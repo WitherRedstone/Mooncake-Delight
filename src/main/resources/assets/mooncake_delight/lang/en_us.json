@@ -147,5 +147,6 @@
 
   "_comment.fluid": "Fluid",
   "fluid.mooncake_delight.invert_sugar_syrup": "Invert Sugar Syrup",
+  "block.mooncake_delight.invert_sugar_syrup": "Invert Sugar Syrup",
   "item.mooncake_delight.invert_sugar_syrup_bucket": "Invert Sugar Syrup Bucket"
 }

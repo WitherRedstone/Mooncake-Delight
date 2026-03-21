@@ -137,5 +137,6 @@
 
   "_comment.fluid": "流体",
   "fluid.mooncake_delight.invert_sugar_syrup": "转换糖浆",
+  "block.mooncake_delight.invert_sugar_syrup": "转换糖浆",
   "item.mooncake_delight.invert_sugar_syrup_bucket": "转换糖浆桶"
 }

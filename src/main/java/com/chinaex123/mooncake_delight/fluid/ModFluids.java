@@ -14,7 +14,7 @@ public class ModFluids {
     public static final DeferredRegister<Fluid> FLUIDS_REGISTER =
             DeferredRegister.create(BuiltInRegistries.FLUID, MooncakeDelight.MOD_ID);
 
-    private static BaseFlowingFluid.Properties INVERT_SUGAR_SYRUP_PROPERTIES; // 使用静态字段来存储 Properties，延迟设置 block
+    private static BaseFlowingFluid.Properties INVERT_SUGAR_SYRUP_PROPERTIES;
 
     public static final Supplier<BaseFlowingFluid.Source> INVERT_SUGAR_SYRUP =
             FLUIDS_REGISTER.register("invert_sugar_syrup",
@@ -29,7 +29,8 @@ public class ModFluids {
                 ModFluidTypes.INVERT_SUGAR_SYRUP_TYPE,
                 INVERT_SUGAR_SYRUP,
                 INVERT_SUGAR_SYRUP_FLOWING)
-                .bucket(ModFluidBlocks.INVERT_SUGAR_SYRUP_BUCKET);
+                .bucket(ModFluidBlocks.INVERT_SUGAR_SYRUP_BUCKET)
+                .tickRate(20); // 流动速度
     }
 
     // 添加一个方法，在 Blocks 注册后调用，用于设置 block

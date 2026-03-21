@@ -26,12 +26,12 @@ public class ModFluidBlocks {
             () -> new LiquidBlock(ModFluids.INVERT_SUGAR_SYRUP.get(),
                     BlockBehaviour.Properties.of()
                             .mapColor(MapColor.COLOR_ORANGE)  // 设置地图颜色
-                            .replaceable()                     // 可被替换
-                            .noCollission()                    // 无碰撞
-                            .strength(100.0F)                  // 强度
+                            .replaceable()  // 可被替换
+                            .noCollission() // 无碰撞
+                            .strength(100.0F)   // 强度
                             .pushReaction(PushReaction.DESTROY) // 活塞反应
-                            .noLootTable()                     // 无掉落物
-                            .liquid()                          // 重要：标记为液体
+                            .noLootTable()  // 无掉落物
+                            .liquid()   // 标记为液体
             ));
     // 转化糖浆桶
     public static final DeferredItem<Item> INVERT_SUGAR_SYRUP_BUCKET = ITEMS.register("invert_sugar_syrup_bucket",

@@ -45,31 +45,31 @@ public class ModFluidTypes {
         public InvertSugarSyrupFluidType(ResourceLocation id, int lightLevel) {
             super(FluidType.Properties.create()
                     .descriptionId(Util.makeDescriptionId("fluid", id))
-                    .density(1500)  // 密度
-                    .viscosity(2000)    // 粘度
+                    .density(3000)  // 密度
+                    .viscosity(16000)    // 粘度
                     .temperature(300)   // 温度
                     .lightLevel(lightLevel) // 光照等级
-                    .canConvertToSource(false)  // 不能无限生成
-                    .canHydrate(false)  // 不滋润耕地
+                    .canConvertToSource(false)  // 无限生成
+                    .canHydrate(false)  // 滋润耕地
                     .canDrown(true) // 可以淹死生物
                     .canPushEntity(true)    // 可以推动实体
                     .canSwim(true)  // 可以游泳
                     .canExtinguish(true)    // 可以灭火
-                    .supportsBoating(false) // 不支持划船
+                    .supportsBoating(true) // 划船
                     .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
                     .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
             );
             this.id = id;
             // 纹理路径：assets/mooncake_delight/textures/fluid/
-            this.stillTexture = ResourceLocation.fromNamespaceAndPath(id.getNamespace(), "fluid/%s_still".formatted(id.getPath()));
-            this.flowingTexture = ResourceLocation.fromNamespaceAndPath(id.getNamespace(), "fluid/%s_flow".formatted(id.getPath()));
+            this.stillTexture = ResourceLocation.fromNamespaceAndPath(id.getNamespace(), "block/%s_still".formatted(id.getPath()));
+            this.flowingTexture = ResourceLocation.fromNamespaceAndPath(id.getNamespace(), "block/%s_flow".formatted(id.getPath()));
         }
 
         @Override
         @Nullable
         public PathType getBlockPathType(FluidState state, BlockGetter level, BlockPos pos,
                                          @Nullable Mob mob, boolean canFluidLog) {
-            return null; // 糖浆太粘了，不会形成正常的路径点
+            return canFluidLog ? super.getBlockPathType(state, level, pos, mob, true) : null;
         }
 
         @Override
@@ -84,11 +84,6 @@ public class ModFluidTypes {
                 @Override
                 public ResourceLocation getFlowingTexture() {
                     return flowingTexture;
-                }
-
-                @Override
-                public int getTintColor() {
-                    return 0xFFE4C4; // 浅橙色/琥珀色（转化糖浆的颜色）
                 }
             });
         }
