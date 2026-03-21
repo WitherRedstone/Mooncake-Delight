@@ -60,7 +60,7 @@ public class ModFluidTypes {
                     .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
             );
             this.id = id;
-            // 纹理路径：assets/mooncake_delight/textures/fluid/invert_sugar_syrup_still.png 和 flow.png
+            // 纹理路径：assets/mooncake_delight/textures/fluid/
             this.stillTexture = ResourceLocation.fromNamespaceAndPath(id.getNamespace(), "fluid/%s_still".formatted(id.getPath()));
             this.flowingTexture = ResourceLocation.fromNamespaceAndPath(id.getNamespace(), "fluid/%s_flow".formatted(id.getPath()));
         }
