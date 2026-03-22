@@ -1,6 +1,5 @@
 {
   "itemGroup.mooncake_delight_tab": "月饼乐事",
-
   "_comment.food-ingredient": "食物-食材",
   "item.mooncake_delight.tallow_crumbs": "动物油脂碎",
   "item.mooncake_delight.tallow": "动物油脂",
@@ -8,7 +7,6 @@
   "item.mooncake_delight.truffle": "松露",
   "item.mooncake_delight.lotus_seed": "莲子",
   "item.mooncake_delight.pepper_salt": "椒盐",
-
   "_comment.food-vanilla_item": "食物-原版自带",
   "item.mooncake_delight.apple_mooncake": "苹果月饼",
   "item.mooncake_delight.golden_apple_mooncake": "金苹果月饼",
@@ -57,7 +55,6 @@
   "item.mooncake_delight.triple_meat_mooncake": "三肉月饼",
   "item.mooncake_delight.ham-bacon_mooncake": "火腿培根月饼",
   "item.mooncake_delight.jinhua_ham_mooncake": "金华火腿月饼",
-
   "_comment.food-mod_command_croptopia": "食物-模组联动-作物盛景",
   "item.mooncake_delight.sausage_mooncake": "香肠月饼",
   "item.mooncake_delight.calamari_mooncake": "鱿鱼月饼",
@@ -102,14 +99,6 @@
   "item.mooncake_delight.milk_tea_mooncake": "奶茶月饼",
   "item.mooncake_delight.candied_orange_peel_mooncake": "橙皮丁月饼",
   "item.mooncake_delight.bacon-onion_mooncake": "培根洋葱月饼",
-
-
-
-
-
-
-
-
   "item.mooncake_delight.red_bean_paste_mooncake": "红豆沙月饼",
   "item.mooncake_delight.sesame_mooncake": "芝麻月饼",
   "item.mooncake_delight.matcha_mooncake": "抹茶月饼",
@@ -128,15 +117,13 @@
   "item.mooncake_delight.white_chocolate_mooncake": "白巧克力月饼",
   "item.mooncake_delight.black_chocolate_mooncake": "黑巧克力月饼",
   "item.mooncake_delight.ube_mooncake": "香芋月饼",
-
   "_comment.food-special-easter_egg": "食物-特殊/彩蛋物品",
   "item.mooncake_delight.lava_mooncake": "流心月饼",
   "item.mooncake_delight.tnt_mooncake": "TNT月饼",
   "item.mooncake_delight.debris_mooncake": "残骸月饼",
   "item.mooncake_delight.bedrock_mooncake": "基岩月饼",
-
   "_comment.fluid": "流体",
   "fluid.mooncake_delight.invert_sugar_syrup": "转换糖浆",
-  "block.mooncake_delight.invert_sugar_syrup": "转换糖浆",
+  "block.mooncake_delight.invert_sugar_syrup_block": "转换糖浆",
   "item.mooncake_delight.invert_sugar_syrup_bucket": "转换糖浆桶"
 }

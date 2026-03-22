@@ -1,91 +1,19 @@
 package com.chinaex123.mooncake_delight.fluid;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import net.minecraft.Util;
-import net.minecraft.core.BlockPos;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.pathfinder.PathType;
-import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
-import net.neoforged.neoforge.common.SoundActions;
 import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
-import org.jetbrains.annotations.Nullable;
 
-import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class ModFluidTypes {
-    public static final DeferredRegister<FluidType> FLUID_TYPES_REGISTER =
-            DeferredRegister.create(NeoForgeRegistries.FLUID_TYPES, MooncakeDelight.MOD_ID);
+    public static final DeferredRegister<FluidType> REGISTRY;
+    public static final Supplier<FluidType> INVERT_SUGAR_SYRUP_TYPE;
 
-    public static final Supplier<FluidType> INVERT_SUGAR_SYRUP_TYPE = FLUID_TYPES_REGISTER.register("invert_sugar_syrup",
-            () -> new InvertSugarSyrupFluidType(
-                    ResourceLocation.fromNamespaceAndPath(MooncakeDelight.MOD_ID, "invert_sugar_syrup"),
-                    0 // 光照等级
-            ));
+    static {
+        REGISTRY = DeferredRegister.create(NeoForgeRegistries.Keys.FLUID_TYPES, MooncakeDelight.MOD_ID);
 
-    public static void register(IEventBus eventBus) {
-        FLUID_TYPES_REGISTER.register(eventBus);
-    }
-
-    /**
-     * 转化糖浆流体类型
-     */
-    public static class InvertSugarSyrupFluidType extends FluidType {
-        private final ResourceLocation id;
-        private final ResourceLocation stillTexture;
-        private final ResourceLocation flowingTexture;
-
-        public InvertSugarSyrupFluidType(ResourceLocation id, int lightLevel) {
-            super(FluidType.Properties.create()
-                    .descriptionId(Util.makeDescriptionId("fluid", id))
-                    .density(3000)  // 密度
-                    .viscosity(16000)    // 粘度
-                    .temperature(300)   // 温度
-                    .lightLevel(lightLevel) // 光照等级
-                    .canConvertToSource(false)  // 无限生成
-                    .canHydrate(false)  // 滋润耕地
-                    .canDrown(true) // 可以淹死生物
-                    .canPushEntity(true)    // 可以推动实体
-                    .canSwim(true)  // 可以游泳
-                    .canExtinguish(true)    // 可以灭火
-                    .supportsBoating(true) // 划船
-                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
-                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
-            );
-            this.id = id;
-            // 纹理路径：assets/mooncake_delight/textures/fluid/
-            this.stillTexture = ResourceLocation.fromNamespaceAndPath(id.getNamespace(), "block/%s_still".formatted(id.getPath()));
-            this.flowingTexture = ResourceLocation.fromNamespaceAndPath(id.getNamespace(), "block/%s_flow".formatted(id.getPath()));
-        }
-
-        @Override
-        @Nullable
-        public PathType getBlockPathType(FluidState state, BlockGetter level, BlockPos pos,
-                                         @Nullable Mob mob, boolean canFluidLog) {
-            return canFluidLog ? super.getBlockPathType(state, level, pos, mob, true) : null;
-        }
-
-        @Override
-        @SuppressWarnings("removal")
-        public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
-            consumer.accept(new IClientFluidTypeExtensions() {
-                @Override
-                public ResourceLocation getStillTexture() {
-                    return stillTexture;
-                }
-
-                @Override
-                public ResourceLocation getFlowingTexture() {
-                    return flowingTexture;
-                }
-            });
-        }
+        INVERT_SUGAR_SYRUP_TYPE = REGISTRY.register("invert_sugar_syrup", InvertSugarSyrupFluidType::new); // 转换糖浆 类型
     }
 }

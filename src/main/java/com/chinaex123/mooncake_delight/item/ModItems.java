@@ -1,10 +1,9 @@
 package com.chinaex123.mooncake_delight.item;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
+import com.chinaex123.mooncake_delight.fluid.ModFluids;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -12,6 +11,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS_REGISTER =
             DeferredRegister.createItems(MooncakeDelight.MOD_ID);
+
+    // ======================= 流体 =======================
+    public static final DeferredItem<Item> INVERT_SUGAR_SYRUP_BUCKET = ITEMS_REGISTER.register("invert_sugar_syrup_bucket", () ->
+            new BucketItem(ModFluids.INVERT_SUGAR_SYRUP.get(), new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET))); // 转换糖浆桶
 
     // ======================= 食材 =======================
     public static final DeferredItem<Item> SUGAR_CUBE = ITEMS_REGISTER.register("sugar_cube", () -> new Item(new Item.Properties())); // 方糖

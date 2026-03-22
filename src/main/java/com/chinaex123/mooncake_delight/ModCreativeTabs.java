@@ -1,7 +1,5 @@
 package com.chinaex123.mooncake_delight;
 
-import com.chinaex123.mooncake_delight.block.ModFluidBlocks;
-import com.chinaex123.mooncake_delight.fluid.ModFluids;
 import com.chinaex123.mooncake_delight.item.ModCompat.Croptopia.CroptopiaItems;
 import com.chinaex123.mooncake_delight.item.ModItems;
 import net.minecraft.core.registries.Registries;
@@ -25,7 +23,7 @@ public class ModCreativeTabs {
                     .displayItems((parameters, output) -> {
 
                         // ======================= 食材 =======================
-                        output.accept(ModFluidBlocks.INVERT_SUGAR_SYRUP_BUCKET.get()); // 转换糖浆桶
+                        output.accept(ModItems.INVERT_SUGAR_SYRUP_BUCKET.get()); // 转换糖浆桶
 
                         output.accept(ModItems.SUGAR_CUBE.get()); // 方糖
                         output.accept(ModItems.TURTLE.get()); // 松露
@@ -130,11 +128,6 @@ public class ModCreativeTabs {
                             output.accept(CroptopiaItems.CANDIED_ORANGE_PEEL_MOONCAKE.get()); // 橙皮丁月饼 配方：橙子 + 糖 + 月饼皮
                             output.accept(CroptopiaItems.BACON_ONION_MOONCAKE.get()); // 培根洋葱月饼 配方：生培根2 + 洋葱2 + 酥皮
                         }
-
-
-
-
-
 
 
 //                        output.accept(CroptopiaItems.RED_BEAN_PASTE_MOONCAKE.get()); // 红豆沙月饼
