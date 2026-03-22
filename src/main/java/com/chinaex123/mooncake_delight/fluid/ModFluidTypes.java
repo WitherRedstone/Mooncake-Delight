@@ -8,12 +8,15 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import java.util.function.Supplier;
 
 public class ModFluidTypes {
-    public static final DeferredRegister<FluidType> REGISTRY;
-    public static final Supplier<FluidType> INVERT_SUGAR_SYRUP_TYPE;
+    public static final DeferredRegister<FluidType> FLUID_TYPE_REGISTRY;
+
+    public static final Supplier<FluidType> INVERT_SUGAR_SYRUP_TYPE; // 转换糖浆
+    public static final Supplier<FluidType> MAPLE_SYRUP_TYPE; // 枫糖浆
 
     static {
-        REGISTRY = DeferredRegister.create(NeoForgeRegistries.Keys.FLUID_TYPES, MooncakeDelight.MOD_ID);
+        FLUID_TYPE_REGISTRY = DeferredRegister.create(NeoForgeRegistries.Keys.FLUID_TYPES, MooncakeDelight.MOD_ID);
 
-        INVERT_SUGAR_SYRUP_TYPE = REGISTRY.register("invert_sugar_syrup", InvertSugarSyrupFluidType::new); // 转换糖浆 类型
+        INVERT_SUGAR_SYRUP_TYPE = FLUID_TYPE_REGISTRY.register("invert_sugar_syrup_type", InvertSugarSyrupFluidType::new); // 转换糖浆 类型
+        MAPLE_SYRUP_TYPE = FLUID_TYPE_REGISTRY.register("maple_syrup_type", MapleSyrupFluidType::new); // 枫糖浆 类型
     }
 }

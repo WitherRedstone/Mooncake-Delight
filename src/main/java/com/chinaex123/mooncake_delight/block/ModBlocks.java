@@ -23,10 +23,19 @@ public class ModBlocks {
 
     // ======================= 流体 =======================
     public static final DeferredBlock<LiquidBlock> INVERT_SUGAR_SYRUP_BLOCK; // 转换糖浆
+    public static final DeferredBlock<LiquidBlock> MAPLE_SYRUP_BLOCK; // 枫糖浆
 
     static {
         INVERT_SUGAR_SYRUP_BLOCK = BLOCKS.register("invert_sugar_syrup_block", () ->
                 new LiquidBlock(ModFluids.INVERT_SUGAR_SYRUP.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)
+                        .friction(0.6F) // 高摩擦
+                        .speedFactor(0.5F) // 减速 50%
+                        .jumpFactor(0.5F) // 跳跃
+                        .mapColor(MapColor.COLOR_ORANGE) // 橙色
+                        .sound(SoundType.HONEY_BLOCK) // 蜂蜜块声音
+                ));
+        MAPLE_SYRUP_BLOCK = BLOCKS.register("maple_syrup_block", () ->
+                new LiquidBlock(ModFluids.MAPLE_SYRUP.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)
                         .friction(0.6F) // 高摩擦
                         .speedFactor(0.5F) // 减速 50%
                         .jumpFactor(0.5F) // 跳跃

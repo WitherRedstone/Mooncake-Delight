@@ -2,19 +2,26 @@ package com.chinaex123.mooncake_delight.item;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
 import com.chinaex123.mooncake_delight.fluid.ModFluids;
+import com.chinaex123.mooncake_delight.util.SyrupItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.jetbrains.annotations.NotNull;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS_REGISTER =
             DeferredRegister.createItems(MooncakeDelight.MOD_ID);
 
-    // ======================= 流体 =======================
+    // ======================= 流体桶 =======================
     public static final DeferredItem<Item> INVERT_SUGAR_SYRUP_BUCKET = ITEMS_REGISTER.register("invert_sugar_syrup_bucket", () ->
-            new BucketItem(ModFluids.INVERT_SUGAR_SYRUP.get(), new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET))); // 转换糖浆桶
+            new BucketItem(ModFluids.INVERT_SUGAR_SYRUP.get(), new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET))); // 转换糖浆 桶
+    public static final DeferredItem<Item> MAPLE_SYRUP_BUCKET = ITEMS_REGISTER.register("maple_syrup_bucket", () ->
+            new BucketItem(ModFluids.MAPLE_SYRUP.get(), new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET))); // 枫糖浆 桶
+
+    public static final DeferredItem<Item> INVERT_SUGAR_SYRUP = ITEMS_REGISTER.register("invert_sugar_syrup", () -> new SyrupItem(ModFoods.INVERT_SUGAR_SYRUP)); // 转换糖浆
+    public static final DeferredItem<Item> MAPLE_SYRUP = ITEMS_REGISTER.register("maple_syrup", () -> new SyrupItem(ModFoods.MAPLE_SYRUP)); // 枫糖浆
 
     // ======================= 食材 =======================
     public static final DeferredItem<Item> SUGAR_CUBE = ITEMS_REGISTER.register("sugar_cube", () -> new Item(new Item.Properties())); // 方糖
@@ -22,6 +29,7 @@ public class ModItems {
     public static final DeferredItem<Item> TALLOW_CRUMBS = ITEMS_REGISTER.register("tallow_crumbs", () -> new Item(new Item.Properties().food(ModFoods.TALLOW_CRUMBS))); // 动物油脂碎
     public static final DeferredItem<Item> TALLOW = ITEMS_REGISTER.register("tallow", () -> new Item(new Item.Properties().food(ModFoods.TALLOW))); // 动物油脂
     public static final DeferredItem<Item> LOTUS_SEED = ITEMS_REGISTER.register("lotus_seed", () -> new Item(new Item.Properties().food(ModFoods.LOTUS_SEED))); // 莲子
+    public static final DeferredItem<Item> PEPPER_SALT = ITEMS_REGISTER.register("pepper_salt", () -> new Item(new Item.Properties())); // 椒盐
 
     // 实际饱和度 ≈ nutrition × saturationModifier × 2
     // ======================= 原版自带 =======================

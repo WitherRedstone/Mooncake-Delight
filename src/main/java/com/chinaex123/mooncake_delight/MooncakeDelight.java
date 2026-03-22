@@ -18,16 +18,10 @@ public class MooncakeDelight {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public MooncakeDelight(IEventBus modEventBus, ModContainer modContainer) {
-        // 注册流体相关
-//        ModFluidTypes.register(modEventBus);
-//        ModFluids.register(modEventBus);
-//        ModFluidBlocks.register(modEventBus);
-//        ModFluids.setFluidBlocks();
-
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        ModFluidTypes.REGISTRY.register(modEventBus);
-        ModFluids.REGISTRY.register(modEventBus);
+        ModFluidTypes.FLUID_TYPE_REGISTRY.register(modEventBus);
+        ModFluids.FLUID_REGISTRY.register(modEventBus);
 
         ModCreativeTabs.register(modEventBus);
 

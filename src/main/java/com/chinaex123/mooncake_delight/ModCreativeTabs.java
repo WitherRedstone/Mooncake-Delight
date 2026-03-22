@@ -23,13 +23,18 @@ public class ModCreativeTabs {
                     .displayItems((parameters, output) -> {
 
                         // ======================= 食材 =======================
-                        output.accept(ModItems.INVERT_SUGAR_SYRUP_BUCKET.get()); // 转换糖浆桶
+                        output.accept(ModItems.INVERT_SUGAR_SYRUP_BUCKET.get()); // 转换糖浆 桶
+                        output.accept(ModItems.MAPLE_SYRUP_BUCKET.get()); // 枫糖浆 桶
+
+                        output.accept(ModItems.INVERT_SUGAR_SYRUP.get()); // 转换糖浆
+                        output.accept(ModItems.MAPLE_SYRUP.get()); // 枫糖浆
 
                         output.accept(ModItems.SUGAR_CUBE.get()); // 方糖
                         output.accept(ModItems.TURTLE.get()); // 松露
                         output.accept(ModItems.TALLOW_CRUMBS.get()); // 动物油脂碎
                         output.accept(ModItems.TALLOW.get()); // 动物油脂
                         output.accept(ModItems.LOTUS_SEED.get()); // 莲子 配方：破坏睡莲有概率获得
+                        output.accept(ModItems.PEPPER_SALT.get()); // 椒盐
 
                         // ======================= 原版自带 =======================
                         output.accept(ModItems.APPLE_MOONCAKE.get()); // 苹果月饼

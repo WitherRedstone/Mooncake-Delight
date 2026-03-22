@@ -27,6 +27,10 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         // 糖
         tag(ModItemTags.SUGARS)
                 .add(ModItems.SUGAR_CUBE.get()); // 方糖
+        // 蜂蜜
+        tag(Tags.Items.DRINKS_HONEY)
+                .add(ModItems.INVERT_SUGAR_SYRUP.get()) // 转换糖浆
+                .add(ModItems.MAPLE_SYRUP.get()); // 枫糖浆
 
         // 所有月饼
         tag(ModItemTags.MOONCAKE)

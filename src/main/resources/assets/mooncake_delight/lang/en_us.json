@@ -1,5 +1,6 @@
 {
   "itemGroup.mooncake_delight_tab": "Mooncake Delight",
+
   "_comment.food-ingredient": "Food-Ingredient",
   "item.mooncake_delight.tallow_crumbs": "Tallow Crumbs",
   "item.mooncake_delight.tallow": "Tallow",
@@ -7,6 +8,9 @@
   "item.mooncake_delight.truffle": "Truffle",
   "item.mooncake_delight.lotus_seed": "Lotus Seed",
   "item.mooncake_delight.pepper_salt": "Pepper Salt",
+  "item.mooncake_delight.invert_sugar_syrup": "Invert Sugar Syrup",
+  "item.mooncake_delight.maple_syrup": "Maple Syrup",
+
   "_comment.food-vanilla_item": "Food-Vanilla Item",
   "item.mooncake_delight.apple_mooncake": "Apple Mooncake",
   "item.mooncake_delight.golden_apple_mooncake": "Golden Apple Mooncake",
@@ -55,6 +59,7 @@
   "item.mooncake_delight.triple_meat_mooncake": "Triple Meat Mooncake",
   "item.mooncake_delight.ham-bacon_mooncake": "Ham Bacon Mooncake",
   "item.mooncake_delight.jinhua_ham_mooncake": "Jinhua Ham Mooncake",
+
   "_comment.food-mod_command_croptopia": "Food-Mod Command-Croptopia",
   "item.mooncake_delight.sausage_mooncake": "Sausage Mooncake",
   "item.mooncake_delight.calamari_mooncake": "Calamari Mooncake",
@@ -117,13 +122,18 @@
   "item.mooncake_delight.white_chocolate_mooncake": "White Chocolate Mooncake",
   "item.mooncake_delight.black_chocolate_mooncake": "Black Chocolate Mooncake",
   "item.mooncake_delight.ube_mooncake": "Ube Mooncake",
+
   "_comment.food-special-easter_egg": "Food-Special / Easter Egg",
   "item.mooncake_delight.lava_mooncake": "Lava Mooncake",
   "item.mooncake_delight.tnt_mooncake": "TNT Mooncake",
   "item.mooncake_delight.debris_mooncake": "Debris Mooncake",
   "item.mooncake_delight.bedrock_mooncake": "Bedrock Mooncake",
+
   "_comment.fluid": "Fluid",
   "fluid.mooncake_delight.invert_sugar_syrup": "Invert Sugar Syrup",
-  "block.mooncake_delight.invert_sugar_syrup_block": "Invert Sugar Syrup",
-  "item.mooncake_delight.invert_sugar_syrup_bucket": "Invert Sugar Syrup Bucket"
+  "fluid.mooncake_delight.maple_syrup": "Maple Syrup",
+  "block.mooncake_delight.invert_sugar_syrup_block": "Invert Sugar Syrup Block",
+  "block.mooncake_delight.maple_syrup_block": "Maple Syrup Block",
+  "item.mooncake_delight.invert_sugar_syrup_bucket": "Invert Sugar Syrup Bucket",
+  "item.mooncake_delight.maple_syrup_bucket": "Maple Syrup Bucket"
 }
