@@ -1,35 +1,42 @@
-//package com.chinaex123.mooncake_delight.dataGen;
-//
-//import net.minecraft.core.HolderLookup;
-//import net.minecraft.data.PackOutput;
-//import net.minecraft.data.recipes.*;
-//import net.minecraft.resources.ResourceLocation;
-//import net.minecraft.tags.ItemTags;
-//import net.minecraft.world.item.Items;
-//import net.minecraft.world.item.crafting.Ingredient;
-//import net.neoforged.neoforge.common.Tags;
-//import net.neoforged.neoforge.common.conditions.IConditionBuilder;
-//import org.jetbrains.annotations.NotNull;
-//
-//import java.util.concurrent.CompletableFuture;
-//
-//public class ModRecipesProvider extends RecipeProvider implements IConditionBuilder {
-//    public ModRecipesProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-//        super(output, registries);
-//    }
-//
-//    protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
-//
-//        // ==================== 基础工具 ====================
-//        // 木锤
-//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
-//                        ModItems.WOOD_HAMMER.get())
-//                .pattern(" BA")
-//                .pattern(" AB")
-//                .pattern("A  ")
-//                .define('A', Tags.Items.RODS_WOODEN)
-//                .define('B', ItemTags.LOGS)
-//                .unlockedBy("has_wood_hammer", has(ItemTags.LOGS))
-//                .save(recipeOutput);
-//    }
-//}
+package com.chinaex123.mooncake_delight.dataGen.recipe;
+
+import com.chinaex123.mooncake_delight.dataGen.recipe.ModCompat.CroptopiaItemRecipes;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.recipes.*;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.concurrent.CompletableFuture;
+
+public class ModRecipesProvider extends RecipeProvider {
+
+    private final ModCraftingRecipes craftingRecipes;
+    private final IngredientRecipes IngredientRecipes;
+    private final VanillaMooncakeRecipes VanillaMooncake;
+
+    // ======================= 作物盛景 联动 =======================
+    private final CroptopiaItemRecipes CroptopiaItem;
+
+    public ModRecipesProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries);
+
+        // 初始化各个配方类
+        this.craftingRecipes = new ModCraftingRecipes(output, registries);
+        this.IngredientRecipes = new IngredientRecipes(output, registries);
+        this.VanillaMooncake = new VanillaMooncakeRecipes(output, registries);
+
+        // ======================= 作物盛景 联动 =======================
+        this.CroptopiaItem = new CroptopiaItemRecipes(output, registries);
+    }
+
+    @Override
+    protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
+        // 调用各个配方类的注册方法
+        craftingRecipes.buildCraftingRecipes(recipeOutput);
+        IngredientRecipes.buildCookingRecipes(recipeOutput);
+        VanillaMooncake.buildVanillaRecipes(recipeOutput);
+
+        // ======================= 作物盛景 联动 =======================
+        CroptopiaItem.buildCroptopiaItem(recipeOutput);
+    }
+}

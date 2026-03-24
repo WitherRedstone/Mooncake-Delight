@@ -1,13 +1,21 @@
 {
   "itemGroup.mooncake_delight_tab": "月饼乐事",
 
+  "_comment.tools": "工具",
+  "item.mooncake_delight.oiled_knife": "油浸刀",
+  "item.mooncake_delight.mooncake_mold": "月饼模具",
+
   "_comment.food-ingredient": "食物-食材",
   "item.mooncake_delight.tallow_crumbs": "动物油脂碎",
   "item.mooncake_delight.tallow": "动物油脂",
+  "item.mooncake_delight.animal_fat": "动物油",
   "item.mooncake_delight.sugar_cube": "方糖",
   "item.mooncake_delight.truffle": "松露",
   "item.mooncake_delight.lotus_seed": "莲子",
   "item.mooncake_delight.pepper_salt": "椒盐",
+  "item.mooncake_delight.flour": "面粉",
+  "item.mooncake_delight.mooncake_crust_dough": "月饼面团",
+  "item.mooncake_delight.snow_skin_mooncake_crust_dough": "冰皮月饼面团",
   "item.mooncake_delight.invert_sugar_syrup": "转换糖浆",
   "item.mooncake_delight.maple_syrup": "枫糖浆",
 
@@ -59,6 +67,7 @@
   "item.mooncake_delight.triple_meat_mooncake": "三肉月饼",
   "item.mooncake_delight.ham-bacon_mooncake": "火腿培根月饼",
   "item.mooncake_delight.jinhua_ham_mooncake": "金华火腿月饼",
+  "item.mooncake_delight.bacon-onion_mooncake": "培根洋葱月饼",
 
   "_comment.food-mod_command_croptopia": "食物-模组联动-作物盛景",
   "item.mooncake_delight.sausage_mooncake": "香肠月饼",
@@ -81,7 +90,6 @@
   "item.mooncake_delight.tropical_fruit_mooncake": "热带水果月饼",
   "item.mooncake_delight.berry_medley_mooncake": "浆果荟萃月饼",
   "item.mooncake_delight.citrus_blast_mooncake": "柑橘炸弹月饼",
-  "item.mooncake_delight.walnut-date_mooncake": "核桃枣泥月饼",
   "item.mooncake_delight.almond-cherry_mooncake": "扁桃仁樱桃月饼",
   "item.mooncake_delight.cashew-mango_mooncake": "腰果芒果月饼",
   "item.mooncake_delight.shrimp-asparagus_mooncake": "鲜虾芦笋月饼",
@@ -103,7 +111,9 @@
   "item.mooncake_delight.pickled_mustard-pork_mooncake": "榨菜鲜肉月饼",
   "item.mooncake_delight.milk_tea_mooncake": "奶茶月饼",
   "item.mooncake_delight.candied_orange_peel_mooncake": "橙皮丁月饼",
-  "item.mooncake_delight.bacon-onion_mooncake": "培根洋葱月饼",
+
+
+
   "item.mooncake_delight.red_bean_paste_mooncake": "红豆沙月饼",
   "item.mooncake_delight.sesame_mooncake": "芝麻月饼",
   "item.mooncake_delight.matcha_mooncake": "抹茶月饼",
@@ -130,10 +140,22 @@
   "item.mooncake_delight.bedrock_mooncake": "基岩月饼",
 
   "_comment.fluid": "流体",
-  "fluid.mooncake_delight.invert_sugar_syrup": "转换糖浆",
-  "fluid.mooncake_delight.maple_syrup": "枫糖浆",
+  "fluid_type.mooncake_delight.invert_sugar_syrup_type": "转换糖浆",
+  "fluid_type.mooncake_delight.maple_syrup_type": "枫糖浆",
   "block.mooncake_delight.invert_sugar_syrup_block": "转换糖浆",
   "block.mooncake_delight.maple_syrup_block": "枫糖浆",
   "item.mooncake_delight.invert_sugar_syrup_bucket": "转换糖浆桶",
-  "item.mooncake_delight.maple_syrup_bucket": "枫糖浆桶"
+  "item.mooncake_delight.maple_syrup_bucket": "枫糖浆桶",
+
+  "_comment.tooltip": "工具提示",
+  "item.mooncake_delight.oiled_knife.tooltip.1": "攻击时，使目标着火",
+  "item.mooncake_delight.oiled_knife.tooltip.2": "攻击动物时，获得更多的动物油脂",
+  "item.mooncake_delight.truffle.tooltip": "挖掘灰化土时有概率获得",
+  "item.mooncake_delight.lotus_seed.tooltip": "挖掘睡莲时有概率获得",
+  "item.mooncake_delight.flour.tooltip": "铁砧砸碎小麦获得1-3个",
+  "item.mooncake_delight.tnt_mooncake.tooltip": "危险的东西，还是不要吃比较好...",
+  "tooltip.mooncake_delight.effects": "§e效果",
+  "tooltip.mooncake_delight.effect_seconds": "  • %s %s (%s 秒) - %s%%",
+  "tooltip.mooncake_delight.effect_minutes": "  • %s %s (%s分%s秒) - %s%%",
+  "tooltip.mooncake_delight.effect_hours": "  • %s %s (%d时%d分) - %s%%"
 }

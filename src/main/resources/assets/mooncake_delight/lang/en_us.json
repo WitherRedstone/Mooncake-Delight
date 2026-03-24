@@ -1,13 +1,21 @@
 {
   "itemGroup.mooncake_delight_tab": "Mooncake Delight",
 
+  "_comment.tools": "Tools",
+  "item.mooncake_delight.oiled_knife": "Oiled Knife",
+  "item.mooncake_delight.mooncake_mold": "Mooncake Mold",
+
   "_comment.food-ingredient": "Food-Ingredient",
   "item.mooncake_delight.tallow_crumbs": "Tallow Crumbs",
   "item.mooncake_delight.tallow": "Tallow",
+  "item.mooncake_delight.animal_fat": "Animal Fat",
   "item.mooncake_delight.sugar_cube": "Sugar Cube",
   "item.mooncake_delight.truffle": "Truffle",
   "item.mooncake_delight.lotus_seed": "Lotus Seed",
   "item.mooncake_delight.pepper_salt": "Pepper Salt",
+  "item.mooncake_delight.mooncake_crust_dough": "Mooncake Crust Dough",
+  "item.mooncake_delight.snow_skin_mooncake_crust_dough": "Snow Skin Mooncake Crust Dough",
+  "item.mooncake_delight.flour": "Flour",
   "item.mooncake_delight.invert_sugar_syrup": "Invert Sugar Syrup",
   "item.mooncake_delight.maple_syrup": "Maple Syrup",
 
@@ -59,6 +67,7 @@
   "item.mooncake_delight.triple_meat_mooncake": "Triple Meat Mooncake",
   "item.mooncake_delight.ham-bacon_mooncake": "Ham Bacon Mooncake",
   "item.mooncake_delight.jinhua_ham_mooncake": "Jinhua Ham Mooncake",
+  "item.mooncake_delight.bacon-onion_mooncake": "Bacon Onion Mooncake",
 
   "_comment.food-mod_command_croptopia": "Food-Mod Command-Croptopia",
   "item.mooncake_delight.sausage_mooncake": "Sausage Mooncake",
@@ -81,7 +90,6 @@
   "item.mooncake_delight.tropical_fruit_mooncake": "Tropical Fruit Mooncake",
   "item.mooncake_delight.berry_medley_mooncake": "Berry Medley Mooncake",
   "item.mooncake_delight.citrus_blast_mooncake": "Citrus Blast Mooncake",
-  "item.mooncake_delight.walnut-date_mooncake": "Walnut & Date Mooncake",
   "item.mooncake_delight.almond-cherry_mooncake": "Almond & Cherry Mooncake",
   "item.mooncake_delight.cashew-mango_mooncake": "Cashew & Mango Mooncake",
   "item.mooncake_delight.shrimp-asparagus_mooncake": "Shrimp & Asparagus Mooncake",
@@ -103,7 +111,9 @@
   "item.mooncake_delight.pickled_mustard-pork_mooncake": "Pickled Mustard & Pork Mooncake",
   "item.mooncake_delight.milk_tea_mooncake": "Milk Tea Mooncake",
   "item.mooncake_delight.candied_orange_peel_mooncake": "Candied Orange Peel Mooncake",
-  "item.mooncake_delight.bacon-onion_mooncake": "Bacon Onion Mooncake",
+
+
+
   "item.mooncake_delight.red_bean_paste_mooncake": "Red Bean Paste Mooncake",
   "item.mooncake_delight.sesame_mooncake": "Sesame Mooncake",
   "item.mooncake_delight.matcha_mooncake": "Matcha Mooncake",
@@ -130,10 +140,22 @@
   "item.mooncake_delight.bedrock_mooncake": "Bedrock Mooncake",
 
   "_comment.fluid": "Fluid",
-  "fluid.mooncake_delight.invert_sugar_syrup": "Invert Sugar Syrup",
-  "fluid.mooncake_delight.maple_syrup": "Maple Syrup",
+  "fluid_type.mooncake_delight.invert_sugar_syrup_type": "Invert Sugar Syrup",
+  "fluid_type.mooncake_delight.maple_syrup_type": "Maple Syrup",
   "block.mooncake_delight.invert_sugar_syrup_block": "Invert Sugar Syrup Block",
   "block.mooncake_delight.maple_syrup_block": "Maple Syrup Block",
   "item.mooncake_delight.invert_sugar_syrup_bucket": "Invert Sugar Syrup Bucket",
-  "item.mooncake_delight.maple_syrup_bucket": "Maple Syrup Bucket"
+  "item.mooncake_delight.maple_syrup_bucket": "Maple Syrup Bucket",
+
+  "_comment.tooltip": "Tool Tooltip",
+  "item.mooncake_delight.oiled_knife.tooltip.1": "On hit, set the target on fire.",
+  "item.mooncake_delight.oiled_knife.tooltip.2": "On hitting animals, gain additional tallow.",
+  "item.mooncake_delight.truffle.tooltip": "Has a chance to be obtained when mining podzol",
+  "item.mooncake_delight.lotus_seed.tooltip": "Has a chance to be obtained when mining water lilies",
+  "item.mooncake_delight.flour.tooltip": "Anvil crushing wheat yields 1-3 pieces.",
+  "item.mooncake_delight.tnt_mooncake.tooltip": "Things that are dangerous are better left uneaten...",
+  "tooltip.mooncake_delight.effects": "Effect",
+  "tooltip.mooncake_delight.effect_seconds": "  • %s %s (%s s) - %s%%",
+  "tooltip.mooncake_delight.effect_minutes": "  • %s %s (%s min %s s) - %s%%",
+  "tooltip.mooncake_delight.effect_hours": "  • %s %s (%dh %d min) - %s%%"
 }

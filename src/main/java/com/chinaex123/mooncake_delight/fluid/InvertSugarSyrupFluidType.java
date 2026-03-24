@@ -1,11 +1,17 @@
 package com.chinaex123.mooncake_delight.fluid;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
+import com.mojang.blaze3d.shaders.FogShape;
+import net.minecraft.client.Camera;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.renderer.FogRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.common.SoundActions;
 import net.neoforged.neoforge.fluids.FluidType;
+import org.jetbrains.annotations.NotNull;
+import org.joml.Vector3f;
 
 import java.util.function.Consumer;
 
@@ -40,12 +46,32 @@ public class InvertSugarSyrupFluidType extends FluidType {
             private static final ResourceLocation STILL_TEXTURE = ResourceLocation.fromNamespaceAndPath(MooncakeDelight.MOD_ID, "block/invert_sugar_syrup_still");
             private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.fromNamespaceAndPath(MooncakeDelight.MOD_ID, "block/invert_sugar_syrup_flow");
 
-            public ResourceLocation getStillTexture() {
+            @Override
+            public @NotNull ResourceLocation getStillTexture() {
                 return STILL_TEXTURE;
             }
 
-            public ResourceLocation getFlowingTexture() {
+            @Override
+            public @NotNull ResourceLocation getFlowingTexture() {
                 return FLOWING_TEXTURE;
+            }
+
+            @Override
+            public @NotNull Vector3f modifyFogColor(@NotNull Camera camera, float partialTick, @NotNull ClientLevel level,
+                                                    int renderDistance, float darkenWorldAmount, @NotNull Vector3f fluidFogColor) {
+                return new Vector3f(0.62F, 0.31F, 0.00F);
+            }
+
+            @Override
+            public void modifyFogRender(@NotNull Camera camera, FogRenderer.@NotNull FogMode mode,
+                                        float renderDistance, float partialTick, float nearDistance, float farDistance, @NotNull FogShape shape) {
+                // 设置雾的起始和结束距离（值越小雾越浓）
+                IClientFluidTypeExtensions.super.modifyFogRender(
+                        camera, mode, renderDistance, partialTick,
+                        Math.max(nearDistance, 2.5F),  // 雾起始距离
+                        Math.min(farDistance, 6.0F),   // 雾结束距离
+                        shape
+                );
             }
         });
     }

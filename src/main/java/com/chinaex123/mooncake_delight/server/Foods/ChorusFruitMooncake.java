@@ -1,4 +1,4 @@
-package com.chinaex123.mooncake_delight.server;
+package com.chinaex123.mooncake_delight.server.Foods;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
 import com.chinaex123.mooncake_delight.item.ModItems;

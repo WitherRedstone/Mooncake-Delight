@@ -22,11 +22,17 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicItem(ModItems.MAPLE_SYRUP_BUCKET.get()); // 枫糖浆 桶 - textures/item/
 
         // ======================= 食材 =======================
+        basicItem(ModItems.OILED_KNIFE.get()); // 油刀 - textures/item/
+        basicItem(ModItems.MOONCAKE_MOLD.get()); // 月饼模具 - textures/item/
         basicItem(ModItems.SUGAR_CUBE.get()); // 方糖 - textures/item/
-        basicItem(ModItems.TURTLE.get()); // 松露 - textures/item/
+        basicItem(ModItems.TRUFFLE.get()); // 松露 - textures/item/
         basicItem(ModItems.TALLOW_CRUMBS.get()); // 动物油脂碎 - textures/item/
         basicItem(ModItems.TALLOW.get()); // 动物油脂 - textures/item/
+        basicItem(ModItems.ANIMAL_FAT.get()); // 动物油 - textures/item/
         basicItem(ModItems.LOTUS_SEED.get()); // 莲子 - textures/item/
+        basicItem(ModItems.FLOUR.get()); // 面粉 - textures/item/
+        basicItem(ModItems.MOONCAKE_CRUST_DOUGH.get()); // 月饼面团 - textures/item/
+        basicItem(ModItems.SNOW_SKIN_MOONCAKE_CRUST_DOUGH.get()); // 冰皮月饼面团 - textures/item/
         basicItem(ModItems.INVERT_SUGAR_SYRUP.get()); // 转换糖浆 - textures/item/
         basicItem(ModItems.MAPLE_SYRUP.get()); // 枫糖浆 - textures/item/
 
@@ -77,6 +83,7 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicFoodItem(ModItems.TRIPLE_MEAT_MOONCAKE); // 三肉月饼
         basicFoodItem(ModItems.HAM_BACON_MOONCAKE); // 火腿培根月饼
         basicFoodItem(ModItems.JINHUA_HAM_MOONCAKE); // 金华火腿月饼
+        basicFoodItem(ModItems.BACON_ONION_MOONCAKE); // 培根洋葱月饼
 
         // ======================= 作物盛景 联动 =======================
         basicCroptopiaItem(CroptopiaItems.PEPPER_SALT); // 椒盐
@@ -100,7 +107,6 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicCroptopiaItem(CroptopiaItems.TROPICAL_FRUIT_MOONCAKE); // 热带水果月饼
         basicCroptopiaItem(CroptopiaItems.BERRY_MEDLEY_MOONCAKE); // 浆果荟萃月饼
         basicCroptopiaItem(CroptopiaItems.CITRUS_BLAST_MOONCAKE); // 柑橘炸弹月饼
-        basicCroptopiaItem(CroptopiaItems.WALNUT_DATE_MOONCAKE); // 核桃枣泥月饼
         basicCroptopiaItem(CroptopiaItems.ALMOND_CHERRY_MOONCAKE); // 扁桃仁樱桃月饼
         basicCroptopiaItem(CroptopiaItems.CASHEW_MANGO_MOONCAKE); // 腰果芒果月饼
         basicCroptopiaItem(CroptopiaItems.SHRIMP_ASPARAGUS_MOONCAKE); // 鲜虾芦笋月饼
@@ -122,7 +128,6 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicCroptopiaItem(CroptopiaItems.PICKLED_MUSTARD_PORK_MOONCAKE); // 榨菜鲜肉月饼
         basicCroptopiaItem(CroptopiaItems.MILK_TEA_MOONCAKE); // 奶茶月饼
         basicCroptopiaItem(CroptopiaItems.CANDIED_ORANGE_PEEL_MOONCAKE); // 橙皮丁月饼
-        basicCroptopiaItem(CroptopiaItems.BACON_ONION_MOONCAKE); // 培根洋葱月饼
 
         // ======================= 特殊/彩蛋物品 =======================
         specialEasterEggItem(ModItems.LAVA_MOONCAKE); // 流心月饼
