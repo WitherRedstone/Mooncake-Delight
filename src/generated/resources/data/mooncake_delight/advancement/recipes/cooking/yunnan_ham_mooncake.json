@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/yunnan_ham_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yunnan_ham_mooncake": {
+      "conditions": {
+        "items": [
+          {
+            "items": "farmersdelight:ham"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_yunnan_ham_mooncake"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/yunnan_ham_mooncake"
+    ]
+  }
+}

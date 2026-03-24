@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pepper-salt_mooncake_greenonions": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mooncake_delight:pepper_salt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/pepper-salt_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pepper-salt_mooncake_greenonions"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/pepper-salt_mooncake"
+    ]
+  }
+}

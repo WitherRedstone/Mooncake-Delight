@@ -1,0 +1,34 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "mooncake_delight:mooncake_mold"
+  },
+  "cookingtime": 400,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "item": "mooncake_delight:mooncake_crust_dough"
+    },
+    {
+      "tag": "c:sugars"
+    },
+    {
+      "tag": "c:tuna"
+    },
+    {
+      "tag": "c:tuna"
+    },
+    {
+      "tag": "c:avocados"
+    },
+    {
+      "tag": "c:avocados"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "mooncake_delight:tuna-avocado_mooncake"
+  }
+}

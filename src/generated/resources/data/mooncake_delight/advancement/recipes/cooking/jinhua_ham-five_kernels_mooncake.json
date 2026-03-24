@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_jinhua_ham-five_kernels_mooncake_cashews": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:cashews"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_jinhua_ham-five_kernels_mooncake_cooked_bacon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:peanuts"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_jinhua_ham-five_kernels_mooncake_ham": {
+      "conditions": {
+        "items": [
+          {
+            "items": "farmersdelight:ham"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_jinhua_ham-five_kernels_mooncake_pecans": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:pecans"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_jinhua_ham-five_kernels_mooncake_walnuts": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:walnuts"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/jinhua_ham-five_kernels_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_jinhua_ham-five_kernels_mooncake_ham",
+      "has_jinhua_ham-five_kernels_mooncake_cooked_bacon",
+      "has_jinhua_ham-five_kernels_mooncake_walnuts",
+      "has_jinhua_ham-five_kernels_mooncake_cashews",
+      "has_jinhua_ham-five_kernels_mooncake_pecans"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/jinhua_ham-five_kernels_mooncake"
+    ]
+  }
+}

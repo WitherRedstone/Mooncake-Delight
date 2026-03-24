@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pickled_mustard-pork_mooncake_bacon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "farmersdelight:bacon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_pickled_mustard-pork_mooncake_salts": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:salts"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/pickled_mustard-pork_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pickled_mustard-pork_mooncake_bacon",
+      "has_pickled_mustard-pork_mooncake_salts"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/pickled_mustard-pork_mooncake"
+    ]
+  }
+}

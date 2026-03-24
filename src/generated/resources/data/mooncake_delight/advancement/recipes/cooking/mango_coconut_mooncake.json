@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mango_coconut_mooncake_mangos": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:mangos"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/mango_coconut_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mango_coconut_mooncake_mangos"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/mango_coconut_mooncake"
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bbq_pork-five_kernels_mooncake_cashews": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:cashews"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bbq_pork-five_kernels_mooncake_cooked_bacon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:cooked_bacon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bbq_pork-five_kernels_mooncake_peanuts": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:peanuts"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bbq_pork-five_kernels_mooncake_pecans": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:pecans"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bbq_pork-five_kernels_mooncake_walnuts": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:walnuts"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/bbq_pork-five_kernels_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bbq_pork-five_kernels_mooncake_cooked_bacon",
+      "has_bbq_pork-five_kernels_mooncake_peanuts",
+      "has_bbq_pork-five_kernels_mooncake_walnuts",
+      "has_bbq_pork-five_kernels_mooncake_cashews",
+      "has_bbq_pork-five_kernels_mooncake_pecans"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/bbq_pork-five_kernels_mooncake"
+    ]
+  }
+}

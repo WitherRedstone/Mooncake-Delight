@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "tag": "farmersdelight:tools/knives"
+    },
+    "B": {
+      "item": "mooncake_delight:tallow"
+    }
+  },
+  "pattern": [
+    " B ",
+    "BAB",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "mooncake_delight:oiled_knife"
+  }
+}

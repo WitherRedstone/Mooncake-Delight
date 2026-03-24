@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cashew-mango_mooncake_almonds": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:mangos"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_cashew-mango_mooncake_cashew": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:cashews"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/cashew-mango_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cashew-mango_mooncake_almonds",
+      "has_cashew-mango_mooncake_cashew"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/cashew-mango_mooncake"
+    ]
+  }
+}

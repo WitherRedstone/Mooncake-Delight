@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blueberry_yogurt_mooncake_cranberries": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:blueberries"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_blueberry_yogurt_mooncake_lemonades": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:lemonades"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/blueberry_yogurt_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blueberry_yogurt_mooncake_lemonades",
+      "has_blueberry_yogurt_mooncake_cranberries"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/blueberry_yogurt_mooncake"
+    ]
+  }
+}

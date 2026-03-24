@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_spinach-walnut_mooncake_spinach": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:spinach"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_spinach-walnut_mooncake_walnuts": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:walnuts"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/spinach-walnut_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_spinach-walnut_mooncake_spinach",
+      "has_spinach-walnut_mooncake_walnuts"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/spinach-walnut_mooncake"
+    ]
+  }
+}

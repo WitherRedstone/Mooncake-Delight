@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/tropical_fruit_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tropical_fruit_mooncake_bananas": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:bananas"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_tropical_fruit_mooncake_coconuts": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:coconuts"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_tropical_fruit_mooncake_mangos": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:mangos"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_tropical_fruit_mooncake_pineapples": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:pineapples"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tropical_fruit_mooncake_mangos",
+      "has_tropical_fruit_mooncake_pineapples",
+      "has_tropical_fruit_mooncake_bananas",
+      "has_tropical_fruit_mooncake_coconuts"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/tropical_fruit_mooncake"
+    ]
+  }
+}

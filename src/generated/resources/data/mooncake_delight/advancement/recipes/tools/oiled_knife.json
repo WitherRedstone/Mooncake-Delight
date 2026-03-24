@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_oiled_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mooncake_delight:tallow"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:oiled_knife"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oiled_knife"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:oiled_knife"
+    ]
+  }
+}

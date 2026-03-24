@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_berry_medley_mooncake_blackberries": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:blackberries"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_berry_medley_mooncake_blueberries": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:blueberries"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_berry_medley_mooncake_raspberries": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:raspberries"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_berry_medley_mooncake_strawberry": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:strawberry"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/berry_medley_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_berry_medley_mooncake_blackberries",
+      "has_berry_medley_mooncake_blueberries",
+      "has_berry_medley_mooncake_raspberries",
+      "has_berry_medley_mooncake_strawberry"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/berry_medley_mooncake"
+    ]
+  }
+}

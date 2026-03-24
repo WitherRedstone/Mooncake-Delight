@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_enchanted_golden_apple_mooncake": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:enchanted_golden_apple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/enchanted_golden_apple_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_enchanted_golden_apple_mooncake"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/enchanted_golden_apple_mooncake"
+    ]
+  }
+}
