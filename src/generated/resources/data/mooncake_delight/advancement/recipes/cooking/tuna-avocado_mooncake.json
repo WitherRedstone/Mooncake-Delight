@@ -7,11 +7,11 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_tuna-avocado_mooncake_avocados": {
+    "has_tuna-avocado_mooncake_avocado": {
       "conditions": {
         "items": [
           {
-            "items": "#c:avocados"
+            "items": "#c:crops/avocado"
           }
         ]
       },
@@ -32,7 +32,7 @@
     [
       "has_the_recipe",
       "has_tuna-avocado_mooncake_tuna",
-      "has_tuna-avocado_mooncake_avocados"
+      "has_tuna-avocado_mooncake_avocado"
     ]
   ],
   "rewards": {

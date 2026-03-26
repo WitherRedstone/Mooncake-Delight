@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blueberry_yogurt_mooncake_cranberries": {
+    "has_blueberry_yogurt_mooncake_cranberry": {
       "conditions": {
         "items": [
           {
-            "items": "#c:blueberries"
+            "items": "#c:crops/blueberry"
           }
         ]
       },
@@ -32,7 +32,7 @@
     [
       "has_the_recipe",
       "has_blueberry_yogurt_mooncake_lemonades",
-      "has_blueberry_yogurt_mooncake_cranberries"
+      "has_blueberry_yogurt_mooncake_cranberry"
     ]
   ],
   "rewards": {

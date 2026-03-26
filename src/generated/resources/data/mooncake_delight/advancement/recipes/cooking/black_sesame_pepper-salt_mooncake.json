@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_black_sesame_pepper-salt_mooncake_paprika": {
+    "has_black_sesame_pepper_salt_mooncake_paprika": {
       "conditions": {
         "items": [
           {
@@ -11,11 +11,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_black_sesame_pepper-salt_mooncake_pepper_salt": {
+    "has_black_sesame_pepper_salt_mooncake_pepper_salt": {
       "conditions": {
         "items": [
           {
-            "items": "mooncake_delight:pepper_salt"
+            "items": "#c:pepper_salt"
           }
         ]
       },
@@ -31,8 +31,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_black_sesame_pepper-salt_mooncake_paprika",
-      "has_black_sesame_pepper-salt_mooncake_pepper_salt"
+      "has_black_sesame_pepper_salt_mooncake_paprika",
+      "has_black_sesame_pepper_salt_mooncake_pepper_salt"
     ]
   ],
   "rewards": {

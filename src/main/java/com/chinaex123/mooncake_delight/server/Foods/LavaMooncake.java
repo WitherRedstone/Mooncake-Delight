@@ -61,11 +61,14 @@ public class LavaMooncake {
         // 将字符串数组转换为资源位置列表
         List<String> blacklist = Arrays.asList(BLOCK_BLACKLIST);
 
-        // 遍历 3x3 区域
-        for (int x = -1; x <= 1; x++) {
-            for (int z = -1; z <= 1; z++) {
+        // 遍历size设定的区域
+        int size = 5; // 区域大小：3=3x3, 5=5x5, 7=7x7
+        int radius = (size - 1) / 2;
+
+        for (int x = -radius; x <= radius; x++) {
+            for (int z = -radius; z <= radius; z++) {
                 BlockPos pos = entityPos.offset(x, -1, z);
-                
+
                 // 保留中心位置的方块（玩家脚下）
                 if (x == 0 && z == 0) {
                     continue;
@@ -73,7 +76,7 @@ public class LavaMooncake {
 
                 // 获取方块的资源位置
                 String blockId = net.minecraft.core.registries.BuiltInRegistries.BLOCK.getKey(
-                    level.getBlockState(pos).getBlock()
+                        level.getBlockState(pos).getBlock()
                 ).toString();
 
                 // 检查是否在黑名单中

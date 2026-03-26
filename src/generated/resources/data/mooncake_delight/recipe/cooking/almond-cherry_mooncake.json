@@ -17,13 +17,13 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:almonds"
+      "tag": "c:crops/almond"
     },
     {
-      "tag": "c:cherries"
+      "tag": "c:crops/cherry"
     },
     {
-      "tag": "c:cherries"
+      "tag": "c:crops/cherry"
     }
   ],
   "recipe_book_tab": "meals",

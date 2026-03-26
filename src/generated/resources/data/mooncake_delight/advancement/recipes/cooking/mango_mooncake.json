@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mango_mooncake_mangos": {
+    "has_mango_mooncake_mango": {
       "conditions": {
         "items": [
           {
-            "items": "#c:mangos"
+            "items": "#c:crops/mango"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mango_mooncake_mangos"
+      "has_mango_mooncake_mango"
     ]
   ],
   "rewards": {

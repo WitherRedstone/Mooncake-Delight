@@ -38,6 +38,9 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModItemTags.SUGARS)
                 .add(Items.SUGAR) // 糖
                 .add(ModItems.SUGAR_CUBE.get()); // 方糖
+        // c:pepper_salt
+        tag(ModItemTags.PEPPER_SALT)
+                .add(ModItems.PEPPER_SALT.get()); // 椒盐
 
         // c:syrups/invert_sugar_syrup
         tag(ModItemTags.INVERT_SUGAR_SYRUP).add(ModItems.INVERT_SUGAR_SYRUP.get()); // 转换糖浆
@@ -145,6 +148,14 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 //                .add(CroptopiaItems.PICKLED_MUSTARD_PORK_MOONCAKE.get()) // 榨菜鲜肉月饼
 //                .add(CroptopiaItems.MILK_TEA_MOONCAKE.get()) // 奶茶月饼
 //                .add(CroptopiaItems.CANDIED_ORANGE_PEEL_MOONCAKE.get()) // 橙皮丁月饼
+//                .add(CroptopiaItems.CARAMEL_MOONCAKE.get()) // 焦糖月饼
+//                .add(CroptopiaItems.CARAMEL_SEA_SALT_MOONCAKE.get()) // 焦糖海盐月饼
+//                .add(CroptopiaItems.CHEESE_LAVA_MOONCAKE.get()) // 芝士流心月饼
+//                .add(CroptopiaItems.CHEESE_CARAMEL_MOONCAKE.get()) // 芝士焦糖月饼
+//                .add(CroptopiaItems.BUTTER_CHOCOLATE_MOONCAKE.get()) // 黄油巧克力月饼
+//                .add(CroptopiaItems.BUTTER_CHEESE_MOONCAKE.get()) // 黄油芝士月饼
+//                .add(CroptopiaItems.LAVA_CHOCOLATE_MOONCAKE.get()) // 流心巧克力月饼
+//                .add(CroptopiaItems.EARL_GREY_MOONCAKE.get()) // 伯爵茶月饼
 //
 //                // ======================= 特殊/彩蛋物品 =======================
 //                .add(ModItems.LAVA_MOONCAKE.get()) // 流心月饼

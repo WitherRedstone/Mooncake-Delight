@@ -20,10 +20,10 @@
       "tag": "c:crabs"
     },
     {
-      "tag": "c:corn"
+      "tag": "c:crops/corn"
     },
     {
-      "tag": "c:corn"
+      "tag": "c:crops/corn"
     }
   ],
   "recipe_book_tab": "meals",

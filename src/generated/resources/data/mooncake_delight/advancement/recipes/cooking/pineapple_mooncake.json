@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pineapple_mooncake_pineapples": {
+    "has_pineapple_mooncake_pineapple": {
       "conditions": {
         "items": [
           {
-            "items": "#c:pineapples"
+            "items": "#c:crops/pineapple"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_pineapple_mooncake_pineapples"
+      "has_pineapple_mooncake_pineapple"
     ]
   ],
   "rewards": {

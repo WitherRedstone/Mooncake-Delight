@@ -14,16 +14,16 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:blackberries"
+      "tag": "c:crops/blackberry"
     },
     {
-      "tag": "c:blueberries"
+      "tag": "c:crops/blueberry"
     },
     {
-      "tag": "c:raspberries"
+      "tag": "c:crops/raspberry"
     },
     {
-      "tag": "c:strawberry"
+      "tag": "c:crops/strawberry"
     }
   ],
   "recipe_book_tab": "meals",

@@ -20,10 +20,10 @@
       "item": "farmersdelight:ham"
     },
     {
-      "tag": "c:pineapples"
+      "tag": "c:crops/pineapple"
     },
     {
-      "tag": "c:pineapples"
+      "tag": "c:crops/pineapple"
     }
   ],
   "recipe_book_tab": "meals",

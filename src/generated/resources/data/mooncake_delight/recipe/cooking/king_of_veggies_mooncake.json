@@ -14,16 +14,16 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:kale"
+      "tag": "c:crops/kale"
     },
     {
-      "tag": "c:spinach"
+      "tag": "c:crops/spinach"
     },
     {
-      "tag": "c:vegetables"
+      "tag": "c:crops/yam"
     },
     {
-      "tag": "c:sweetpotatos"
+      "tag": "c:crops/sweetpotato"
     }
   ],
   "recipe_book_tab": "meals",

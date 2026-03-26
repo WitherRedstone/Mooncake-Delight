@@ -14,6 +14,8 @@ public class ModItemTags {
 
     // 糖
     public static final TagKey<Item> SUGARS = createSimpleNeoforgeTag("sugars"); // c:sugars
+    // 椒盐
+    public static final TagKey<Item> PEPPER_SALT = createSimpleNeoforgeTag("pepper_salt"); // c:pepper_salt
 
     // 糖浆
     public static final TagKey<Item> INVERT_SUGAR_SYRUP = createNeoforgeTag("syrups", "invert_sugar_syrup"); // c:syrups/invert_sugar_syrup

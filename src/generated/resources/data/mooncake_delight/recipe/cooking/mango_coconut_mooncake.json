@@ -17,13 +17,13 @@
       "tag": "c:drinks/milk"
     },
     {
-      "tag": "c:mangos"
+      "tag": "c:crops/mango"
     },
     {
-      "tag": "c:mangos"
+      "tag": "c:crops/mango"
     },
     {
-      "tag": "c:coconuts"
+      "tag": "c:crops/coconut"
     }
   ],
   "recipe_book_tab": "meals",

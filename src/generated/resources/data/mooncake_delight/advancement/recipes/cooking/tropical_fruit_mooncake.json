@@ -7,41 +7,41 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_tropical_fruit_mooncake_bananas": {
+    "has_tropical_fruit_mooncake_banana": {
       "conditions": {
         "items": [
           {
-            "items": "#c:bananas"
+            "items": "#c:crops/banana"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_tropical_fruit_mooncake_coconuts": {
+    "has_tropical_fruit_mooncake_coconut": {
       "conditions": {
         "items": [
           {
-            "items": "#c:coconuts"
+            "items": "#c:crops/coconut"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_tropical_fruit_mooncake_mangos": {
+    "has_tropical_fruit_mooncake_mango": {
       "conditions": {
         "items": [
           {
-            "items": "#c:mangos"
+            "items": "#c:crops/mango"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_tropical_fruit_mooncake_pineapples": {
+    "has_tropical_fruit_mooncake_pineapple": {
       "conditions": {
         "items": [
           {
-            "items": "#c:pineapples"
+            "items": "#c:crops/pineapple"
           }
         ]
       },
@@ -51,10 +51,10 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_tropical_fruit_mooncake_mangos",
-      "has_tropical_fruit_mooncake_pineapples",
-      "has_tropical_fruit_mooncake_bananas",
-      "has_tropical_fruit_mooncake_coconuts"
+      "has_tropical_fruit_mooncake_mango",
+      "has_tropical_fruit_mooncake_pineapple",
+      "has_tropical_fruit_mooncake_banana",
+      "has_tropical_fruit_mooncake_coconut"
     ]
   ],
   "rewards": {

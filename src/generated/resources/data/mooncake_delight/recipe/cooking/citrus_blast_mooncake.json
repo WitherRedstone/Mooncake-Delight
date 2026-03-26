@@ -14,16 +14,16 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:oranges"
+      "tag": "c:crops/orange"
     },
     {
-      "tag": "c:lemons"
+      "tag": "c:crops/lemon"
     },
     {
-      "tag": "c:grapefruits"
+      "tag": "c:crops/grapefruit"
     },
     {
-      "tag": "c:limes"
+      "tag": "c:crops/lime"
     }
   ],
   "recipe_book_tab": "meals",

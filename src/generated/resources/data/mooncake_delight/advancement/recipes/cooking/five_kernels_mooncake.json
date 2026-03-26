@@ -1,41 +1,41 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_five_kernels_mooncake_cashews": {
+    "has_five_kernels_mooncake_cashew": {
       "conditions": {
         "items": [
           {
-            "items": "#c:cashews"
+            "items": "#c:crops/cashew"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_five_kernels_mooncake_peanuts": {
+    "has_five_kernels_mooncake_peanut": {
       "conditions": {
         "items": [
           {
-            "items": "#c:peanuts"
+            "items": "#c:crops/peanut"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_five_kernels_mooncake_pecans": {
+    "has_five_kernels_mooncake_pecan": {
       "conditions": {
         "items": [
           {
-            "items": "#c:pecans"
+            "items": "#c:crops/pecan"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_five_kernels_mooncake_walnuts": {
+    "has_five_kernels_mooncake_walnut": {
       "conditions": {
         "items": [
           {
-            "items": "#c:walnuts"
+            "items": "#c:crops/walnut"
           }
         ]
       },
@@ -51,10 +51,10 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_five_kernels_mooncake_peanuts",
-      "has_five_kernels_mooncake_walnuts",
-      "has_five_kernels_mooncake_cashews",
-      "has_five_kernels_mooncake_pecans"
+      "has_five_kernels_mooncake_peanut",
+      "has_five_kernels_mooncake_walnut",
+      "has_five_kernels_mooncake_cashew",
+      "has_five_kernels_mooncake_pecan"
     ]
   ],
   "rewards": {

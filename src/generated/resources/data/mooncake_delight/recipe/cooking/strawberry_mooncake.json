@@ -17,13 +17,13 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:strawberries"
+      "tag": "c:crops/strawberry"
     },
     {
-      "tag": "c:strawberries"
+      "tag": "c:crops/strawberry"
     },
     {
-      "tag": "c:strawberries"
+      "tag": "c:crops/strawberry"
     }
   ],
   "recipe_book_tab": "meals",

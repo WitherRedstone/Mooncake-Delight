@@ -20,10 +20,10 @@
       "tag": "c:lemonades"
     },
     {
-      "tag": "c:blueberries"
+      "tag": "c:crops/blueberry"
     },
     {
-      "tag": "c:blueberries"
+      "tag": "c:crops/blueberry"
     }
   ],
   "recipe_book_tab": "meals",

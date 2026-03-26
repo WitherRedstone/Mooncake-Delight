@@ -17,13 +17,13 @@
       "tag": "c:drinks/milk"
     },
     {
-      "item": "minecraft:apple"
+      "tag": "c:apples"
     },
     {
-      "tag": "c:cinnamon"
+      "tag": "c:crops/cinnamon"
     },
     {
-      "tag": "c:cinnamon"
+      "tag": "c:crops/cinnamon"
     }
   ],
   "recipe_book_tab": "meals",

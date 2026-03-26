@@ -14,16 +14,16 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:salts"
+      "tag": "c:crops/salt"
     },
     {
-      "tag": "c:mustard"
+      "tag": "c:crops/mustard"
     },
     {
-      "tag": "c:mustard"
+      "tag": "c:crops/mustard"
     },
     {
-      "tag": "c:mustard"
+      "tag": "c:crops/mustard"
     }
   ],
   "recipe_book_tab": "meals",

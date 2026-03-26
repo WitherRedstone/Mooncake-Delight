@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pepper-salt_mooncake_greenonions": {
+    "has_pepper_salt_mooncake_pepper_salt": {
       "conditions": {
         "items": [
           {
-            "items": "mooncake_delight:pepper_salt"
+            "items": "#c:pepper_salt"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_pepper-salt_mooncake_greenonions"
+      "has_pepper_salt_mooncake_pepper_salt"
     ]
   ],
   "rewards": {

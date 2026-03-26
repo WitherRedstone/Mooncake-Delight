@@ -17,13 +17,13 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:peanuts"
+      "tag": "c:crops/peanut"
     },
     {
-      "tag": "c:peanuts"
+      "tag": "c:crops/peanut"
     },
     {
-      "tag": "c:peanuts"
+      "tag": "c:crops/peanut"
     }
   ],
   "recipe_book_tab": "meals",

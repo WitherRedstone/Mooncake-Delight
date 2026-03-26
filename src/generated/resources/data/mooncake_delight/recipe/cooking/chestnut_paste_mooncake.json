@@ -20,10 +20,10 @@
       "item": "mooncake_delight:lotus_seed"
     },
     {
-      "tag": "c:currants"
+      "tag": "c:crops/currant"
     },
     {
-      "tag": "c:currants"
+      "tag": "c:crops/currant"
     }
   ],
   "recipe_book_tab": "meals",

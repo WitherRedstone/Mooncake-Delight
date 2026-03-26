@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cranberry_mooncake_cranberries": {
+    "has_cranberry_mooncake_cranberry": {
       "conditions": {
         "items": [
           {
-            "items": "#c:cranberries"
+            "items": "#c:crops/cranberry"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cranberry_mooncake_cranberries"
+      "has_cranberry_mooncake_cranberry"
     ]
   ],
   "rewards": {

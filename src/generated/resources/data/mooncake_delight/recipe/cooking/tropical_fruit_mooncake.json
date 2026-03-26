@@ -14,16 +14,16 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:mangos"
+      "tag": "c:crops/mango"
     },
     {
-      "tag": "c:pineapples"
+      "tag": "c:crops/pineapple"
     },
     {
-      "tag": "c:bananas"
+      "tag": "c:crops/banana"
     },
     {
-      "tag": "c:coconuts"
+      "tag": "c:crops/coconut"
     }
   ],
   "recipe_book_tab": "meals",

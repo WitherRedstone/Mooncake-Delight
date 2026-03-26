@@ -20,10 +20,10 @@
       "tag": "c:shrimp"
     },
     {
-      "tag": "c:asparagus"
+      "tag": "c:crops/asparagus"
     },
     {
-      "tag": "c:asparagus"
+      "tag": "c:crops/asparagus"
     }
   ],
   "recipe_book_tab": "meals",

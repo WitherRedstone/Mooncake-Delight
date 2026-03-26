@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chestnut_paste_mooncake_currants": {
+    "has_chestnut_paste_mooncake_currant": {
       "conditions": {
         "items": [
           {
-            "items": "#c:currants"
+            "items": "#c:crops/currant"
           }
         ]
       },
@@ -32,7 +32,7 @@
     [
       "has_the_recipe",
       "has_chestnut_paste_mooncake_lotus_seed",
-      "has_chestnut_paste_mooncake_currants"
+      "has_chestnut_paste_mooncake_currant"
     ]
   ],
   "rewards": {

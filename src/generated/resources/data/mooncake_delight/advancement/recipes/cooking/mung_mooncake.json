@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mung_mooncake_greenbeans": {
+    "has_mung_mooncake_greenbean": {
       "conditions": {
         "items": [
           {
-            "items": "#c:greenbeans"
+            "items": "#c:crops/greenbean"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mung_mooncake_greenbeans"
+      "has_mung_mooncake_greenbean"
     ]
   ],
   "rewards": {

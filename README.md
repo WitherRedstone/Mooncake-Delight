@@ -32,10 +32,6 @@ Mooncake Delight is a food mod themed around **mooncakes**, a traditional Chines
 - Seafood Mooncake, Three Delight Mooncake, Family Reunion Mooncake
 - Bedrock Mooncake (Easter Egg Item)
 
-### Technical Features
-- Optimized tooltip display, clearly showing food information
-- Localization support for Chinese and English
-
 **A reunion under the full moon, sharing the joy of mooncakes!** 🌕
 
 ---
@@ -67,9 +63,5 @@ Mooncake Delight is a food mod themed around **mooncakes**, a traditional Chines
 - 流心奶黄月饼、黑松露月饼
 - 海鲜月饼、三鲜月饼、全家福月饼
 - 基岩月饼（彩蛋物品）
-
-### 技术特性
-- 优化的 Tooltip 显示，清晰展示食物信息
-- 本地化支持中文和英文
 
 **月圆人团圆，共享月饼乐！** 🌕

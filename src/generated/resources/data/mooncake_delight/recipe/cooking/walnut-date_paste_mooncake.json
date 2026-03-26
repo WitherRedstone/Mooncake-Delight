@@ -17,13 +17,13 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:walnuts"
+      "tag": "c:crops/walnut"
     },
     {
-      "tag": "c:dates"
+      "tag": "c:crops/date"
     },
     {
-      "tag": "c:dates"
+      "tag": "c:crops/date"
     }
   ],
   "recipe_book_tab": "meals",

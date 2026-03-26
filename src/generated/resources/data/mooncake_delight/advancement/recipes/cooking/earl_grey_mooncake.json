@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_earl_grey_mooncake_oranges": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:oranges"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_earl_grey_mooncake_tea_leaves": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:crops/tea_leaves"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/earl_grey_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_earl_grey_mooncake_tea_leaves",
+      "has_earl_grey_mooncake_oranges"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/earl_grey_mooncake"
+    ]
+  }
+}

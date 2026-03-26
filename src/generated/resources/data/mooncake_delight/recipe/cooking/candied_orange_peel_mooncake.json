@@ -17,13 +17,13 @@
       "tag": "c:drinks/milk"
     },
     {
-      "tag": "c:oranges"
+      "tag": "c:crops/orange"
     },
     {
-      "tag": "c:oranges"
+      "tag": "c:crops/orange"
     },
     {
-      "tag": "c:oranges"
+      "tag": "c:crops/orange"
     }
   ],
   "recipe_book_tab": "meals",

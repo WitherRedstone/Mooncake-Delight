@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_candied_orange_peel_mooncake_oranges": {
+    "has_candied_orange_peel_mooncake_orange": {
       "conditions": {
         "items": [
           {
-            "items": "#c:oranges"
+            "items": "#c:crops/orange"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_candied_orange_peel_mooncake_oranges"
+      "has_candied_orange_peel_mooncake_orange"
     ]
   ],
   "rewards": {

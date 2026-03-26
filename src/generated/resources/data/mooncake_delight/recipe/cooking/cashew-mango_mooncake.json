@@ -17,13 +17,13 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:mangos"
+      "tag": "c:crops/mango"
     },
     {
-      "tag": "c:cashews"
+      "tag": "c:crops/cashew"
     },
     {
-      "tag": "c:cashews"
+      "tag": "c:crops/cashew"
     }
   ],
   "recipe_book_tab": "meals",

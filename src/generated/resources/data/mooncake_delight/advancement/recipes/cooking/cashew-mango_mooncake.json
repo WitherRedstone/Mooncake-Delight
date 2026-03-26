@@ -1,21 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cashew-mango_mooncake_almonds": {
+    "has_cashew-mango_mooncake_cashew": {
       "conditions": {
         "items": [
           {
-            "items": "#c:mangos"
+            "items": "#c:crops/cashew"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_cashew-mango_mooncake_cashew": {
+    "has_cashew-mango_mooncake_mango": {
       "conditions": {
         "items": [
           {
-            "items": "#c:cashews"
+            "items": "#c:crops/mango"
           }
         ]
       },
@@ -31,7 +31,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cashew-mango_mooncake_almonds",
+      "has_cashew-mango_mooncake_mango",
       "has_cashew-mango_mooncake_cashew"
     ]
   ],

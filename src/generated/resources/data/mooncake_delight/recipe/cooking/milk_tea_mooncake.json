@@ -20,10 +20,10 @@
       "tag": "c:drinks/milk"
     },
     {
-      "tag": "c:tea_leaves"
+      "tag": "c:crops/tea_leaves"
     },
     {
-      "tag": "c:tea_leaves"
+      "tag": "c:crops/tea_leaves"
     }
   ],
   "recipe_book_tab": "meals",

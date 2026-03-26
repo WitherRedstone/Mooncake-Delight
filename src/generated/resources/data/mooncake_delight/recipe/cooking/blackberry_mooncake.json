@@ -17,13 +17,13 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:blackberries"
+      "tag": "c:crops/blackberry"
     },
     {
-      "tag": "c:blackberries"
+      "tag": "c:crops/blackberry"
     },
     {
-      "tag": "c:blackberries"
+      "tag": "c:crops/blackberry"
     }
   ],
   "recipe_book_tab": "meals",

@@ -1,11 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_cinnamon_apple_mooncake_apple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:apples"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_cinnamon_apple_mooncake_cinnamon": {
       "conditions": {
         "items": [
           {
-            "items": "#c:cinnamon"
+            "items": "#c:crops/cinnamon"
           }
         ]
       },
@@ -21,6 +31,7 @@
   "requirements": [
     [
       "has_the_recipe",
+      "has_cinnamon_apple_mooncake_apple",
       "has_cinnamon_apple_mooncake_cinnamon"
     ]
   ],

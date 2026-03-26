@@ -17,13 +17,13 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:coconuts"
+      "tag": "c:crops/coconut"
     },
     {
-      "tag": "c:coconuts"
+      "tag": "c:crops/coconut"
     },
     {
-      "tag": "c:coconuts"
+      "tag": "c:crops/coconut"
     }
   ],
   "recipe_book_tab": "meals",

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_coconut_paste_mooncake_blackberries": {
+    "has_coconut_paste_mooncake_blackberry": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_coconut_paste_mooncake_blackberries"
+      "has_coconut_paste_mooncake_blackberry"
     ]
   ],
   "rewards": {

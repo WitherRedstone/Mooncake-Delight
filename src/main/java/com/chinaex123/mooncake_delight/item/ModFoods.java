@@ -47,7 +47,7 @@ public class ModFoods {
     public static final FoodProperties COD_MOONCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.4f).build(); // 鳕鱼月饼
     public static final FoodProperties SALMON_MOONCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.4f).build(); // 鲑鱼月饼
     public static final FoodProperties ROTTEN_FLESH_MOONCAKE = new FoodProperties.Builder().nutrition(4).saturationModifier(0.5f)
-            .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 20 * 10, 4), 1.0f) // 饥饿
+            .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 20 * 15, 4), 1.0f) // 饥饿
             .alwaysEdible().build();// 腐肉月饼
     public static final FoodProperties HONEY_MOONCAKE = new FoodProperties.Builder().nutrition(10).saturationModifier(0.2f).build(); // 蜂蜜月饼
     public static final FoodProperties COFFEE_MOONCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.2f).build(); // 咖啡月饼
@@ -66,7 +66,9 @@ public class ModFoods {
     public static final FoodProperties DOUBLE_YOLK_LOTUS_MOONCAKE = new FoodProperties.Builder().nutrition(12).saturationModifier(0.5f).build(); // 双黄莲蓉月饼
     public static final FoodProperties PORK_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.5f).build(); // 鲜肉月饼
     public static final FoodProperties EGG_YOLK_MOONCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.4f).build(); // 蛋黄月饼
-    public static final FoodProperties SALTED_EGG_YOLK_PORK_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.5f).build(); // 蛋黄鲜肉月饼
+    public static final FoodProperties SALTED_EGG_YOLK_PORK_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 10, 0), 1.0f) // 力量
+            .alwaysEdible().build(); // 蛋黄鲜肉月饼
     public static final FoodProperties HAM_MOONCAKE = new FoodProperties.Builder().nutrition(12).saturationModifier(0.4f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 10, 0), 1.0f) // 力量
             .alwaysEdible().build(); // 火腿月饼
@@ -85,35 +87,34 @@ public class ModFoods {
     public static final FoodProperties HAM_CABBAGE_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.5f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 10, 0), 1.0f) // 力量
             .alwaysEdible().build();  // 火腿卷心菜月饼
-    public static final FoodProperties SEAFOOD_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.5f)
-            .effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 20 * 10, 0), 1.0f) // 水下呼吸
+    public static final FoodProperties SEAFOOD_MOONCAKE = new FoodProperties.Builder().nutrition(16).saturationModifier(0.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 20 * 12, 0), 1.0f) // 水下呼吸
             .alwaysEdible().build();  // 海鲜月饼
-    public static final FoodProperties THREE_DELICACIES_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.5f)
-            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 25, 1), 1.0f) // 力量
-            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20 * 25, 0), 1.0f) // 抗性提升
-            .alwaysEdible().build();  // 三鲜月饼
-    public static final FoodProperties FAMILY_FEASTS_MOONCAKE = new FoodProperties.Builder().nutrition(16).saturationModifier(0.4f)
+    public static final FoodProperties THREE_DELICACIES_MOONCAKE = new FoodProperties.Builder().nutrition(16).saturationModifier(0.5f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 20, 1), 1.0f) // 力量
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20 * 20, 0), 1.0f) // 抗性提升
-            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20 * 20, 1), 1.0f) // 速度
+            .alwaysEdible().build();  // 三鲜月饼
+    public static final FoodProperties FAMILY_FEASTS_MOONCAKE = new FoodProperties.Builder().nutrition(18).saturationModifier(0.4f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 30, 1), 1.0f) // 力量
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20 * 30, 0), 1.0f) // 抗性提升
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20 * 30, 1), 1.0f) // 速度
             .alwaysEdible().build();  // 全家福月饼
-    public static final FoodProperties DOUBLE_MEAT_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.4f)
+    public static final FoodProperties DOUBLE_MEAT_MOONCAKE = new FoodProperties.Builder().nutrition(16).saturationModifier(0.4f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 10, 1), 1.0f) // 力量
             .alwaysEdible().build();  // 双拼肉月饼
-    public static final FoodProperties TRIPLE_MEAT_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.4f)
-            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 5, 2), 1.0f) // 力量
+    public static final FoodProperties TRIPLE_MEAT_MOONCAKE = new FoodProperties.Builder().nutrition(18).saturationModifier(0.4f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 10, 2), 1.0f) // 力量
             .alwaysEdible().build();  // 三肉月饼
-    public static final FoodProperties HAM_BACON_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.4f)
+    public static final FoodProperties HAM_BACON_MOONCAKE = new FoodProperties.Builder().nutrition(16).saturationModifier(0.4f)
             .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 20 * 10, 1), 1.0f) // 急迫
             .alwaysEdible().build();  // 火腿培根月饼
-    public static final FoodProperties JINHUA_HAM_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.4f)
+    public static final FoodProperties JINHUA_HAM_MOONCAKE = new FoodProperties.Builder().nutrition(16).saturationModifier(0.4f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 10, 0), 1.0f) // 力量
             .alwaysEdible().build(); // 金华火腿月饼
-    public static final FoodProperties BACON_ONION_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.4f)
+    public static final FoodProperties BACON_ONION_MOONCAKE = new FoodProperties.Builder().nutrition(16).saturationModifier(0.4f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 10, 0), 1.0f) // 力量
             .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 20 * 4, 0), 0.8f) // 反胃
             .alwaysEdible().build();  // 培根洋葱月饼
-
 
     // ======================= 特殊/彩蛋物品 =======================
     public static final FoodProperties LAVA_MOONCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.5f)
@@ -121,7 +122,7 @@ public class ModFoods {
             .alwaysEdible().build(); // 流心月饼
     public static final FoodProperties TNT_MOONCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.5f).build(); // TNT 月饼
     public static final FoodProperties DEBRIS_MOONCAKE = new FoodProperties.Builder().nutrition(10).saturationModifier(0.5f).build(); // 残骸月饼
-    public static final FoodProperties BEDROCK_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.5f)
+    public static final FoodProperties BEDROCK_MOONCAKE = new FoodProperties.Builder().nutrition(20).saturationModifier(0.8f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20 * 60 * 5, 3), 1.0f) // 抗性提升
             .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 20 * 60 * 5, 0), 1.0f) // 防火
             .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 20 * 60 * 5, 4), 1.0f) // 伤害吸收

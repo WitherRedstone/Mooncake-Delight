@@ -1,41 +1,41 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_citrus_blast_mooncake_grapefruits": {
+    "has_citrus_blast_mooncake_grapefruit": {
       "conditions": {
         "items": [
           {
-            "items": "#c:grapefruits"
+            "items": "#c:crops/grapefruit"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_citrus_blast_mooncake_lemons": {
+    "has_citrus_blast_mooncake_lemon": {
       "conditions": {
         "items": [
           {
-            "items": "#c:lemons"
+            "items": "#c:crops/lemon"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_citrus_blast_mooncake_limes": {
+    "has_citrus_blast_mooncake_lime": {
       "conditions": {
         "items": [
           {
-            "items": "#c:limes"
+            "items": "#c:crops/lime"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_citrus_blast_mooncake_oranges": {
+    "has_citrus_blast_mooncake_orange": {
       "conditions": {
         "items": [
           {
-            "items": "#c:oranges"
+            "items": "#c:crops/orange"
           }
         ]
       },
@@ -51,10 +51,10 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_citrus_blast_mooncake_oranges",
-      "has_citrus_blast_mooncake_lemons",
-      "has_citrus_blast_mooncake_grapefruits",
-      "has_citrus_blast_mooncake_limes"
+      "has_citrus_blast_mooncake_orange",
+      "has_citrus_blast_mooncake_lemon",
+      "has_citrus_blast_mooncake_grapefruit",
+      "has_citrus_blast_mooncake_lime"
     ]
   ],
   "rewards": {

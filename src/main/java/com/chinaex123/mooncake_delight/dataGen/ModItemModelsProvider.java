@@ -128,6 +128,14 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicCroptopiaItem(CroptopiaItems.PICKLED_MUSTARD_PORK_MOONCAKE); // 榨菜鲜肉月饼
         basicCroptopiaItem(CroptopiaItems.MILK_TEA_MOONCAKE); // 奶茶月饼
         basicCroptopiaItem(CroptopiaItems.CANDIED_ORANGE_PEEL_MOONCAKE); // 橙皮丁月饼
+        basicCroptopiaItem(CroptopiaItems.CARAMEL_MOONCAKE); // 焦糖月饼
+        basicCroptopiaItem(CroptopiaItems.CARAMEL_SEA_SALT_MOONCAKE); // 焦糖海盐月饼
+        basicCroptopiaItem(CroptopiaItems.CHEESE_LAVA_MOONCAKE); // 芝士流心月饼
+        basicCroptopiaItem(CroptopiaItems.CHEESE_CARAMEL_MOONCAKE); // 芝士焦糖月饼
+        basicCroptopiaItem(CroptopiaItems.BUTTER_CHOCOLATE_MOONCAKE); // 黄油巧克力月饼
+        basicCroptopiaItem(CroptopiaItems.BUTTER_CHEESE_MOONCAKE); // 黄油芝士月饼
+        basicCroptopiaItem(CroptopiaItems.LAVA_CHOCOLATE_MOONCAKE); // 流心巧克力月饼
+        basicCroptopiaItem(CroptopiaItems.EARL_GREY_MOONCAKE); // 伯爵茶月饼
 
         // ======================= 特殊/彩蛋物品 =======================
         specialEasterEggItem(ModItems.LAVA_MOONCAKE); // 流心月饼

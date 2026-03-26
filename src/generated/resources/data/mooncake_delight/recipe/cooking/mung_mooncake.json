@@ -17,13 +17,13 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:greenbeans"
+      "tag": "c:crops/greenbean"
     },
     {
-      "tag": "c:greenbeans"
+      "tag": "c:crops/greenbean"
     },
     {
-      "tag": "c:greenbeans"
+      "tag": "c:crops/greenbean"
     }
   ],
   "recipe_book_tab": "meals",

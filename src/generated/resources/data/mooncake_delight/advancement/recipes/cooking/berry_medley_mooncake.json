@@ -1,31 +1,31 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_berry_medley_mooncake_blackberries": {
+    "has_berry_medley_mooncake_blackberry": {
       "conditions": {
         "items": [
           {
-            "items": "#c:blackberries"
+            "items": "#c:crops/blackberry"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_berry_medley_mooncake_blueberries": {
+    "has_berry_medley_mooncake_blueberry": {
       "conditions": {
         "items": [
           {
-            "items": "#c:blueberries"
+            "items": "#c:crops/blueberry"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_berry_medley_mooncake_raspberries": {
+    "has_berry_medley_mooncake_raspberry": {
       "conditions": {
         "items": [
           {
-            "items": "#c:raspberries"
+            "items": "#c:crops/raspberry"
           }
         ]
       },
@@ -35,7 +35,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:strawberry"
+            "items": "#c:crops/strawberry"
           }
         ]
       },
@@ -51,9 +51,9 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_berry_medley_mooncake_blackberries",
-      "has_berry_medley_mooncake_blueberries",
-      "has_berry_medley_mooncake_raspberries",
+      "has_berry_medley_mooncake_blackberry",
+      "has_berry_medley_mooncake_blueberry",
+      "has_berry_medley_mooncake_raspberry",
       "has_berry_medley_mooncake_strawberry"
     ]
   ],

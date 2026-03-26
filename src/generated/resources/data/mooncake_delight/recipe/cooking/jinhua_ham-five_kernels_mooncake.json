@@ -17,16 +17,16 @@
       "item": "farmersdelight:ham"
     },
     {
-      "tag": "c:peanuts"
+      "tag": "c:crops/peanut"
     },
     {
-      "tag": "c:walnuts"
+      "tag": "c:crops/walnut"
     },
     {
-      "tag": "c:cashews"
+      "tag": "c:crops/cashew"
     },
     {
-      "tag": "c:pecans"
+      "tag": "c:crops/pecan"
     }
   ],
   "recipe_book_tab": "meals",

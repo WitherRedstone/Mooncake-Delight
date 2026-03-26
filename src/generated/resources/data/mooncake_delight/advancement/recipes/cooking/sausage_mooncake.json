@@ -1,11 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_sausage_mooncake_onion": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:crops/onion"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_sausage_mooncake_sausage": {
       "conditions": {
         "items": [
           {
-            "items": "#c:sausage"
+            "items": "#c:sausages"
           }
         ]
       },
@@ -32,6 +42,7 @@
     [
       "has_the_recipe",
       "has_sausage_mooncake_sugar",
+      "has_sausage_mooncake_onion",
       "has_sausage_mooncake_sausage"
     ]
   ],

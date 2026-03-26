@@ -20,10 +20,10 @@
       "tag": "c:olive_oils"
     },
     {
-      "tag": "c:greenonions"
+      "tag": "c:crops/greenonion"
     },
     {
-      "tag": "c:greenonions"
+      "tag": "c:crops/greenonion"
     }
   ],
   "recipe_book_tab": "meals",

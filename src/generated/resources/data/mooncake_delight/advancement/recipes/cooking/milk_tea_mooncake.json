@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:tea_leaves"
+            "items": "#c:crops/tea_leaves"
           }
         ]
       },

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_jujube_paste_mooncake_dates": {
+    "has_jujube_paste_mooncake_date": {
       "conditions": {
         "items": [
           {
-            "items": "#c:dates"
+            "items": "#c:crops/date"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_jujube_paste_mooncake_dates"
+      "has_jujube_paste_mooncake_date"
     ]
   ],
   "rewards": {

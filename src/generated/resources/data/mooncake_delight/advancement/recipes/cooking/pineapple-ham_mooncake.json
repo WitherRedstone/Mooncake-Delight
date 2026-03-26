@@ -11,11 +11,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_pineapple-ham_mooncake_pineapples": {
+    "has_pineapple-ham_mooncake_pineapple": {
       "conditions": {
         "items": [
           {
-            "items": "#c:pineapples"
+            "items": "#c:crops/pineapple"
           }
         ]
       },
@@ -32,7 +32,7 @@
     [
       "has_the_recipe",
       "has_jinhua_ham-five_kernels_mooncake_ham",
-      "has_pineapple-ham_mooncake_pineapples"
+      "has_pineapple-ham_mooncake_pineapple"
     ]
   ],
   "rewards": {

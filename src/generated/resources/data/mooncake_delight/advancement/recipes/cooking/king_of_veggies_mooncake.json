@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:kale"
+            "items": "#c:crops/kale"
           }
         ]
       },
@@ -15,27 +15,27 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:spinach"
+            "items": "#c:crops/spinach"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_king_of_veggies_mooncake_sweetpotatos": {
+    "has_king_of_veggies_mooncake_sweetpotato": {
       "conditions": {
         "items": [
           {
-            "items": "#c:sweetpotatos"
+            "items": "#c:crops/sweetpotato"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_king_of_veggies_mooncake_vegetables": {
+    "has_king_of_veggies_mooncake_yam": {
       "conditions": {
         "items": [
           {
-            "items": "#c:vegetables"
+            "items": "#c:crops/yam"
           }
         ]
       },
@@ -53,8 +53,8 @@
       "has_the_recipe",
       "has_king_of_veggies_mooncake_kale",
       "has_king_of_veggies_mooncake_spinach",
-      "has_king_of_veggies_mooncake_vegetables",
-      "has_king_of_veggies_mooncake_sweetpotatos"
+      "has_king_of_veggies_mooncake_yam",
+      "has_king_of_veggies_mooncake_sweetpotato"
     ]
   ],
   "rewards": {

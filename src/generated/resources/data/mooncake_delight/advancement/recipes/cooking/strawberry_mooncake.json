@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_strawberry_mooncake_strawberries": {
+    "has_strawberry_mooncake_strawberry": {
       "conditions": {
         "items": [
           {
-            "items": "#c:strawberries"
+            "items": "#c:crops/strawberry"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_strawberry_mooncake_strawberries"
+      "has_strawberry_mooncake_strawberry"
     ]
   ],
   "rewards": {

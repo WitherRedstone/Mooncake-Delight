@@ -5,17 +5,17 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:spinach"
+            "items": "#c:crops/spinach"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_spinach-walnut_mooncake_walnuts": {
+    "has_spinach-walnut_mooncake_walnut": {
       "conditions": {
         "items": [
           {
-            "items": "#c:walnuts"
+            "items": "#c:crops/walnut"
           }
         ]
       },
@@ -32,7 +32,7 @@
     [
       "has_the_recipe",
       "has_spinach-walnut_mooncake_spinach",
-      "has_spinach-walnut_mooncake_walnuts"
+      "has_spinach-walnut_mooncake_walnut"
     ]
   ],
   "rewards": {

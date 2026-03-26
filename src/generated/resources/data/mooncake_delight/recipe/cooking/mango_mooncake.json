@@ -17,13 +17,13 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:mangos"
+      "tag": "c:crops/mango"
     },
     {
-      "tag": "c:mangos"
+      "tag": "c:crops/mango"
     },
     {
-      "tag": "c:mangos"
+      "tag": "c:crops/mango"
     }
   ],
   "recipe_book_tab": "meals",

@@ -135,28 +135,15 @@ public class ModCreativeTabs {
                             output.accept(CroptopiaItems.PICKLED_MUSTARD_PORK_MOONCAKE.get()); // 榨菜鲜肉月饼
                             output.accept(CroptopiaItems.MILK_TEA_MOONCAKE.get()); // 奶茶月饼
                             output.accept(CroptopiaItems.CANDIED_ORANGE_PEEL_MOONCAKE.get()); // 橙皮丁月饼
+                            output.accept(CroptopiaItems.CARAMEL_MOONCAKE.get()); // 焦糖月饼
+                            output.accept(CroptopiaItems.CARAMEL_SEA_SALT_MOONCAKE.get()); // 焦糖海盐月饼
+                            output.accept(CroptopiaItems.CHEESE_LAVA_MOONCAKE.get()); // 芝士流心月饼
+                            output.accept(CroptopiaItems.CHEESE_CARAMEL_MOONCAKE.get()); // 芝士焦糖月饼
+                            output.accept(CroptopiaItems.BUTTER_CHOCOLATE_MOONCAKE.get()); // 黄油巧克力月饼
+                            output.accept(CroptopiaItems.BUTTER_CHEESE_MOONCAKE.get()); // 黄油芝士月饼
+                            output.accept(CroptopiaItems.LAVA_CHOCOLATE_MOONCAKE.get()); // 流心巧克力月饼
+                            output.accept(CroptopiaItems.EARL_GREY_MOONCAKE.get()); // 伯爵茶月饼
                         }
-
-
-//                        output.accept(CroptopiaItems.RED_BEAN_PASTE_MOONCAKE.get()); // 红豆沙月饼
-//                        output.accept(CroptopiaItems.SESAME_MOONCAKE.get()); // 芝麻月饼
-//                        output.accept(CroptopiaItems.MATCHA_MOONCAKE.get()); // 抹茶月饼
-//                        output.accept(CroptopiaItems.EARL_GREY_MOONCAKE.get()); // 伯爵茶月饼 配方：茶叶 + 橙子 + 糖 + 月饼皮
-//                        output.accept(CroptopiaItems.SEVEN_STARS_MOONCAKE.get()); // 七星伴月月饼
-//                        output.accept(CroptopiaItems.TARO_PASTE_MOONCAKE.get()); // 芋泥月饼
-//                        output.accept(CroptopiaItems.OSMANTHUS_MOONCAKE.get()); // 桂花月饼
-//                        output.accept(CroptopiaItems.DURIAN_MOONCAKE.get()); // 榴莲月饼
-//                        output.accept(CroptopiaItems.DURIAN_SNOW_SKIN_MOONCAKE.get()); // 榴莲冰皮月饼
-//                        output.accept(CroptopiaItems.PURPLE_SWEET_POTATO_YAM_MOONCAKE.get()); // 紫薯山药月饼
-//                        output.accept(CroptopiaItems.MATCHA_RED_BEAN_MOONCAKE.get()); // 抹茶红豆月饼
-//                        output.accept(CroptopiaItems.CARAMEL_MOONCAKE.get()); // 焦糖月饼
-//                        output.accept(CroptopiaItems.CARAMEL_SEA_SALT_MOONCAKE.get()); // 焦糖海盐月饼
-//                        output.accept(CroptopiaItems.CHEESE_LAVA_MOONCAKE.get()); // 芝士流心月饼
-//                        output.accept(CroptopiaItems.LAVA_CHOCOLATE_MOONCAKE.get()); // 流心巧克力月饼
-//                        output.accept(CroptopiaItems.WHITE_CHOCOLATE_MOONCAKE.get()); // 白巧克力月饼
-//                        output.accept(CroptopiaItems.BLACK_CHOCOLATE_MOONCAKE.get()); // 黑巧克力月饼
-//                        output.accept(CroptopiaItems.UBE_MOONCAKE.get()); // 香芋月饼
-
                         // ======================= 特殊/彩蛋物品 =======================
                         output.accept(ModItems.LAVA_MOONCAKE.get()); // 流心月饼
                         output.accept(ModItems.TNT_MOONCAKE.get()); // TNT 月饼
