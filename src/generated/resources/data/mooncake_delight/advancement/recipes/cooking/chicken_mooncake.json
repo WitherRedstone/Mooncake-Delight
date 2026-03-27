@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "farmersdelight:chicken_cuts"
+            "items": "#c:foods/raw_chicken"
           }
         ]
       },

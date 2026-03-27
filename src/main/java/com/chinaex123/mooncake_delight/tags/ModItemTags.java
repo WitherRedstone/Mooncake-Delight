@@ -1,60 +1,82 @@
 package com.chinaex123.mooncake_delight.tags;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 
-public class ModItemTags {
+public interface ModItemTags {
 
-    public static final TagKey<Item> MOONCAKE = bind("mooncake");
+    // 所有月饼
+    TagKey<Item> MOONCAKE = bind("mooncake");
 
     // 糖
-    public static final TagKey<Item> SUGARS = createSimpleNeoforgeTag("sugars"); // c:sugars
+    TagKey<Item> SUGARS = neoforgeItemTag("sugars"); // c:sugars
     // 椒盐
-    public static final TagKey<Item> PEPPER_SALT = createSimpleNeoforgeTag("pepper_salt"); // c:pepper_salt
+    TagKey<Item> PEPPER_SALT = neoforgeItemTag("pepper_salt"); // c:pepper_salt
 
     // 糖浆
-    public static final TagKey<Item> INVERT_SUGAR_SYRUP = createNeoforgeTag("syrups", "invert_sugar_syrup"); // c:syrups/invert_sugar_syrup
-    public static final TagKey<Item> MAPLE_SYRUP = createNeoforgeTag("syrups", "maple_syrup"); // c:syrups/maple_syrup
+    TagKey<Item> SYRUPS_MAPLE_SYRUP = neoforgeItemTag("syrups/maple_syrup"); // c:syrups/maple_syrup
+    TagKey<Item> SYRUPS_INVERT_SUGAR_SYRUP = neoforgeItemTag("syrups/invert_sugar_syrup"); // c:syrups/invert_sugar_syrup
 
     // 面粉
-    public static final TagKey<Item> FLOURS = createSimpleNeoforgeTag("flours"); // c:flours
-    public static final TagKey<Item> FLOUR_SIMPLE = createSimpleNeoforgeTag("flour"); // c:flour
-    public static final TagKey<Item> WHEAT_IN_FLOURS = createNeoforgeTag("flours", "wheat"); // c:flours/wheat
+    TagKey<Item> FLOUR = neoforgeItemTag("flour"); // c:flour
+    TagKey<Item> FLOURS = neoforgeItemTag("flours"); // c:flours
+    TagKey<Item> FLOURS_WHEAT = neoforgeItemTag("flours/wheat"); // c:flours/wheat
 
+    // 莲子
+    TagKey<Item> LOTUS = neoforgeItemTag("lotus"); // c:lotus
+    TagKey<Item> CROPS_LOTUS = neoforgeItemTag("crops/lotus"); // c:crops/lotus
+
+    // 芝麻
+    TagKey<Item> SESAMES = neoforgeItemTag("sesames"); // c:sesames
+    TagKey<Item> CROPS_SESAME = neoforgeItemTag("crops/sesame"); // c:crops/sesame
+
+    // 静谧四季
+    TagKey<Item> CROPS_SPRING = seasonsItemTag("spring_crops");
+    TagKey<Item> CROPS_SUMMER = seasonsItemTag("summer_crops");
+    TagKey<Item> CROPS_AUTUMN = seasonsItemTag("autumn_crops");
+    TagKey<Item> CROPS_WINTER = seasonsItemTag("winter_crops");
+    TagKey<Block> CROPS_SPRING_BLOCK = seasonsBlockTag("spring_crops");
+    TagKey<Block> CROPS_SUMMER_BLOCK = seasonsBlockTag("summer_crops");
+    TagKey<Block> CROPS_AUTUMN_BLOCK = seasonsBlockTag("autumn_crops");
+    TagKey<Block> CROPS_WINTER_BLOCK = seasonsBlockTag("winter_crops");
+
+    // 节气
+    TagKey<Block> CROPS_SPRING_SUMMER = eclipticSeasonsTag("crops/summer"); // 春夏
+    TagKey<Block> CROPS_DRY_AVERAGE = eclipticSeasonsTag("crops/dry_average"); // 干燥
+    TagKey<Block> CROPS_AVERAGE_MOIST = eclipticSeasonsTag("crops/average_moist"); // 一般
+    TagKey<Block> CROPS_MOIST_HUMID = eclipticSeasonsTag("crops/moist_humid"); // 湿润
+    TagKey<Block> CROPS_HUMID_HUMID = eclipticSeasonsTag("crops/humid_humid"); // 潮湿
 
     private static TagKey<Item> bind(String name) {
         return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(MooncakeDelight.MOD_ID, name));
     }
 
-    /**
-     * 创建 NeoForge 通用标签（c:xxx/name）
-     * @param prefix 前缀（如 flours, milks, eggs）
-     * @param name 物品名
-     */
-    private static TagKey<Item> createNeoforgeTag(String prefix, String name) {
-        return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", prefix + "/" + name));
+    private static TagKey<Item> neoforgeItemTag(String name) {
+        return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", name));
     }
-    
+
     /**
-     * 创建 NeoForge 通用标签（简化版，自动加 s）
-     * @param name 物品名（会自动加上 s 作为前缀）
+     * 静谧四季 - 物品标签
      */
-    private static TagKey<Item> createNeoforgeTag(String name) {
-        // 自动将单数变为复数形式
-        String plural = name.endsWith("s") ? name : name + "s";
-        return createNeoforgeTag(plural, name);
+    static TagKey<Item> seasonsItemTag(String name) {
+        return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("sereneseasons", name));
     }
-    
+
     /**
-     * 创建 NeoForge 通用标签（无前缀，直接 c:name）
-     * @param name 物品名
+     * 静谧四季 - 方块标签
      */
-    private static TagKey<Item> createSimpleNeoforgeTag(String name) {
-        return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
+    static TagKey<Block> seasonsBlockTag(String name) {
+        return TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath("sereneseasons", name));
+    }
+
+    /**
+     * 节气 - 方块标签
+     */
+    static TagKey<Block> eclipticSeasonsTag(String name) {
+        return TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath("eclipticseasons", name));
     }
 }

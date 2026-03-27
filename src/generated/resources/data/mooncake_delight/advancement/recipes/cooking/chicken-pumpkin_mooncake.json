@@ -1,21 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chicken-pumpkin_mooncake_chicken_slice": {
-      "conditions": {
-        "items": [
-          {
-            "items": "farmersdelight:pumpkin_slice"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_chicken-pumpkin_mooncake_minced_beef": {
       "conditions": {
         "items": [
           {
             "items": "farmersdelight:minced_beef"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_chicken-pumpkin_mooncake_pumpkin_slice": {
+      "conditions": {
+        "items": [
+          {
+            "items": "farmersdelight:pumpkin_slice"
           }
         ]
       },
@@ -32,7 +32,7 @@
     [
       "has_the_recipe",
       "has_chicken-pumpkin_mooncake_minced_beef",
-      "has_chicken-pumpkin_mooncake_chicken_slice"
+      "has_chicken-pumpkin_mooncake_pumpkin_slice"
     ]
   ],
   "rewards": {

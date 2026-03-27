@@ -1,6 +1,7 @@
 package com.chinaex123.mooncake_delight.block;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
+import com.chinaex123.mooncake_delight.block.Crops.SesameCrop;
 import com.chinaex123.mooncake_delight.fluid.ModFluids;
 import com.chinaex123.mooncake_delight.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -43,6 +44,12 @@ public class ModBlocks {
                         .sound(SoundType.HONEY_BLOCK) // 蜂蜜块声音
                 ));
     }
+
+    // ======================= 种子 =======================
+    // 芝麻作物
+    public static final DeferredBlock<SesameCrop> SESAME_CROP =
+            BLOCKS.register("sesame_crop", () -> new SesameCrop(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
 
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         ModItems.ITEMS_REGISTER.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

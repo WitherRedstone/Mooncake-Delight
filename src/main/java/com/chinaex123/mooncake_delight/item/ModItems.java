@@ -1,6 +1,7 @@
 package com.chinaex123.mooncake_delight.item;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
+import com.chinaex123.mooncake_delight.block.ModBlocks;
 import com.chinaex123.mooncake_delight.fluid.ModFluids;
 import com.chinaex123.mooncake_delight.item.Tools.Knife.OiledKnife;
 import com.chinaex123.mooncake_delight.util.FoodTooltipItem;
@@ -35,6 +36,10 @@ public class ModItems {
     public static final DeferredItem<Item> TALLOW = ITEMS_REGISTER.register("tallow", () -> new Item(new Item.Properties().food(ModFoods.TALLOW))); // 动物油脂
     public static final DeferredItem<Item> TALLOW_CRUMBS = ITEMS_REGISTER.register("tallow_crumbs", () -> new Item(new Item.Properties().food(ModFoods.TALLOW_CRUMBS))); // 动物油脂碎
     public static final DeferredItem<Item> LOTUS_SEED = ITEMS_REGISTER.register("lotus_seed", () -> new Item(new Item.Properties().food(ModFoods.LOTUS_SEED))); // 莲子
+
+    // ======================= 作物 =======================
+    public static final DeferredItem<Item> WHITE_SESAME = ITEMS_REGISTER.register("white_sesame", () -> new ItemNameBlockItem(ModBlocks.SESAME_CROP.get(), new Item.Properties().food(ModFoods.WHITE_SESAME))); // 白芝麻
+    public static final DeferredItem<Item> BLACK_SESAME = ITEMS_REGISTER.register("black_sesame", () -> new Item(new Item.Properties().food(ModFoods.BLACK_SESAME).rarity(Rarity.RARE))); // 黑芝麻
 
     // 实际饱和度 ≈ nutrition × saturationModifier × 2
     // ======================= 原版自带 =======================
@@ -86,6 +91,18 @@ public class ModItems {
     public static final DeferredItem<Item> HAM_BACON_MOONCAKE = ITEMS_REGISTER.register("ham-bacon_mooncake", () -> new Item(new Item.Properties().food(ModFoods.HAM_BACON_MOONCAKE))); // 火腿培根月饼
     public static final DeferredItem<Item> JINHUA_HAM_MOONCAKE = ITEMS_REGISTER.register("jinhua_ham_mooncake", () -> new Item(new Item.Properties().food(ModFoods.JINHUA_HAM_MOONCAKE))); // 金华火腿月饼
     public static final DeferredItem<Item> BACON_ONION_MOONCAKE = ITEMS_REGISTER.register("bacon-onion_mooncake", () -> new Item(new Item.Properties().food(ModFoods.BACON_ONION_MOONCAKE))); // 培根洋葱月饼
+    public static final DeferredItem<Item> BLACK_SESAME_PASTE_MOONCAKE = ITEMS_REGISTER.register("black_sesame_paste_mooncake", () -> new Item(new Item.Properties().food(ModFoods.BLACK_SESAME_PASTE_MOONCAKE))); // 黑芝麻蓉月饼
+    public static final DeferredItem<Item> BLACK_SESAME_LAVA_MOONCAKE = ITEMS_REGISTER.register("black_sesame_lava_mooncake", () -> new Item(new Item.Properties().food(ModFoods.BLACK_SESAME_LAVA_MOONCAKE))); // 黑芝麻蓉流心月饼
+    public static final DeferredItem<Item> BLACK_SESAME_SOY_MILK_MOONCAKE = ITEMS_REGISTER.register("black_sesame_soy_milk_mooncake", () -> new Item(new Item.Properties().food(ModFoods.BLACK_SESAME_SOY_MILK_MOONCAKE))); // 黑芝麻豆乳月饼
+    public static final DeferredItem<Item> WHITE_SESAME_PASTE_MOONCAKE = ITEMS_REGISTER.register("white_sesame_paste_mooncake", () -> new Item(new Item.Properties().food(ModFoods.WHITE_SESAME_PASTE_MOONCAKE))); // 白芝麻蓉月饼
+    public static final DeferredItem<Item> SESAME_EGG_YOLK_MOONCAKE = ITEMS_REGISTER.register("sesame_egg_yolk_mooncake", () -> new Item(new Item.Properties().food(ModFoods.SESAME_EGG_YOLK_MOONCAKE))); // 芝麻蛋黄月饼
+    public static final DeferredItem<Item> SESAME_HAM_MOONCAKE = ITEMS_REGISTER.register("sesame-ham_mooncake", () -> new Item(new Item.Properties().food(ModFoods.SESAME_HAM_MOONCAKE))); // 芝麻火腿月饼
+    public static final DeferredItem<Item> SESAME_BEEF_MOONCAKE = ITEMS_REGISTER.register("sesame-beef_mooncake", () -> new Item(new Item.Properties().food(ModFoods.SESAME_BEEF_MOONCAKE))); // 芝麻牛肉月饼
+    public static final DeferredItem<Item> SESAME_BACON_MOONCAKE = ITEMS_REGISTER.register("sesame-bacon_mooncake", () -> new Item(new Item.Properties().food(ModFoods.SESAME_BACON_MOONCAKE))); // 芝麻培根月饼
+    public static final DeferredItem<Item> SESAME_ONION_MOONCAKE = ITEMS_REGISTER.register("sesame-onion_mooncake", () -> new Item(new Item.Properties().food(ModFoods.SESAME_ONION_MOONCAKE))); // 芝麻洋葱月饼
+    public static final DeferredItem<Item> SESAME_TOMATO_MOONCAKE = ITEMS_REGISTER.register("sesame-tomato_mooncake", () -> new Item(new Item.Properties().food(ModFoods.SESAME_TOMATO_MOONCAKE))); // 芝麻番茄月饼
+    public static final DeferredItem<Item> SESAME_CHICKEN_MOONCAKE = ITEMS_REGISTER.register("sesame-chicken_mooncake", () -> new Item(new Item.Properties().food(ModFoods.SESAME_CHICKEN_MOONCAKE))); // 芝麻鸡肉月饼
+    public static final DeferredItem<Item> SESAME_MUTTON_MOONCAKE = ITEMS_REGISTER.register("sesame-mutton_mooncake", () -> new Item(new Item.Properties().food(ModFoods.SESAME_MUTTON_MOONCAKE))); // 芝麻羊肉月饼
 
     // ======================= 特殊/彩蛋物品 =======================
     public static final DeferredItem<Item> LAVA_MOONCAKE = ITEMS_REGISTER.register("lava_mooncake", () -> new Item(new Item.Properties().food(ModFoods.LAVA_MOONCAKE).rarity(Rarity.EPIC))); // 流心月饼
@@ -96,7 +113,6 @@ public class ModItems {
     // ======================= 工具 =======================
     public static final DeferredItem<Item> MOONCAKE_MOLD = ITEMS_REGISTER.register("mooncake_mold", () -> new Item(new Item.Properties())); // 月饼模具
     public static final DeferredItem<Item> OILED_KNIFE = ITEMS_REGISTER.register("oiled_knife", OiledKnife::new); // 油浸刀
-
 
     /**
      * 创建带有附魔光效的物品

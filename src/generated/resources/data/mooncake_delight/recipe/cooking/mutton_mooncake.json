@@ -17,10 +17,10 @@
       "tag": "c:crops/onion"
     },
     {
-      "item": "farmersdelight:mutton_chops"
+      "tag": "c:foods/raw_mutton"
     },
     {
-      "item": "farmersdelight:mutton_chops"
+      "tag": "c:foods/raw_mutton"
     }
   ],
   "recipe_book_tab": "meals",

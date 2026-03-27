@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_black_sesame_paste_mooncake_black_sesame": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:crops/lotus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_black_sesame_paste_mooncake_lotus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:crops/lotus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/black_sesame_paste_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_black_sesame_paste_mooncake_black_sesame",
+      "has_black_sesame_paste_mooncake_lotus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/black_sesame_paste_mooncake"
+    ]
+  }
+}

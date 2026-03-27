@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sesame_egg_yolk_mooncake_eggs": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:eggs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sesame_egg_yolk_mooncake_white_sesame": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:crops/sesame"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/sesame_egg_yolk_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sesame_egg_yolk_mooncake_white_sesame",
+      "has_sesame_egg_yolk_mooncake_eggs"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/sesame_egg_yolk_mooncake"
+    ]
+  }
+}

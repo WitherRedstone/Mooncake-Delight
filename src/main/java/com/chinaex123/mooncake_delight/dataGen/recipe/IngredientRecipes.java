@@ -1,6 +1,5 @@
 package com.chinaex123.mooncake_delight.dataGen.recipe;
 
-import com.chinaex123.mooncake_delight.MooncakeDelight;
 import com.chinaex123.mooncake_delight.item.ModItems;
 import com.chinaex123.mooncake_delight.tags.ModItemTags;
 import net.minecraft.advancements.Criterion;
@@ -15,7 +14,6 @@ import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
 import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
-import vectorwing.farmersdelight.common.tag.CommonTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -59,8 +57,8 @@ public class IngredientRecipes {
                 .addIngredient(Tags.Items.BUCKETS_WATER)
                 .addIngredient(ModItems.INVERT_SUGAR_SYRUP)
                 .addIngredient(ModItems.ANIMAL_FAT)
-                .addIngredient(ModItemTags.FLOUR_SIMPLE)
-                .addIngredient(ModItemTags.FLOUR_SIMPLE)
+                .addIngredient(ModItemTags.FLOUR)
+                .addIngredient(ModItemTags.FLOUR)
                 .addIngredient(Items.BLAZE_POWDER)
                 .unlockedBy("has_animal_fat", has(ModItems.ANIMAL_FAT.get()))
                 .unlockedBy("has_flour", has(ModItems.FLOUR.get()))
@@ -72,8 +70,8 @@ public class IngredientRecipes {
                 .addIngredient(ModItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Items.BLUE_ICE)
-                .addIngredient(ModItemTags.FLOUR_SIMPLE)
-                .addIngredient(ModItemTags.FLOUR_SIMPLE)
+                .addIngredient(ModItemTags.FLOUR)
+                .addIngredient(ModItemTags.FLOUR)
                 .unlockedBy("has_snow_skin_mooncake_crust_dough", has(Tags.Items.DRINKS_MILK))
                 .unlockedBy("has_snow_skin_mooncake_crust_dough_blue_ice", has(Items.BLUE_ICE))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MISC)

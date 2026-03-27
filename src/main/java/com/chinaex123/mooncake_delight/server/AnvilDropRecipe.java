@@ -31,7 +31,7 @@ public class AnvilDropRecipe {
     private static void initRecipes() {
         if (!initialized) {
             // 格式：registerRecipe(输入物品，最小输入数量，最大输入数量，输出物品，每个产出最小值，每个产出最大值)
-            registerRecipe(Items.WHEAT, 1, 1, ModItems.FLOUR, 1, 3); // 小麦 → 1-3个面粉
+            registerRecipe(Items.WHEAT, 1, 1, ModItems.FLOUR, 2, 6); // 小麦 → 面粉
             
             initialized = true;
         }

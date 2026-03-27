@@ -5,12 +5,16 @@ import com.chinaex123.mooncake_delight.dataGen.recipe.ModRecipesProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.data.tags.TagsProvider;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 @EventBusSubscriber(modid = MooncakeDelight.MOD_ID)
@@ -25,9 +29,10 @@ public class ModDataGenerator {
         generator.addProvider(event.includeServer(), new ModRecipesProvider(packOutput, lookupProvider));
         generator.addProvider(event.includeClient(), new ModItemModelsProvider(packOutput, event.getExistingFileHelper()));
         generator.addProvider(event.includeServer(), new ModItemTagsProvider(packOutput, lookupProvider, CompletableFuture.completedFuture(TagsProvider.TagLookup.empty()), existingFileHelper));
+        generator.addProvider(event.includeServer(), new ModBlockTagsProvider(packOutput, lookupProvider, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModFluidTagsProvider(packOutput, lookupProvider, existingFileHelper));
-//        generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Set.of(), List.of(new LootTableProvider.SubProviderEntry(provider ->
-//                new ModLootTableSubProvider(lookupProvider), LootContextParamSets.ALL_PARAMS)), lookupProvider
-//        ));
+        generator.addProvider(event.includeClient(), new ModBlockStatesProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
+                List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTablesProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
     }
 }

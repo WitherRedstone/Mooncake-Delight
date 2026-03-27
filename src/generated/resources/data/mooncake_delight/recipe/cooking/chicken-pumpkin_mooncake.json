@@ -17,10 +17,10 @@
       "tag": "c:crops/onion"
     },
     {
-      "item": "farmersdelight:chicken_cuts"
+      "tag": "c:foods/raw_chicken"
     },
     {
-      "item": "farmersdelight:chicken_cuts"
+      "tag": "c:foods/raw_chicken"
     },
     {
       "item": "farmersdelight:pumpkin_slice"

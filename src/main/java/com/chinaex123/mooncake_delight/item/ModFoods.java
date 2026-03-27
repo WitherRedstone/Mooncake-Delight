@@ -22,6 +22,14 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 20 * 5, 0), 1.0f) // 饥饿
             .alwaysEdible().build();// 冰皮月饼面团
 
+    // ======================= 作物 =======================
+    public static final FoodProperties WHITE_SESAME = new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f).build();// 白芝麻
+    public static final FoodProperties BLACK_SESAME = new FoodProperties.Builder().nutrition(2).saturationModifier(0.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 20 * 30, 1), 1.0f) // 幸运
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 20 * 45, 3), 0.25f) // 幸运
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 20 * 60, 4), 0.05f) // 幸运
+            .alwaysEdible().build();// 黑芝麻
+
     // ======================= 原版自带 =======================
     public static final FoodProperties APPLE_MOONCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.4f).build(); // 苹果月饼
     public static final FoodProperties GOLDEN_APPLE_MOONCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.4f)
@@ -115,6 +123,24 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 10, 0), 1.0f) // 力量
             .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 20 * 4, 0), 0.8f) // 反胃
             .alwaysEdible().build();  // 培根洋葱月饼
+    public static final FoodProperties BLACK_SESAME_PASTE_MOONCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 20 * 90, 1), 1.0f) // 幸运
+            .alwaysEdible().build(); // 黑芝麻蓉月饼
+    public static final FoodProperties BLACK_SESAME_LAVA_MOONCAKE = new FoodProperties.Builder().nutrition(10).saturationModifier(0.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 20 * 90, 1), 1.0f) // 幸运
+            .alwaysEdible().build(); // 黑芝麻蓉流心月饼
+    public static final FoodProperties BLACK_SESAME_SOY_MILK_MOONCAKE = new FoodProperties.Builder().nutrition(10).saturationModifier(0.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 20 * 90, 1), 1.0f) // 幸运
+            .alwaysEdible().build(); // 黑芝麻豆乳月饼
+    public static final FoodProperties WHITE_SESAME_PASTE_MOONCAKE = new FoodProperties.Builder().nutrition(10).saturationModifier(0.4f).build(); // 白芝麻蓉月饼
+    public static final FoodProperties SESAME_EGG_YOLK_MOONCAKE = new FoodProperties.Builder().nutrition(10).saturationModifier(0.4f).build(); // 芝麻蛋黄月饼
+    public static final FoodProperties SESAME_HAM_MOONCAKE = new FoodProperties.Builder().nutrition(12).saturationModifier(0.4f).build(); // 芝麻火腿月饼
+    public static final FoodProperties SESAME_BEEF_MOONCAKE = new FoodProperties.Builder().nutrition(12).saturationModifier(0.4f).build(); // 芝麻牛肉月饼
+    public static final FoodProperties SESAME_BACON_MOONCAKE = new FoodProperties.Builder().nutrition(12).saturationModifier(0.4f).build(); // 芝麻培根月饼
+    public static final FoodProperties SESAME_ONION_MOONCAKE = new FoodProperties.Builder().nutrition(12).saturationModifier(0.4f).build(); // 芝麻洋葱月饼
+    public static final FoodProperties SESAME_TOMATO_MOONCAKE = new FoodProperties.Builder().nutrition(12).saturationModifier(0.4f).build(); // 芝麻番茄月饼
+    public static final FoodProperties SESAME_CHICKEN_MOONCAKE = new FoodProperties.Builder().nutrition(12).saturationModifier(0.4f).build(); // 芝麻鸡肉月饼
+    public static final FoodProperties SESAME_MUTTON_MOONCAKE = new FoodProperties.Builder().nutrition(12).saturationModifier(0.4f).build(); // 芝麻羊肉月饼
 
     // ======================= 特殊/彩蛋物品 =======================
     public static final FoodProperties LAVA_MOONCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.5f)

@@ -4,6 +4,7 @@ import com.chinaex123.mooncake_delight.item.ModCompat.Croptopia.CroptopiaItems;
 import com.chinaex123.mooncake_delight.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
@@ -41,6 +42,10 @@ public class ModCreativeTabs {
                         output.accept(ModItems.MOONCAKE_CRUST_DOUGH.get()); // 月饼面团
                         output.accept(ModItems.SNOW_SKIN_MOONCAKE_CRUST_DOUGH.get()); // 冰皮月饼面团
                         output.accept(ModItems.PEPPER_SALT.get()); // 椒盐
+
+                        // ======================= 作物 =======================
+                        output.accept(ModItems.WHITE_SESAME.get()); // 白芝麻
+                        output.accept(ModItems.BLACK_SESAME.get()); // 黑芝麻
 
                         // ======================= 原版自带 =======================
                         output.accept(ModItems.APPLE_MOONCAKE.get()); // 苹果月饼
@@ -91,6 +96,18 @@ public class ModCreativeTabs {
                         output.accept(ModItems.HAM_BACON_MOONCAKE.get()); // 火腿培根月饼
                         output.accept(ModItems.JINHUA_HAM_MOONCAKE.get()); // 金华火腿月饼
                         output.accept(ModItems.BACON_ONION_MOONCAKE.get()); // 培根洋葱月饼
+                        output.accept(ModItems.BLACK_SESAME_PASTE_MOONCAKE.get()); // 黑芝麻蓉月饼
+                        output.accept(ModItems.BLACK_SESAME_LAVA_MOONCAKE.get()); // 黑芝麻蓉流心月饼
+                        output.accept(ModItems.BLACK_SESAME_SOY_MILK_MOONCAKE.get()); // 黑芝麻豆乳月饼
+                        output.accept(ModItems.WHITE_SESAME_PASTE_MOONCAKE.get()); // 白芝麻蓉月饼
+                        output.accept(ModItems.SESAME_EGG_YOLK_MOONCAKE.get()); // 芝麻蛋黄月饼
+                        output.accept(ModItems.SESAME_HAM_MOONCAKE.get()); // 芝麻火腿月饼
+                        output.accept(ModItems.SESAME_BEEF_MOONCAKE.get()); // 芝麻牛肉月饼 配方：牛肉馅+洋葱+番茄酱+芝麻
+                        output.accept(ModItems.SESAME_BACON_MOONCAKE.get()); // 芝麻培根月饼
+                        output.accept(ModItems.SESAME_ONION_MOONCAKE.get()); // 芝麻洋葱月饼 配方：洋葱+焦糖+芝麻
+                        output.accept(ModItems.SESAME_TOMATO_MOONCAKE.get()); // 芝麻番茄月饼
+                        output.accept(ModItems.SESAME_CHICKEN_MOONCAKE.get()); // 芝麻鸡肉月饼
+                        output.accept(ModItems.SESAME_MUTTON_MOONCAKE.get()); // 芝麻羊肉月饼
 
                         // ======================= 作物盛景 联动 =======================
                         if (ModList.get().isLoaded("croptopia")) {
@@ -143,7 +160,13 @@ public class ModCreativeTabs {
                             output.accept(CroptopiaItems.BUTTER_CHEESE_MOONCAKE.get()); // 黄油芝士月饼
                             output.accept(CroptopiaItems.LAVA_CHOCOLATE_MOONCAKE.get()); // 流心巧克力月饼
                             output.accept(CroptopiaItems.EARL_GREY_MOONCAKE.get()); // 伯爵茶月饼
+                            output.accept(CroptopiaItems.SESAME_WALNUT_MOONCAKE.get()); // 芝麻核桃月饼
+                            output.accept(CroptopiaItems.SESAME_PEANUT_MOONCAKE.get()); // 芝麻花生月饼
+                            output.accept(CroptopiaItems.SESAME_ALMOND_MOONCAKE.get()); // 芝麻杏仁月饼
+                            output.accept(CroptopiaItems.SESAME_CHEESE_MOONCAKE.get()); // 芝麻芝士月饼
+                            output.accept(CroptopiaItems.BLACK_SESAME_COCONUT_MOONCAKE.get()); // 黑芝麻椰蓉月饼
                         }
+
                         // ======================= 特殊/彩蛋物品 =======================
                         output.accept(ModItems.LAVA_MOONCAKE.get()); // 流心月饼
                         output.accept(ModItems.TNT_MOONCAKE.get()); // TNT 月饼

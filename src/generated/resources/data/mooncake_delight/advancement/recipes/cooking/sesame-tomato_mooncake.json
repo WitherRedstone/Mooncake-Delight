@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sesame-tomato_mooncake_tomato": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:crops/tomato"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sesame-tomato_mooncake_white_sesame": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:crops/sesame"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/sesame-tomato_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sesame-tomato_mooncake_white_sesame",
+      "has_sesame-tomato_mooncake_tomato"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/sesame-tomato_mooncake"
+    ]
+  }
+}

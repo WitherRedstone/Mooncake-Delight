@@ -64,6 +64,11 @@ public class CroptopiaItems {
     public static final DeferredItem<Item> BUTTER_CHEESE_MOONCAKE = ITEMS_REGISTER.register("butter_cheese_mooncake", () -> new Item(new Item.Properties().food(CroptopiaFoods.BUTTER_CHEESE_MOONCAKE))); // 黄油芝士月饼
     public static final DeferredItem<Item> LAVA_CHOCOLATE_MOONCAKE = ITEMS_REGISTER.register("lava_chocolate_mooncake", () -> new Item(new Item.Properties().food(CroptopiaFoods.LAVA_CHOCOLATE_MOONCAKE))); // 流心巧克力月饼
     public static final DeferredItem<Item> EARL_GREY_MOONCAKE = ITEMS_REGISTER.register("earl_grey_mooncake", () -> new Item(new Item.Properties().food(CroptopiaFoods.EARL_GREY_MOONCAKE))); // 伯爵茶月饼
+    public static final DeferredItem<Item> SESAME_WALNUT_MOONCAKE = ITEMS_REGISTER.register("sesame-walnut_mooncake", () -> new Item(new Item.Properties().food(CroptopiaFoods.SESAME_WALNUT_MOONCAKE))); // 芝麻核桃月饼
+    public static final DeferredItem<Item> SESAME_PEANUT_MOONCAKE = ITEMS_REGISTER.register("sesame-peanut_mooncake", () -> new Item(new Item.Properties().food(CroptopiaFoods.SESAME_PEANUT_MOONCAKE))); // 芝麻花生月饼
+    public static final DeferredItem<Item> SESAME_ALMOND_MOONCAKE = ITEMS_REGISTER.register("sesame-almond_mooncake", () -> new Item(new Item.Properties().food(CroptopiaFoods.SESAME_ALMOND_MOONCAKE))); // 芝麻杏仁月饼
+    public static final DeferredItem<Item> SESAME_CHEESE_MOONCAKE = ITEMS_REGISTER.register("sesame-cheese_mooncake", () -> new Item(new Item.Properties().food(CroptopiaFoods.SESAME_CHEESE_MOONCAKE))); // 芝麻芝士月饼
+    public static final DeferredItem<Item> BLACK_SESAME_COCONUT_MOONCAKE = ITEMS_REGISTER.register("black_sesame-coconut_mooncake", () -> new Item(new Item.Properties().food(CroptopiaFoods.BLACK_SESAME_COCONUT_MOONCAKE))); // 黑芝麻椰蓉月饼
 
     /**
      * 自动显示 Effect 的 Tooltip（无附魔光效）

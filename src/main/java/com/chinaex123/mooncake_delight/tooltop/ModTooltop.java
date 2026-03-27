@@ -43,5 +43,10 @@ public class ModTooltop {
             tooltip.add(Component.translatable("item.mooncake_delight.lava_mooncake.tooltip")
                     .withStyle(ChatFormatting.RED));
         }
+        // 黑芝麻
+        if (stack.getItem() == ModItems.BLACK_SESAME.get()) {
+            tooltip.add(Component.translatable("item.mooncake_delight.black_sesame.tooltip")
+                    .withStyle(ChatFormatting.GOLD));
+        }
     }
 }

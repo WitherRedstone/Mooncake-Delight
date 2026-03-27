@@ -100,6 +100,13 @@ public class CroptopiaFoods {
     public static final FoodProperties BUTTER_CHEESE_MOONCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.4f).build(); // 黄油芝士月饼
     public static final FoodProperties LAVA_CHOCOLATE_MOONCAKE = new FoodProperties.Builder().nutrition(8).saturationModifier(0.4f).build(); // 流心巧克力月饼
     public static final FoodProperties EARL_GREY_MOONCAKE = new FoodProperties.Builder().nutrition(10).saturationModifier(0.4f).build(); // 伯爵茶月饼
+    public static final FoodProperties SESAME_WALNUT_MOONCAKE = new FoodProperties.Builder().nutrition(10).saturationModifier(0.4f).build(); // 芝麻核桃月饼
+    public static final FoodProperties SESAME_PEANUT_MOONCAKE = new FoodProperties.Builder().nutrition(10).saturationModifier(0.4f).build(); // 芝麻花生月饼
+    public static final FoodProperties SESAME_ALMOND_MOONCAKE = new FoodProperties.Builder().nutrition(10).saturationModifier(0.4f).build(); // 芝麻杏仁月饼
+    public static final FoodProperties SESAME_CHEESE_MOONCAKE = new FoodProperties.Builder().nutrition(14).saturationModifier(0.4f).build(); // 芝麻芝士月饼
+    public static final FoodProperties BLACK_SESAME_COCONUT_MOONCAKE = new FoodProperties.Builder().nutrition(10).saturationModifier(0.4f)
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 20 * 90, 1), 1.0f) // 幸运
+            .alwaysEdible().build(); // 黑芝麻椰蓉月饼
 
 
 

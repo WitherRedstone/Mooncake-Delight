@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_black_sesame_soy_milk_mooncake_black_sesame": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mooncake_delight:black_sesame"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_black_sesame_soy_milk_mooncake_cocoa_bean": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:crops/cocoa_bean"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/black_sesame_soy_milk_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_black_sesame_soy_milk_mooncake_black_sesame",
+      "has_black_sesame_soy_milk_mooncake_cocoa_bean"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/black_sesame_soy_milk_mooncake"
+    ]
+  }
+}

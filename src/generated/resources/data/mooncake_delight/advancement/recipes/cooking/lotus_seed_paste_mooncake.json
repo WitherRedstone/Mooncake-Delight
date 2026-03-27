@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "mooncake_delight:lotus_seed"
+            "items": "#c:crops/lotus"
           }
         ]
       },
