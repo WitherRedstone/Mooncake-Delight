@@ -23,5 +23,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         this.tag(ModItemTags.CROPS_SUMMER_BLOCK).add(ModBlocks.SESAME_CROP.get()); // 夏天
         this.tag(ModItemTags.CROPS_DRY_AVERAGE).add(ModBlocks.SESAME_CROP.get()); // 干燥
         this.tag(ModItemTags.CROPS_SPRING_SUMMER).add(ModBlocks.SESAME_CROP.get()); // 干燥
+        this.tag(ModItemTags.FTB_SINGLE_CROP_HARVESTING_BLACKLIST).add(ModBlocks.SESAME_CROP.get());
+        this.tag(ModItemTags.FTB_EXCLUDED_BLOCKS).add(ModBlocks.SESAME_CROP.get());
     }
 }
