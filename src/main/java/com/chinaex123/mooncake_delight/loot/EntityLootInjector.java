@@ -44,7 +44,8 @@ public class EntityLootInjector {
         // 猪、牛、羊
         if (tableId.equals(ResourceLocation.withDefaultNamespace("entities/pig")) ||
                 tableId.equals(ResourceLocation.withDefaultNamespace("entities/cow")) ||
-                tableId.equals(ResourceLocation.withDefaultNamespace("entities/sheep"))) {
+                tableId.equals(ResourceLocation.withDefaultNamespace("entities/sheep")) ||
+                tableId.equals(ResourceLocation.withDefaultNamespace("entities/goat"))) {
 
             // 普通情况（着火状态）
             LootPool burntTallowCrumbsPool = LootPool.lootPool()

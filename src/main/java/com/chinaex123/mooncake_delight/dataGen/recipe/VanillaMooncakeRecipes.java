@@ -711,7 +711,7 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(ModItemTags.CROPS_SESAME)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_mutton"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_mutton"))))
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/raw_mutton"))))
+                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_mutton"))))
                 .unlockedBy("has_sesame-mutton_mooncake_tomato", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_mutton"))))
                 .unlockedBy("has_sesame-mutton_mooncake_white_sesame", has(ModItemTags.CROPS_SESAME))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)

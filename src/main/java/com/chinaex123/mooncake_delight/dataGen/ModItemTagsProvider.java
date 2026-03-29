@@ -36,9 +36,9 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         this.tag(ModItemTags.PEPPER_SALT).add(ModItems.PEPPER_SALT.get()); // c:pepper_salt
 
         // 转换糖浆
-        this.tag(ModItemTags.SYRUPS_INVERT_SUGAR_SYRUP).add(ModItems.INVERT_SUGAR_SYRUP.get());// c:syrups/invert_sugar_syrup
+        this.tag(ModItemTags.SYRUPS_INVERT_SUGAR_SYRUP).add(ModItems.INVERT_SUGAR_SYRUP_BOTTLE.get());// c:syrups/invert_sugar_syrup
         // 枫糖浆
-        this.tag(ModItemTags.SYRUPS_MAPLE_SYRUP).add(ModItems.MAPLE_SYRUP.get()); // c:syrups/maple_syrup
+        this.tag(ModItemTags.SYRUPS_MAPLE_SYRUP).add(ModItems.MAPLE_SYRUP_BOTTLE.get()); // c:syrups/maple_syrup
 
         // 面粉
         this.tag(ModItemTags.FLOURS).add(ModItems.FLOUR.get());// c:flours

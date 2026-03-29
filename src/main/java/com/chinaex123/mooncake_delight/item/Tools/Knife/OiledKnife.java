@@ -12,6 +12,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
+import vectorwing.farmersdelight.common.item.KnifeItem;
 
 import java.util.List;
 
@@ -19,7 +20,7 @@ public class OiledKnife extends ModKnifeItem {
 
     public OiledKnife() {
         super(ToolMaterials.OILED_KNIFE, new Item.Properties()
-            .rarity(Rarity.UNCOMMON));
+                .rarity(Rarity.UNCOMMON));
     }
 
     @Override

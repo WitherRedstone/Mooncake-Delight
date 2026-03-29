@@ -22,8 +22,8 @@ public class ModItems {
     public static final DeferredItem<Item> MAPLE_SYRUP_BUCKET = ITEMS_REGISTER.register("maple_syrup_bucket", () ->
             new BucketItem(ModFluids.MAPLE_SYRUP.get(), new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET))); // 枫糖浆 桶
 
-    public static final DeferredItem<Item> INVERT_SUGAR_SYRUP = ITEMS_REGISTER.register("invert_sugar_syrup", () -> new SyrupItem(ModFoods.INVERT_SUGAR_SYRUP)); // 转换糖浆
-    public static final DeferredItem<Item> MAPLE_SYRUP = ITEMS_REGISTER.register("maple_syrup", () -> new SyrupItem(ModFoods.MAPLE_SYRUP)); // 枫糖浆
+    public static final DeferredItem<Item> INVERT_SUGAR_SYRUP_BOTTLE = ITEMS_REGISTER.register("invert_sugar_syrup_bottle", () -> new SyrupItem(ModFoods.INVERT_SUGAR_SYRUP_BOTTLE)); // 转换糖浆瓶
+    public static final DeferredItem<Item> MAPLE_SYRUP_BOTTLE = ITEMS_REGISTER.register("maple_syrup_bottle", () -> new SyrupItem(ModFoods.MAPLE_SYRUP_BOTTLE)); // 枫糖浆瓶
     public static final DeferredItem<Item> ANIMAL_FAT = ITEMS_REGISTER.register("animal_fat", () -> new SyrupItem(ModFoods.ANIMAL_FAT)); // 动物油
 
     // ======================= 食材 =======================

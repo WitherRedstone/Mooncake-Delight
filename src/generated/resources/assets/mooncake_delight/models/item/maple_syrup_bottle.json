@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "mooncake_delight:item/maple_syrup"
+    "layer0": "mooncake_delight:item/maple_syrup_bottle"
   }
 }

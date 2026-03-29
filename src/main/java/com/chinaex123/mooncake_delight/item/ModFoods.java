@@ -7,8 +7,8 @@ import net.minecraft.world.food.FoodProperties;
 public class ModFoods {
 
     // ======================= 流体桶 =======================
-    public static final FoodProperties INVERT_SUGAR_SYRUP = new FoodProperties.Builder().nutrition(6).saturationModifier(0.3f).build(); // 转换糖浆
-    public static final FoodProperties MAPLE_SYRUP = new FoodProperties.Builder().nutrition(6).saturationModifier(0.3f).build(); // 枫糖浆
+    public static final FoodProperties INVERT_SUGAR_SYRUP_BOTTLE = new FoodProperties.Builder().nutrition(6).saturationModifier(0.3f).build(); // 转换糖浆
+    public static final FoodProperties MAPLE_SYRUP_BOTTLE = new FoodProperties.Builder().nutrition(6).saturationModifier(0.3f).build(); // 枫糖浆
 
     // ======================= 食材 =======================
     public static final FoodProperties TALLOW_CRUMBS = new FoodProperties.Builder().nutrition(2).saturationModifier(0.1f).build(); // 动物油脂碎

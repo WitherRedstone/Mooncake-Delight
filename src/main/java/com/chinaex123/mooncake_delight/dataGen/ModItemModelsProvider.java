@@ -33,8 +33,8 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicItem(ModItems.FLOUR.get()); // 面粉
         basicItem(ModItems.MOONCAKE_CRUST_DOUGH.get()); // 月饼面团
         basicItem(ModItems.SNOW_SKIN_MOONCAKE_CRUST_DOUGH.get()); // 冰皮月饼面团
-        basicItem(ModItems.INVERT_SUGAR_SYRUP.get()); // 转换糖浆
-        basicItem(ModItems.MAPLE_SYRUP.get()); // 枫糖浆
+        basicItem(ModItems.INVERT_SUGAR_SYRUP_BOTTLE.get()); // 转换糖浆
+        basicItem(ModItems.MAPLE_SYRUP_BOTTLE.get()); // 枫糖浆
 
         // ======================= 原版自带 =======================
         basicItem(ModItems.WHITE_SESAME.get()); // 白芝麻

@@ -4,7 +4,6 @@ import com.chinaex123.mooncake_delight.item.ModCompat.Croptopia.CroptopiaItems;
 import com.chinaex123.mooncake_delight.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
@@ -27,8 +26,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.INVERT_SUGAR_SYRUP_BUCKET.get()); // 转换糖浆 桶
                         output.accept(ModItems.MAPLE_SYRUP_BUCKET.get()); // 枫糖浆 桶
 
-                        output.accept(ModItems.INVERT_SUGAR_SYRUP.get()); // 转换糖浆
-                        output.accept(ModItems.MAPLE_SYRUP.get()); // 枫糖浆
+                        output.accept(ModItems.INVERT_SUGAR_SYRUP_BOTTLE.get()); // 转换糖浆
+                        output.accept(ModItems.MAPLE_SYRUP_BOTTLE.get()); // 枫糖浆
                         output.accept(ModItems.ANIMAL_FAT.get()); // 动物油
 
                         output.accept(ModItems.OILED_KNIFE.get()); // 油浸刀

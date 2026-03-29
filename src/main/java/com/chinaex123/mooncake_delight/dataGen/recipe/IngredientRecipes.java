@@ -32,7 +32,7 @@ public class IngredientRecipes {
 
         // ======================= 食材 =======================
         // 转换糖浆
-        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.INVERT_SUGAR_SYRUP.get(), 1, 20 * 20,0.5F, Items.GLASS_BOTTLE)
+        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.INVERT_SUGAR_SYRUP_BOTTLE.get(), 1, 20 * 20,0.5F, Items.GLASS_BOTTLE)
                 .addIngredient(ModItemTags.SUGARS)
                 .addIngredient(Items.GLOW_BERRIES)
                 .addIngredient(Items.HONEYCOMB)
@@ -55,7 +55,7 @@ public class IngredientRecipes {
         // 月饼面团
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.MOONCAKE_CRUST_DOUGH.get(), 1, 20 * 20,0.5F)
                 .addIngredient(Tags.Items.BUCKETS_WATER)
-                .addIngredient(ModItems.INVERT_SUGAR_SYRUP)
+                .addIngredient(ModItems.INVERT_SUGAR_SYRUP_BOTTLE)
                 .addIngredient(ModItems.ANIMAL_FAT)
                 .addIngredient(ModItemTags.FLOUR)
                 .addIngredient(ModItemTags.FLOUR)
