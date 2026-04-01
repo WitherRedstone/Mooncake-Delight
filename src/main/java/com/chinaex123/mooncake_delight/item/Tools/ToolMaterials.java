@@ -6,12 +6,13 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 
 import java.util.function.Supplier;
 
 public enum ToolMaterials implements Tier {
 
-    OILED_KNIFE(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 128, 2F, 1.5F, -2.4F, 12, () -> Ingredient.of(ItemTags.PLANKS));
+    OILED_KNIFE(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 128, 2F, 1.5F, -2.4F, 12, () -> Ingredient.of(Tags.Items.GEMS_DIAMOND));
 
     private final TagKey<Block> incorrectBlocksForDrops;
     private final int uses;
