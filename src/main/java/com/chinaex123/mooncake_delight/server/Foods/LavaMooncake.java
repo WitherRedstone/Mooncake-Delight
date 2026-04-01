@@ -29,7 +29,8 @@ public class LavaMooncake {
             "minecraft:end_portal",
             "minecraft:end_portal_frame",
             "minecraft:portal",
-            "minecraft:nether_portal"
+            "minecraft:nether_portal",
+            "minecraft:reinforced_deepslate"
     };
 
     @SubscribeEvent
