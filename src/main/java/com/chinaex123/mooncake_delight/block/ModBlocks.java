@@ -23,27 +23,34 @@ public class ModBlocks {
             DeferredRegister.createBlocks(MooncakeDelight.MOD_ID);
 
     // ======================= 流体 =======================
-    public static final DeferredBlock<LiquidBlock> INVERT_SUGAR_SYRUP_BLOCK; // 转换糖浆
-    public static final DeferredBlock<LiquidBlock> MAPLE_SYRUP_BLOCK; // 枫糖浆
-
-    static {
-        INVERT_SUGAR_SYRUP_BLOCK = BLOCKS.register("invert_sugar_syrup_block", () ->
-                new LiquidBlock(ModFluids.INVERT_SUGAR_SYRUP.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)
-                        .friction(0.6F) // 高摩擦
-                        .speedFactor(0.5F) // 减速 50%
-                        .jumpFactor(0.5F) // 跳跃
-                        .mapColor(MapColor.COLOR_ORANGE) // 橙色
-                        .sound(SoundType.HONEY_BLOCK) // 蜂蜜块声音
-                ));
-        MAPLE_SYRUP_BLOCK = BLOCKS.register("maple_syrup_block", () ->
-                new LiquidBlock(ModFluids.MAPLE_SYRUP.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)
-                        .friction(0.6F) // 高摩擦
-                        .speedFactor(0.5F) // 减速 50%
-                        .jumpFactor(0.5F) // 跳跃
-                        .mapColor(MapColor.COLOR_ORANGE) // 橙色
-                        .sound(SoundType.HONEY_BLOCK) // 蜂蜜块声音
-                ));
-    }
+    // 转换糖浆
+    public static final DeferredBlock<LiquidBlock> INVERT_SUGAR_SYRUP_BLOCK =
+            BLOCKS.register("invert_sugar_syrup_block", () -> new LiquidBlock(ModFluids.INVERT_SUGAR_SYRUP.get(), BlockBehaviour.Properties.of()
+                    .noLootTable() // 不掉落
+                    .liquid() // 液体
+                    .replaceable() // 可替换
+                    .noCollission() // 无碰撞
+                    .strength(100.0F) // 硬度
+                    .friction(0.6F) // 摩擦
+                    .speedFactor(0.5F) // 移动速度
+                    .jumpFactor(0.5F) // 跳跃速度
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .sound(SoundType.HONEY_BLOCK)
+            ));
+    // 枫糖浆
+    public static final DeferredBlock<LiquidBlock> MAPLE_SYRUP_BLOCK =
+            BLOCKS.register("maple_syrup_block", () -> new LiquidBlock(ModFluids.MAPLE_SYRUP.get(), BlockBehaviour.Properties.of()
+                    .noLootTable() // 不掉落
+                    .liquid() // 液体
+                    .replaceable() // 可替换
+                    .noCollission() // 无碰撞
+                    .strength(100.0F) // 硬度
+                    .friction(0.6F) // 摩擦
+                    .speedFactor(0.5F) // 移动速度
+                    .jumpFactor(0.5F) // 跳跃速度
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .sound(SoundType.HONEY_BLOCK)
+            ));
 
     // ======================= 种子 =======================
     // 芝麻作物

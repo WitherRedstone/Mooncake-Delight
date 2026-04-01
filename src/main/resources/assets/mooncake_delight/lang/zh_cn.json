@@ -151,8 +151,8 @@
   "_comment.fluid": "流体",
   "fluid_type.mooncake_delight.invert_sugar_syrup_type": "转换糖浆",
   "fluid_type.mooncake_delight.maple_syrup_type": "枫糖浆",
-  "block.mooncake_delight.invert_sugar_syrup_block": "转换糖浆",
-  "block.mooncake_delight.maple_syrup_block": "枫糖浆",
+  "block.mooncake_delight.invert_sugar_syrup": "转换糖浆",
+  "block.mooncake_delight.maple_syrup": "枫糖浆",
   "item.mooncake_delight.invert_sugar_syrup_bucket": "转换糖浆桶",
   "item.mooncake_delight.maple_syrup_bucket": "枫糖浆桶",
 

@@ -151,8 +151,8 @@
   "_comment.fluid": "Fluid",
   "fluid_type.mooncake_delight.invert_sugar_syrup_type": "Invert Sugar Syrup",
   "fluid_type.mooncake_delight.maple_syrup_type": "Maple Syrup",
-  "block.mooncake_delight.invert_sugar_syrup_block": "Invert Sugar Syrup Block",
-  "block.mooncake_delight.maple_syrup_block": "Maple Syrup Block",
+  "block.mooncake_delight.invert_sugar_syrup": "Invert Sugar Syrup",
+  "block.mooncake_delight.maple_syrup": "Maple Syrup",
   "item.mooncake_delight.invert_sugar_syrup_bucket": "Invert Sugar Syrup Bucket",
   "item.mooncake_delight.maple_syrup_bucket": "Maple Syrup Bucket",
 

@@ -10,9 +10,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
-import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.DeferredBlock;
 
 import java.util.function.Function;
 
@@ -33,13 +31,6 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         getVariantBuilder(block).forAllStates(function);
     }
 
-    public void crossCrop(CropBlock block, String name, IntegerProperty property) {
-        Function<BlockState, ConfiguredModel[]> function = state ->
-                crossStates(state, name, property);
-
-        getVariantBuilder(block).forAllStates(function);
-    }
-
     private ConfiguredModel[] cropStates(BlockState state, String modelName, IntegerProperty property) {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(property),
@@ -48,18 +39,25 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         return models;
     }
 
-    private ConfiguredModel[] crossStates(BlockState state, String modelName, IntegerProperty property) {
-        ConfiguredModel[] models = new ConfiguredModel[1];
-        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(property),
-                ResourceLocation.fromNamespaceAndPath(MooncakeDelight.MOD_ID, "block/" + modelName + state.getValue(property))).renderType("cutout"));
+//    public void crossCrop(CropBlock block, String name, IntegerProperty property) {
+//        Function<BlockState, ConfiguredModel[]> function = state ->
+//                crossStates(state, name, property);
+//
+//        getVariantBuilder(block).forAllStates(function);
+//    }
 
-        return models;
-    }
+//    private ConfiguredModel[] crossStates(BlockState state, String modelName, IntegerProperty property) {
+//        ConfiguredModel[] models = new ConfiguredModel[1];
+//        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(property),
+//                ResourceLocation.fromNamespaceAndPath(MooncakeDelight.MOD_ID, "block/" + modelName + state.getValue(property))).renderType("cutout"));
+//
+//        return models;
+//    }
 
-    private void blockItem(DeferredBlock<?> block) {
-        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(MooncakeDelight.MOD_ID + ":block/" + block.getId().getPath()));
-    }
-    private void blockItem(DeferredBlock<?> block, String append) {
-        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(MooncakeDelight.MOD_ID + ":block/" + block.getId().getPath() + append));
-    }
+//    private void blockItem(DeferredBlock<?> block) {
+//        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(MooncakeDelight.MOD_ID + ":block/" + block.getId().getPath()));
+//    }
+//    private void blockItem(DeferredBlock<?> block, String append) {
+//        simpleBlockItem(block.get(), new ModelFile.UncheckedModelFile(MooncakeDelight.MOD_ID + ":block/" + block.getId().getPath() + append));
+//    }
 }

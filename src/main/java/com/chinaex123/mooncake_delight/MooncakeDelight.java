@@ -1,7 +1,6 @@
 package com.chinaex123.mooncake_delight;
 
 import com.chinaex123.mooncake_delight.block.ModBlocks;
-import com.chinaex123.mooncake_delight.fluid.ModFluidTypes;
 import com.chinaex123.mooncake_delight.fluid.ModFluids;
 import com.chinaex123.mooncake_delight.item.ModCompat.Croptopia.CroptopiaItems;
 import com.chinaex123.mooncake_delight.item.ModItems;
@@ -20,8 +19,8 @@ public class MooncakeDelight {
     public MooncakeDelight(IEventBus modEventBus, ModContainer modContainer) {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        ModFluidTypes.FLUID_TYPE_REGISTRY.register(modEventBus);
-        ModFluids.FLUID_REGISTRY.register(modEventBus);
+        ModFluids.FLUID_TYPES.register(modEventBus);
+        ModFluids.FLUIDS.register(modEventBus);
 
         ModCreativeTabs.register(modEventBus);
 
