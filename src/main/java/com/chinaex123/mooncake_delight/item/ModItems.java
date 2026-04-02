@@ -31,7 +31,6 @@ public class ModItems {
     // ======================= 食材 =======================
     public static final RegistryObject<Item> SUGAR_CUBE = ITEMS_REGISTER.register("sugar_cube", () -> new Item(new Item.Properties())); // 方糖
     public static final RegistryObject<Item> TRUFFLE = ITEMS_REGISTER.register("truffle", () -> new Item(new Item.Properties())); // 松露
-    public static final RegistryObject<Item> PEPPER_SALT = ITEMS_REGISTER.register("pepper_salt", () -> new Item(new Item.Properties())); // 椒盐
     public static final RegistryObject<Item> FLOUR = ITEMS_REGISTER.register("flour", () -> new Item(new Item.Properties())); // 面粉
     public static final RegistryObject<Item> MOONCAKE_CRUST_DOUGH = ITEMS_REGISTER.register("mooncake_crust_dough", () -> new Item(new Item.Properties().food(ModFoods.MOONCAKE_CRUST_DOUGH))); // 月饼面团
     public static final RegistryObject<Item> SNOW_SKIN_MOONCAKE_CRUST_DOUGH = ITEMS_REGISTER.register("snow_skin_mooncake_crust_dough", () -> new Item(new Item.Properties().food(ModFoods.SNOW_SKIN_MOONCAKE_CRUST_DOUGH))); // 冰皮月饼面团

@@ -17,7 +17,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-@Mod.EventBusSubscriber(modid = MooncakeDelight.MOD_ID)
+@Mod.EventBusSubscriber(modid = MooncakeDelight.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModDataGenerator {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {

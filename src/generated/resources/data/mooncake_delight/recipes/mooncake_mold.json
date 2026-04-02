@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "tag": "forge:flours"
+    },
+    "B": {
+      "tag": "forge:rods/wooden"
+    },
+    "C": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    " CA",
+    " CC",
+    "B  "
+  ],
+  "result": {
+    "item": "mooncake_delight:mooncake_mold"
+  },
+  "show_notification": true
+}

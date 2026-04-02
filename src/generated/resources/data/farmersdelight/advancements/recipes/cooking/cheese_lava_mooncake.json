@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cheese_lava_mooncake_cheeses": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:cheeses"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "farmersdelight:cooking/cheese_lava_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cheese_lava_mooncake_cheeses",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmersdelight:cooking/cheese_lava_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}

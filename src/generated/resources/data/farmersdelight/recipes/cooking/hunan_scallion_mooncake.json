@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "mooncake_delight:mooncake_mold"
+  },
+  "cookingtime": 400,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "item": "mooncake_delight:mooncake_crust_dough"
+    },
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "tag": "forge:olive_oils"
+    },
+    {
+      "tag": "forge:crops/greenonion"
+    },
+    {
+      "tag": "forge:crops/greenonion"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "mooncake_delight:hunan_scallion_mooncake"
+  }
+}

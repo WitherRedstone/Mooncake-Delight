@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "mooncake_delight:mooncake_mold"
+  },
+  "cookingtime": 400,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "mooncake_delight:mooncake_crust_dough"
+    },
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "item": "mooncake_delight:black_sesame"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "mooncake_delight:black_sesame_soy_milk_mooncake"
+  }
+}

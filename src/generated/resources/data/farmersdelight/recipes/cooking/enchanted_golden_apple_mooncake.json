@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "mooncake_delight:mooncake_mold"
+  },
+  "cookingtime": 400,
+  "experience": 2.5,
+  "ingredients": [
+    {
+      "item": "mooncake_delight:mooncake_crust_dough"
+    },
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    {
+      "item": "minecraft:enchanted_golden_apple"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "mooncake_delight:enchanted_golden_apple_mooncake"
+  }
+}

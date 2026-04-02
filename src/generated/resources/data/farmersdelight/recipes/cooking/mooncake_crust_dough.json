@@ -1,0 +1,29 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 400,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "tag": "forge:buckets/water"
+    },
+    {
+      "item": "mooncake_delight:invert_sugar_syrup_bottle"
+    },
+    {
+      "item": "mooncake_delight:animal_fat"
+    },
+    {
+      "tag": "forge:flour"
+    },
+    {
+      "tag": "forge:flour"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "mooncake_delight:mooncake_crust_dough"
+  }
+}

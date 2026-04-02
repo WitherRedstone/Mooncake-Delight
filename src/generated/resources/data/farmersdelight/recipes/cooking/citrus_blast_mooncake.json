@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "mooncake_delight:mooncake_mold"
+  },
+  "cookingtime": 400,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "item": "mooncake_delight:mooncake_crust_dough"
+    },
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "tag": "forge:crops/orange"
+    },
+    {
+      "tag": "forge:crops/lemon"
+    },
+    {
+      "tag": "forge:crops/grapefruit"
+    },
+    {
+      "tag": "forge:crops/lime"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "mooncake_delight:citrus_blast_mooncake"
+  }
+}

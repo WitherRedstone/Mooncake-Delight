@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "forge:buckets/water"
+    },
+    "B": {
+      "item": "mooncake_delight:flour"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BAB",
+    "BBB"
+  ],
+  "result": {
+    "count": 3,
+    "item": "farmersdelight:wheat_dough"
+  },
+  "show_notification": true
+}

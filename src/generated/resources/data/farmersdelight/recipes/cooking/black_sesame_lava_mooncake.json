@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "mooncake_delight:mooncake_mold"
+  },
+  "cookingtime": 400,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "mooncake_delight:mooncake_crust_dough"
+    },
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "tag": "forge:eggs"
+    },
+    {
+      "item": "mooncake_delight:black_sesame"
+    },
+    {
+      "tag": "forge:crops/lotus"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "mooncake_delight:black_sesame_lava_mooncake"
+  }
+}

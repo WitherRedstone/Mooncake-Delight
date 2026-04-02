@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "mooncake_delight:mooncake_mold"
+  },
+  "cookingtime": 400,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "item": "mooncake_delight:mooncake_crust_dough"
+    },
+    {
+      "item": "farmersdelight:ham"
+    },
+    {
+      "tag": "forge:crops/peanut"
+    },
+    {
+      "tag": "forge:crops/walnut"
+    },
+    {
+      "tag": "forge:crops/cashew"
+    },
+    {
+      "tag": "forge:crops/pecan"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "mooncake_delight:jinhua_ham-five_kernels_mooncake"
+  }
+}

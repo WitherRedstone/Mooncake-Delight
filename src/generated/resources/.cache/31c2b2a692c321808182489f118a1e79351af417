@@ -1,0 +1,4 @@
+// 1.20.1	2026-04-02T10:48:23.745926	Tags for minecraft:fluid mod id mooncake_delight
+f05b53b25f628e765ab7cdae92bfad834fc044a5 data/forge/tags/fluids/fluid.json
+613bad983172c0d18820455064183cc844b9d7a7 data/forge/tags/fluids/fluid/invert_sugar_syrup.json
+5e726bf27728025f2da790b623a686c69b056b6c data/forge/tags/fluids/fluid/maple_syrup.json

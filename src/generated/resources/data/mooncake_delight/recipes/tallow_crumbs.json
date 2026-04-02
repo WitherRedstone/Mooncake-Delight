@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mooncake_delight:tallow"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "mooncake_delight:tallow_crumbs"
+  }
+}

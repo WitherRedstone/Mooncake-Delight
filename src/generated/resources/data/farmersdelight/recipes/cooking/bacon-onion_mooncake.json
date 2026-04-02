@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "mooncake_delight:mooncake_mold"
+  },
+  "cookingtime": 400,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "mooncake_delight:mooncake_crust_dough"
+    },
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "tag": "forge:crops/onion"
+    },
+    {
+      "item": "farmersdelight:bacon"
+    },
+    {
+      "item": "farmersdelight:bacon"
+    },
+    {
+      "item": "farmersdelight:bacon"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "mooncake_delight:bacon-onion_mooncake"
+  }
+}

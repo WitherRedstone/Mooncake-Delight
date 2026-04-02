@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cod_mooncake": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farmersdelight:cod_slice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "farmersdelight:cooking/cod_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cod_mooncake",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmersdelight:cooking/cod_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "mooncake_delight:mooncake_mold"
+  },
+  "cookingtime": 400,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "item": "mooncake_delight:mooncake_crust_dough"
+    },
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "tag": "forge:crabs"
+    },
+    {
+      "tag": "forge:crabs"
+    },
+    {
+      "tag": "forge:crops/corn"
+    },
+    {
+      "tag": "forge:crops/corn"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "mooncake_delight:crab-corns_mooncake"
+  }
+}

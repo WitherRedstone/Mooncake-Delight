@@ -4,6 +4,7 @@ plugins {
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'org.spongepowered.mixin' version '0.7.+'
 }
 
 version = mod_version
@@ -131,10 +132,16 @@ repositories {
 }
 
 dependencies {
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor' // Mixin 注解处理器，农夫乐事需要
     implementation fg.deobf("curse.maven:farmers-delight-398521:7801523")
     implementation fg.deobf("curse.maven:croptopia-415438:4997459")
+    implementation fg.deobf("curse.maven:epherolib-885449:4889101")
+
+    implementation fg.deobf("curse.maven:create-328085:7178761")
 
     implementation fg.deobf("curse.maven:jei-238222:7391695")
+    implementation fg.deobf("curse.maven:advanced-loot-info-1205426:7767313")
+
     // Specify the version of Minecraft to use.
     // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.
     // The "userdev" classifier will be requested and setup by ForgeGradle.

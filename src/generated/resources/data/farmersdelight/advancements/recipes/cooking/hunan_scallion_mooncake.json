@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hunan_scallion_mooncake_greenonion": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:crops/greenonion"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_hunan_scallion_mooncake_olive_oil": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:olive_oils"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "farmersdelight:cooking/hunan_scallion_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_hunan_scallion_mooncake_olive_oil",
+      "has_hunan_scallion_mooncake_greenonion",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmersdelight:cooking/hunan_scallion_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}

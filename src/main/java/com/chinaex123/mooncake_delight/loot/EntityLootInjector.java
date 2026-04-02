@@ -18,6 +18,8 @@ import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+import java.util.Optional;
+
 @Mod.EventBusSubscriber(modid = MooncakeDelight.MOD_ID)
 public class EntityLootInjector {
 
@@ -59,7 +61,14 @@ public class EntityLootInjector {
                     .setRolls(UniformGenerator.between(1.0f, 1.0f))
                     .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().flags(EntityFlagsPredicate.Builder.flags().setOnFire(true).build())))
                     .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.entity().equipment(
-                            new EntityEquipmentPredicate(null, null, null, null, ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build(), ItemPredicate.Builder.item().build())
+                            new EntityEquipmentPredicate(
+                                    ItemPredicate.ANY,
+                                    ItemPredicate.ANY,
+                                    ItemPredicate.ANY,
+                                    ItemPredicate.ANY,
+                                    ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build(),
+                                    ItemPredicate.ANY
+                            )
                     )))
                     .when(LootItemRandomChanceCondition.randomChance(0.75f))
                     .add(LootItem.lootTableItem(ModItems.TALLOW_CRUMBS.get()))
@@ -72,7 +81,14 @@ public class EntityLootInjector {
                     .setRolls(UniformGenerator.between(1.0f, 1.0f))
                     .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().flags(EntityFlagsPredicate.Builder.flags().setOnFire(true).build())))
                     .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.entity().equipment(
-                            new EntityEquipmentPredicate(null, null, null, null, ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build(), ItemPredicate.Builder.item().build())
+                            new EntityEquipmentPredicate(
+                                    ItemPredicate.ANY,
+                                    ItemPredicate.ANY,
+                                    ItemPredicate.ANY,
+                                    ItemPredicate.ANY,
+                                    ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build(),
+                                    ItemPredicate.ANY
+                            )
                     )))
                     .when(LootItemRandomChanceCondition.randomChance(0.25f))
                     .add(LootItem.lootTableItem(ModItems.TALLOW.get()))

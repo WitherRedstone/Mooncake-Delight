@@ -32,7 +32,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 .add(Items.SUGAR) // 糖
                 .add(ModItems.SUGAR_CUBE.get()); // 方糖
         // 椒盐
-        this.tag(ModItemTags.PEPPER_SALT).add(ModItems.PEPPER_SALT.get()); // c:pepper_salt
+        this.tag(ModItemTags.PEPPER_SALT).add(CroptopiaItems.PEPPER_SALT.get()); // c:pepper_salt
 
         // 转换糖浆
         this.tag(ModItemTags.SYRUPS_INVERT_SUGAR_SYRUP).add(ModItems.INVERT_SUGAR_SYRUP_BOTTLE.get());// c:syrups/invert_sugar_syrup

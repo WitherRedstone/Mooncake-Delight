@@ -1,0 +1,29 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:glass_bottle"
+  },
+  "cookingtime": 400,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "item": "mooncake_delight:invert_sugar_syrup_bottle"
+  }
+}

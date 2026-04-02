@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pepper_salt_mooncake_pepper_salt": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:pepper_salt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "farmersdelight:cooking/pepper-salt_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_pepper_salt_mooncake_pepper_salt",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmersdelight:cooking/pepper-salt_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}

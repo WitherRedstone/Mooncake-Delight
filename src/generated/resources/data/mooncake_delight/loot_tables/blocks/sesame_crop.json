@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "mooncake_delight:sesame_crop",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "4"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mooncake_delight:white_sesame"
+        }
+      ],
+      "functions": [
+        {
+          "add": false,
+          "count": {
+            "type": "minecraft:uniform",
+            "max": 3.0,
+            "min": 1.0
+          },
+          "function": "minecraft:set_count"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "mooncake_delight:sesame_crop",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "4"
+          }
+        },
+        {
+          "chance": 0.01,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mooncake_delight:black_sesame"
+        }
+      ],
+      "functions": [
+        {
+          "add": false,
+          "count": 1.0,
+          "function": "minecraft:set_count"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "mooncake_delight:blocks/sesame_crop"
+}

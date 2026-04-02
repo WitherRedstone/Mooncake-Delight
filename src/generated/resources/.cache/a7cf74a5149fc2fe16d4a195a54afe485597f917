@@ -1,0 +1,16 @@
+// 1.20.1	2026-04-02T14:02:20.5486932	Tags for minecraft:item mod id mooncake_delight
+779f6280ef7710c22cb59171ee2d58626dba6d9c data/farmersdelight/tags/items/tools/knives.json
+ba50267f7c5d9c3b0685643ed1db799667dd977d data/forge/tags/items/crops/lotus.json
+af45004b3858e3f22953adff57901b0cb1576306 data/forge/tags/items/crops/sesame.json
+0fad072930d30fd2c9f843e691b3a512cd3178ab data/forge/tags/items/flour.json
+0fad072930d30fd2c9f843e691b3a512cd3178ab data/forge/tags/items/flours.json
+0fad072930d30fd2c9f843e691b3a512cd3178ab data/forge/tags/items/flours/wheat.json
+ba50267f7c5d9c3b0685643ed1db799667dd977d data/forge/tags/items/lotus.json
+b12c2a565f9c4084813133293b13e950f414d661 data/forge/tags/items/pepper_salt.json
+749f74b00a3c4e46f32f7d2831f27c845cad0dbd data/forge/tags/items/sesames.json
+7a7592b84caf5eb58f81bb36e9baead2854a715c data/forge/tags/items/sugars.json
+e5cb934d10db73a390fea2a071a39cfffc371afe data/forge/tags/items/syrups/invert_sugar_syrup.json
+0d36d13250f9d7f2dd37ca39f92406f6f5c586d7 data/forge/tags/items/syrups/maple_syrup.json
+feef6c9c0f195061ee43d495f7d4c4a58f78746e data/mooncake_delight/tags/items/mooncake.json
+af45004b3858e3f22953adff57901b0cb1576306 data/sereneseasons/tags/items/spring_crops.json
+af45004b3858e3f22953adff57901b0cb1576306 data/sereneseasons/tags/items/summer_crops.json

@@ -1,0 +1,29 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 400,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "tag": "forge:buckets/water"
+    },
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "item": "minecraft:blue_ice"
+    },
+    {
+      "tag": "forge:flour"
+    },
+    {
+      "tag": "forge:flour"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "mooncake_delight:snow_skin_mooncake_crust_dough"
+  }
+}

@@ -82,8 +82,8 @@ public class ModCraftingRecipes {
         // ======================= 作物盛景 联动 =======================
         // 胡椒
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CroptopiaItems.PEPPER_SALT.get(), 2)
-                .requires(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "pepper"))), 1)
-                .requires(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "salt"))), 1)
+                .requires(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "pepper"))), 1)
+                .requires(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "salt"))), 1)
                 .unlockedBy("has_sugar_pepper",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "pepper"))))
                 .unlockedBy("has_sugar_salt",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "salt"))))
                 .save(recipeOutput);

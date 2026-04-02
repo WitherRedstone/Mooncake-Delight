@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_coconut_paste_mooncake_blackberry": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:coconuts"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "farmersdelight:cooking/coconut_paste_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_coconut_paste_mooncake_blackberry",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmersdelight:cooking/coconut_paste_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}

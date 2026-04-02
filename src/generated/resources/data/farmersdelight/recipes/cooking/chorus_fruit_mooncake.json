@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "mooncake_delight:mooncake_mold"
+  },
+  "cookingtime": 400,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "item": "mooncake_delight:mooncake_crust_dough"
+    },
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "tag": "forge:sugars"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "mooncake_delight:chorus_fruit_mooncake"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:glass_bottle"
+  },
+  "cookingtime": 600,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "item": "mooncake_delight:tallow"
+    },
+    {
+      "item": "mooncake_delight:tallow"
+    },
+    {
+      "item": "mooncake_delight:tallow"
+    },
+    {
+      "item": "mooncake_delight:tallow"
+    },
+    {
+      "item": "mooncake_delight:tallow"
+    },
+    {
+      "item": "mooncake_delight:tallow"
+    }
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "item": "mooncake_delight:animal_fat"
+  }
+}

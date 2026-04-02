@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mooncake_delight:item/food/croptopia/jinhua_ham-five_kernels_mooncake"
+  }
+}

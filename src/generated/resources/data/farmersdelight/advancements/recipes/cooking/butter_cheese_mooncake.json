@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_butter_cheese_mooncake_butters": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:butters"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_butter_cheese_mooncake_cheeses": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:cheeses"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "farmersdelight:cooking/butter_cheese_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_butter_cheese_mooncake_butters",
+      "has_butter_cheese_mooncake_cheeses",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmersdelight:cooking/butter_cheese_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}

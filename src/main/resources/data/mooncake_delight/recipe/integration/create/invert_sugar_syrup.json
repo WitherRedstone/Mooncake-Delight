@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:sugars"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "results": [
+    {
+      "id": "mooncake_delight:invert_sugar_syrup",
+      "amount": 250
+    }
+  ]
+}

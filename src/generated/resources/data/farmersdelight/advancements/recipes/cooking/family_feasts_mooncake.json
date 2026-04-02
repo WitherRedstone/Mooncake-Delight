@@ -1,0 +1,61 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_family_feasts_mooncake_bacon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farmersdelight:bacon"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_family_feasts_mooncake_chicken_cuts": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farmersdelight:chicken_cuts"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_family_feasts_mooncake_minced_beef": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farmersdelight:minced_beef"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "farmersdelight:cooking/family_feasts_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_family_feasts_mooncake_chicken_cuts",
+      "has_family_feasts_mooncake_bacon",
+      "has_family_feasts_mooncake_minced_beef",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmersdelight:cooking/family_feasts_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}
