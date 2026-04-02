@@ -436,7 +436,6 @@ public class CroptopiaItemRecipes {
         // 叉烧五仁月饼
         CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BBQ_PORK_FIVE_KERNELS_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
                 .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cooked_bacon"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/peanut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/walnut"))))
@@ -452,7 +451,6 @@ public class CroptopiaItemRecipes {
         // 金腿五仁月饼
         CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.JINHUA_HAM_FIVE_KERNELS_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
                 .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
                 .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.HAM.get())
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/peanut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/walnut"))))

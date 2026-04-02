@@ -62,7 +62,17 @@ public class EntityLootInjector {
             LootPool oiledKnifeTallowCrumbsPool = LootPool.lootPool()
                     .setRolls(UniformGenerator.between(1.0f, 1.0f))
                     .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().flags(EntityFlagsPredicate.Builder.flags().setOnFire(true))))
-                    .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.ATTACKER, EntityPredicate.Builder.entity().equipment(new EntityEquipmentPredicate(Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.of(ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build()), Optional.empty()))))
+                    .when(LootItemEntityPropertyCondition.hasProperties(
+                            LootContext.EntityTarget.ATTACKER, EntityPredicate.Builder.entity().equipment(
+                                    new EntityEquipmentPredicate(
+                                            Optional.empty(),
+                                            Optional.empty(),
+                                            Optional.empty(),
+                                            Optional.empty(),
+                                            Optional.empty(),
+                                            Optional.of(ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build()),
+                                            Optional.empty()
+                                    ))))
                     .when(LootItemRandomChanceCondition.randomChance(0.75f))
                     .add(LootItem.lootTableItem(ModItems.TALLOW_CRUMBS.get()))
                     .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 3)))
@@ -73,7 +83,17 @@ public class EntityLootInjector {
             LootPool oiledKnifeTallowPool = LootPool.lootPool()
                     .setRolls(UniformGenerator.between(1.0f, 1.0f))
                     .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().flags(EntityFlagsPredicate.Builder.flags().setOnFire(true))))
-                    .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.ATTACKER, EntityPredicate.Builder.entity().equipment(new EntityEquipmentPredicate(Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.of(ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build()), Optional.empty()))))
+                    .when(LootItemEntityPropertyCondition.hasProperties(
+                            LootContext.EntityTarget.ATTACKER, EntityPredicate.Builder.entity().equipment(
+                                    new EntityEquipmentPredicate(
+                                            Optional.empty(),
+                                            Optional.empty(),
+                                            Optional.empty(),
+                                            Optional.empty(),
+                                            Optional.empty(),
+                                            Optional.of(ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build()),
+                                            Optional.empty()
+                                    ))))
                     .when(LootItemRandomChanceCondition.randomChance(0.25f))
                     .add(LootItem.lootTableItem(ModItems.TALLOW.get()))
                     .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 1)))
