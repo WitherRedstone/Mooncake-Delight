@@ -40,7 +40,9 @@ public class ModCreativeTabs {
                         output.accept(ModItems.FLOUR.get()); // 面粉
                         output.accept(ModItems.MOONCAKE_CRUST_DOUGH.get()); // 月饼面团
                         output.accept(ModItems.SNOW_SKIN_MOONCAKE_CRUST_DOUGH.get()); // 冰皮月饼面团
-                        output.accept(CroptopiaItems.PEPPER_SALT.get()); // 椒盐
+                        if (ModList.get().isLoaded("croptopia")) {
+                            output.accept(CroptopiaItems.PEPPER_SALT.get()); // 椒盐
+                        }
 
                         // ======================= 作物 =======================
                         output.accept(ModItems.WHITE_SESAME.get()); // 白芝麻
