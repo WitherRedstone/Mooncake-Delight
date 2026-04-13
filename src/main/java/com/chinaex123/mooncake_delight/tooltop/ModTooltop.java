@@ -1,6 +1,6 @@
 package com.chinaex123.mooncake_delight.tooltop;
 
-import com.chinaex123.mooncake_delight.item.ModItems;
+import com.chinaex123.mooncake_delight.init.ModItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;

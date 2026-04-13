@@ -1,6 +1,6 @@
-package com.chinaex123.mooncake_delight.item.Tools.Knife;
+package com.chinaex123.mooncake_delight.init.Tools.Knife;
 
-import com.chinaex123.mooncake_delight.item.Tools.ToolMaterials;
+import com.chinaex123.mooncake_delight.init.Tools.ToolMaterials;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.ParticleTypes;
@@ -12,7 +12,6 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
-import vectorwing.farmersdelight.common.item.KnifeItem;
 
 import java.util.List;
 

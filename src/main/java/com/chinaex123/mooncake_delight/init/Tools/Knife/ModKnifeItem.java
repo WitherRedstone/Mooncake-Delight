@@ -1,6 +1,6 @@
-package com.chinaex123.mooncake_delight.item.Tools.Knife;
+package com.chinaex123.mooncake_delight.init.Tools.Knife;
 
-import com.chinaex123.mooncake_delight.item.Tools.ToolMaterials;
+import com.chinaex123.mooncake_delight.init.Tools.ToolMaterials;
 import net.minecraft.core.Holder;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;

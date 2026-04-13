@@ -1,7 +1,6 @@
 package com.chinaex123.mooncake_delight.item.ModCompat.Croptopia;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import com.chinaex123.mooncake_delight.item.ModFoods;
 import com.chinaex123.mooncake_delight.util.FoodTooltipItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;

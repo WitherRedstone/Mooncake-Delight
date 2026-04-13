@@ -1,8 +1,6 @@
-package com.chinaex123.mooncake_delight.fluid;
+package com.chinaex123.mooncake_delight.init;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import com.chinaex123.mooncake_delight.block.ModBlocks;
-import com.chinaex123.mooncake_delight.item.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.material.Fluid;

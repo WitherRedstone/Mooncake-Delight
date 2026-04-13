@@ -1,6 +1,5 @@
-package com.chinaex123.mooncake_delight.fluid;
+package com.chinaex123.mooncake_delight.init;
 
-import com.chinaex123.mooncake_delight.MooncakeDelight;
 import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;

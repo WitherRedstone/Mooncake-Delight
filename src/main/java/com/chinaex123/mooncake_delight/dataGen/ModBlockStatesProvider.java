@@ -2,7 +2,7 @@ package com.chinaex123.mooncake_delight.dataGen;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
 import com.chinaex123.mooncake_delight.block.Crops.SesameCrop;
-import com.chinaex123.mooncake_delight.block.ModBlocks;
+import com.chinaex123.mooncake_delight.init.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.CropBlock;

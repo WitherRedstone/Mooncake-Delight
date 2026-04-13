@@ -1,7 +1,7 @@
-package com.chinaex123.mooncake_delight.server.Foods;
+package com.chinaex123.mooncake_delight.event.Foods;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import com.chinaex123.mooncake_delight.item.ModItems;
+import com.chinaex123.mooncake_delight.init.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;

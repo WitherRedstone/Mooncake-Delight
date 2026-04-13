@@ -1,6 +1,6 @@
-package com.chinaex123.mooncake_delight.server;
+package com.chinaex123.mooncake_delight.event;
 
-import com.chinaex123.mooncake_delight.item.ModItems;
+import com.chinaex123.mooncake_delight.init.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.FallingBlockEntity;

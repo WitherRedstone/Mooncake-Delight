@@ -1,4 +1,4 @@
-package com.chinaex123.mooncake_delight.tags;
+package com.chinaex123.mooncake_delight.init;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
 import net.minecraft.core.registries.Registries;

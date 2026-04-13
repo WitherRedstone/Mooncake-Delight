@@ -1,9 +1,7 @@
-package com.chinaex123.mooncake_delight.block;
+package com.chinaex123.mooncake_delight.init;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
 import com.chinaex123.mooncake_delight.block.Crops.SesameCrop;
-import com.chinaex123.mooncake_delight.fluid.ModFluids;
-import com.chinaex123.mooncake_delight.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
