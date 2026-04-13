@@ -1,7 +1,7 @@
 package com.chinaex123.mooncake_delight.loot;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import com.chinaex123.mooncake_delight.item.ModItems;
+import com.chinaex123.mooncake_delight.init.ModItems;
 import net.minecraft.advancements.critereon.EntityEquipmentPredicate;
 import net.minecraft.advancements.critereon.EntityPredicate;
 import net.minecraft.advancements.critereon.EntityFlagsPredicate;
@@ -17,8 +17,6 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemEntityPropertyC
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-
-import java.util.Optional;
 
 @Mod.EventBusSubscriber(modid = MooncakeDelight.MOD_ID)
 public class EntityLootInjector {

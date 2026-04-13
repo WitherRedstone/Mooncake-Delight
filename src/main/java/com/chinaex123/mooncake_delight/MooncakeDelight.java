@@ -1,8 +1,9 @@
 package com.chinaex123.mooncake_delight;
 
-import com.chinaex123.mooncake_delight.block.ModBlocks;
+import com.chinaex123.mooncake_delight.init.ModBlocks;
+import com.chinaex123.mooncake_delight.init.ModCreativeTabs;
 import com.chinaex123.mooncake_delight.item.ModCompat.Croptopia.CroptopiaItems;
-import com.chinaex123.mooncake_delight.item.ModItems;
+import com.chinaex123.mooncake_delight.init.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModList;

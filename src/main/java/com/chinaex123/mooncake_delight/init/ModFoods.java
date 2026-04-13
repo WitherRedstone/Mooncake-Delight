@@ -1,4 +1,4 @@
-package com.chinaex123.mooncake_delight.item;
+package com.chinaex123.mooncake_delight.init;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

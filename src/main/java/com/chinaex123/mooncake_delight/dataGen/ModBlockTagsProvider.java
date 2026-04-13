@@ -1,8 +1,8 @@
 package com.chinaex123.mooncake_delight.dataGen;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import com.chinaex123.mooncake_delight.block.ModBlocks;
-import com.chinaex123.mooncake_delight.tags.ModItemTags;
+import com.chinaex123.mooncake_delight.init.ModBlocks;
+import com.chinaex123.mooncake_delight.init.ModItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.BlockTagsProvider;

@@ -1,4 +1,4 @@
-package com.chinaex123.mooncake_delight.item.Tools;
+package com.chinaex123.mooncake_delight.init.Tools;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;

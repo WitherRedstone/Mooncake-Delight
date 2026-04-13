@@ -1,4 +1,4 @@
-package com.chinaex123.mooncake_delight.fluid;
+package com.chinaex123.mooncake_delight.init;
 
 import net.minecraft.Util;
 import net.minecraft.core.BlockPos;

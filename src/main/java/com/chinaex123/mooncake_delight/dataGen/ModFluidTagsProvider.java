@@ -1,8 +1,8 @@
 package com.chinaex123.mooncake_delight.dataGen;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import com.chinaex123.mooncake_delight.fluid.ModFluids;
-import com.chinaex123.mooncake_delight.tags.ModFluidTags;
+import com.chinaex123.mooncake_delight.init.ModFluids;
+import com.chinaex123.mooncake_delight.init.ModFluidTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.FluidTagsProvider;

@@ -1,9 +1,7 @@
-package com.chinaex123.mooncake_delight.item;
+package com.chinaex123.mooncake_delight.init;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import com.chinaex123.mooncake_delight.block.ModBlocks;
-import com.chinaex123.mooncake_delight.fluid.ModFluids;
-import com.chinaex123.mooncake_delight.item.Tools.Knife.OiledKnife;
+import com.chinaex123.mooncake_delight.init.Tools.Knife.OiledKnife;
 import com.chinaex123.mooncake_delight.util.FoodTooltipItem;
 import com.chinaex123.mooncake_delight.util.SyrupItem;
 import net.minecraft.world.food.FoodProperties;

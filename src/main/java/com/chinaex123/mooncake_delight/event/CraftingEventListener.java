@@ -1,6 +1,6 @@
-package com.chinaex123.mooncake_delight.server;
+package com.chinaex123.mooncake_delight.event;
 
-import com.chinaex123.mooncake_delight.item.ModItems;
+import com.chinaex123.mooncake_delight.init.ModItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.player.PlayerEvent;

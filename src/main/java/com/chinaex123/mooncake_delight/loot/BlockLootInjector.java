@@ -1,7 +1,7 @@
 package com.chinaex123.mooncake_delight.loot;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import com.chinaex123.mooncake_delight.item.ModItems;
+import com.chinaex123.mooncake_delight.init.ModItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;

@@ -762,23 +762,23 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 [024月2026 14:02:15.805] [modloading-worker-0/DEBUG] [mixin/]: Mixing OptionsMixin from flywheel.backend.mixins.json into net.minecraft.client.Options
 [024月2026 14:02:15.807] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for mooncake_delight
 [024月2026 14:02:15.808] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.dataGen.ModDataGenerator to MOD
-[024月2026 14:02:15.821] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.fluid.ModFluids to MOD
+[024月2026 14:02:15.821] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.init.ModFluids to MOD
 [024月2026 14:02:15.825] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.loot.BlockLootInjector to FORGE
 [024月2026 14:02:15.842] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.yanny.ali.forge.ForgeClientBusSubscriber to FORGE
 [024月2026 14:02:15.842] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.loot.ChestLootInjector to FORGE
 [024月2026 14:02:15.845] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.loot.EntityLootInjector to FORGE
-[024月2026 14:02:15.849] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.server.AnvilDropRecipe to FORGE
-[024月2026 14:02:15.853] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.server.CraftingEventListener to FORGE
+[024月2026 14:02:15.849] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.event.AnvilDropRecipe to FORGE
+[024月2026 14:02:15.853] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.event.CraftingEventListener to FORGE
 [024月2026 14:02:15.854] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.createmod.ponder.ForgePonderClient$ClientEvents to FORGE
-[024月2026 14:02:15.857] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.server.Foods.ChorusFruitMooncake to FORGE
+[024月2026 14:02:15.857] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.event.Foods.ChorusFruitMooncake to FORGE
 [024月2026 14:02:15.860] [modloading-worker-0/DEBUG] [com.tterrag.registrate.AbstractRegistrate/REGISTRATE.REGISTER]: Captured registration for entry death_count of type create:display_source
 [024月2026 14:02:15.861] [modloading-worker-0/DEBUG] [mixin/]: Mixing MinecraftMixin from flywheel.impl.mixins.json into net.minecraft.client.Minecraft
 [024月2026 14:02:15.864] [modloading-worker-0/DEBUG] [com.tterrag.registrate.AbstractRegistrate/REGISTRATE.REGISTER]: Captured registration for entry scoreboard of type create:display_source
 [024月2026 14:02:15.866] [modloading-worker-0/DEBUG] [mixin/]: Mixing client.WindowResizeMixin from ponder-common.mixins.json into net.minecraft.client.Minecraft
-[024月2026 14:02:15.896] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.server.Foods.DebrisMooncake to FORGE
-[024月2026 14:02:15.899] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.server.Foods.LavaMooncake to FORGE
+[024月2026 14:02:15.896] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.event.Foods.DebrisMooncake to FORGE
+[024月2026 14:02:15.899] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.event.Foods.LavaMooncake to FORGE
 [024月2026 14:02:15.900] [modloading-worker-0/DEBUG] [com.tterrag.registrate.AbstractRegistrate/REGISTRATE.REGISTER]: Captured registration for entry enchant_power of type create:display_source
-[024月2026 14:02:15.901] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.server.Foods.TntMooncake to FORGE
+[024月2026 14:02:15.901] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.event.Foods.TntMooncake to FORGE
 [024月2026 14:02:15.902] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing com.chinaex123.mooncake_delight.tooltop.ModTooltop to FORGE
 [024月2026 14:02:15.903] [modloading-worker-0/DEBUG] [com.tterrag.registrate.AbstractRegistrate/REGISTRATE.REGISTER]: Captured registration for entry redstone_power of type create:display_source
 [024月2026 14:02:15.905] [modloading-worker-0/DEBUG] [com.tterrag.registrate.AbstractRegistrate/REGISTRATE.REGISTER]: Captured registration for entry nixie_tube of type create:display_source

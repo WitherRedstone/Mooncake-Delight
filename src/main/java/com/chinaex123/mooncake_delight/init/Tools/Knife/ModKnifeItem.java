@@ -1,6 +1,6 @@
-package com.chinaex123.mooncake_delight.item.Tools.Knife;
+package com.chinaex123.mooncake_delight.init.Tools.Knife;
 
-import com.chinaex123.mooncake_delight.item.Tools.ToolMaterials;
+import com.chinaex123.mooncake_delight.init.Tools.ToolMaterials;
 import vectorwing.farmersdelight.common.item.KnifeItem;
 
 public class ModKnifeItem extends KnifeItem {

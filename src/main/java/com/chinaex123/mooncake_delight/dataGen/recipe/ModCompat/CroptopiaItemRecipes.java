@@ -1,8 +1,8 @@
 package com.chinaex123.mooncake_delight.dataGen.recipe.ModCompat;
 
 import com.chinaex123.mooncake_delight.item.ModCompat.Croptopia.CroptopiaItems;
-import com.chinaex123.mooncake_delight.item.ModItems;
-import com.chinaex123.mooncake_delight.tags.ModItemTags;
+import com.chinaex123.mooncake_delight.init.ModItems;
+import com.chinaex123.mooncake_delight.init.ModItemTags;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.core.HolderLookup;
