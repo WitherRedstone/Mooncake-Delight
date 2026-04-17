@@ -1,0 +1,10 @@
+{
+  "values": {
+    "mooncake_delight:black_sesame": {
+      "chance": 0.65
+    },
+    "mooncake_delight:white_sesame": {
+      "chance": 0.3
+    }
+  }
+}

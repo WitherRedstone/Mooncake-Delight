@@ -1,6 +1,6 @@
 package com.chinaex123.mooncake_delight.dataGen.recipe.ModCompat;
 
-import com.chinaex123.mooncake_delight.item.ModCompat.Croptopia.CroptopiaItems;
+import com.chinaex123.mooncake_delight.init.ModCompat.Croptopia.CroptopiaItems;
 import com.chinaex123.mooncake_delight.init.ModItems;
 import com.chinaex123.mooncake_delight.init.ModItemTags;
 import net.minecraft.advancements.Criterion;

@@ -1,4 +1,4 @@
-package com.chinaex123.mooncake_delight.event.Foods;
+package com.chinaex123.mooncake_delight.item.Foods;
 
 import com.chinaex123.mooncake_delight.init.ModItems;
 import net.minecraft.world.entity.LivingEntity;

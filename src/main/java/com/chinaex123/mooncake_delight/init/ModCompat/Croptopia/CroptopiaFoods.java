@@ -1,4 +1,4 @@
-package com.chinaex123.mooncake_delight.item.ModCompat.Croptopia;
+package com.chinaex123.mooncake_delight.init.ModCompat.Croptopia;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

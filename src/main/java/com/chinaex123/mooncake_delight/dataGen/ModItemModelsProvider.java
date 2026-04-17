@@ -1,7 +1,7 @@
 package com.chinaex123.mooncake_delight.dataGen;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import com.chinaex123.mooncake_delight.item.ModCompat.Croptopia.CroptopiaItems;
+import com.chinaex123.mooncake_delight.init.ModCompat.Croptopia.CroptopiaItems;
 import com.chinaex123.mooncake_delight.init.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;

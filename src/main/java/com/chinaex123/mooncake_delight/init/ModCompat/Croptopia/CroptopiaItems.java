@@ -1,4 +1,4 @@
-package com.chinaex123.mooncake_delight.item.ModCompat.Croptopia;
+package com.chinaex123.mooncake_delight.init.ModCompat.Croptopia;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
 import com.chinaex123.mooncake_delight.util.FoodTooltipItem;

@@ -34,5 +34,6 @@ public class ModDataGenerator {
         generator.addProvider(event.includeClient(), new ModBlockStatesProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
                 List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTablesProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+        generator.addProvider(event.includeServer(), new DataMaps(packOutput, lookupProvider));
     }
 }
