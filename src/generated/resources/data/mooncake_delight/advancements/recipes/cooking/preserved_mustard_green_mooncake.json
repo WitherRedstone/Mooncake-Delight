@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_preserved_mustard_green_mooncake_mustard": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:crops/mustard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_preserved_mustard_green_mooncake_salt": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:crops/salt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/preserved_mustard_green_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_preserved_mustard_green_mooncake_salt",
+      "has_preserved_mustard_green_mooncake_mustard",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/preserved_mustard_green_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}

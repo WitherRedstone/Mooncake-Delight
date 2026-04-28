@@ -1,0 +1,61 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_seafood_mooncake_cod_slice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farmersdelight:cod_slice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_seafood_mooncake_salmon_slice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farmersdelight:salmon_slice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_seafood_mooncake_tropical_fish": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:tropical_fish"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/seafood_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_seafood_mooncake_cod_slice",
+      "has_seafood_mooncake_salmon_slice",
+      "has_seafood_mooncake_tropical_fish",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/seafood_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}

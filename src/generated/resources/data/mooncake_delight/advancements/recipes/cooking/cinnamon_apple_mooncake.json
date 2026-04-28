@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cinnamon_apple_mooncake_apple": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:apples"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_cinnamon_apple_mooncake_cinnamon": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:crops/cinnamon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/cinnamon_apple_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cinnamon_apple_mooncake_apple",
+      "has_cinnamon_apple_mooncake_cinnamon",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/cinnamon_apple_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}

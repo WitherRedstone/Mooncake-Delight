@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_butter_chocolate_mooncake_butters": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:butters"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_butter_chocolate_mooncake_chocolates": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:chocolates"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/butter_chocolate_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_butter_chocolate_mooncake_butters",
+      "has_butter_chocolate_mooncake_chocolates",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/butter_chocolate_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}

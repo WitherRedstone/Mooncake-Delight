@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_almond-cherry_mooncake_almond": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:crops/almond"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_almond-cherry_mooncake_cherry": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:crops/cherry"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/almond-cherry_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_almond-cherry_mooncake_almond",
+      "has_almond-cherry_mooncake_cherry",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/almond-cherry_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}

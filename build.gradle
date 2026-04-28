@@ -133,7 +133,7 @@ repositories {
 
 dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor' // Mixin 注解处理器，农夫乐事需要
-    implementation fg.deobf("curse.maven:farmers-delight-398521:7801523")
+    implementation fg.deobf("curse.maven:farmers-delight-398521:8000996")
     implementation fg.deobf("curse.maven:croptopia-415438:4997459")
     implementation fg.deobf("curse.maven:epherolib-885449:4889101")
 

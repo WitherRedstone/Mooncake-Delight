@@ -5,6 +5,7 @@ import com.chinaex123.mooncake_delight.init.ModBlocks;
 import com.chinaex123.mooncake_delight.init.ModItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -23,5 +24,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         this.tag(ModItemTags.CROPS_SUMMER_BLOCK).add(ModBlocks.SESAME_CROP.get()); // 夏天
         this.tag(ModItemTags.CROPS_DRY_AVERAGE).add(ModBlocks.SESAME_CROP.get()); // 干燥
         this.tag(ModItemTags.CROPS_SPRING_SUMMER).add(ModBlocks.SESAME_CROP.get()); // 干燥
+
+        this.tag(BlockTags.CROPS).add(ModBlocks.SESAME_CROP.get()); // 作物
     }
 }

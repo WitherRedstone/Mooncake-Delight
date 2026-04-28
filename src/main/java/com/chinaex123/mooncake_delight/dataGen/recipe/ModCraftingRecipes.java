@@ -17,7 +17,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.Tags;
-import vectorwing.farmersdelight.common.tag.ForgeTags;
+import vectorwing.farmersdelight.common.tag.CommonTags;
 import vectorwing.farmersdelight.common.tag.ModTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -40,7 +40,7 @@ public class ModCraftingRecipes {
                 .pattern(" B ")
                 .pattern("BAB")
                 .pattern(" B ")
-                .define('A', ModTags.KNIVES)
+                .define('A', ModTags.Items.KNIVES)
                 .define('B', ModItems.TALLOW.get())
                 .unlockedBy("has_oiled_knife", has(ModItems.TALLOW.get()))
                 .save(recipeOutput);
@@ -67,7 +67,7 @@ public class ModCraftingRecipes {
                 .pattern("BBB")
                 .pattern("BAB")
                 .pattern("BBB")
-                .define('A', ForgeTags.BUCKETS_WATER)
+                .define('A', CommonTags.Items.BUCKETS_WATER)
                 .define('B', ModItems.FLOUR.get())
                 .unlockedBy("has_wheat_dough", has(vectorwing.farmersdelight.common.registry.ModItems.WHEAT_DOUGH.get()))
                 .save(recipeOutput);

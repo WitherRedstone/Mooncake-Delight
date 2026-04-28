@@ -25,7 +25,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         // 油浸刀
-        this.tag(ModTags.KNIVES).add(ModItems.OILED_KNIFE.get()); // farmersdelight:tools/knives
+        this.tag(ModTags.Items.KNIVES).add(ModItems.OILED_KNIFE.get()); // farmersdelight:tools/knives
 
         // c:sugars
         this.tag(ModItemTags.SUGARS)

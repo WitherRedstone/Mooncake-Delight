@@ -26,7 +26,7 @@ public class CraftingEventListener {
             ItemStack ingredient = container.getItem(i);
 
             // 找到刀具标签中的物品
-            if (ingredient.is(ModTags.KNIVES)) {
+            if (ingredient.is(ModTags.Items.KNIVES)) {
                 // 复制所有 NBT 数据
                 if (ingredient.hasTag()) {
                     CompoundTag tag = ingredient.getTag().copy();

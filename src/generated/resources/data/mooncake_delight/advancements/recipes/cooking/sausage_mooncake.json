@@ -1,0 +1,55 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sausage_mooncake_onion": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:crops/onion"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sausage_mooncake_sausage": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:sausages"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sausage_mooncake_sugar": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:sugars"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mooncake_delight:cooking/sausage_mooncake"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_sausage_mooncake_sugar",
+      "has_sausage_mooncake_onion",
+      "has_sausage_mooncake_sausage",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mooncake_delight:cooking/sausage_mooncake"
+    ]
+  },
+  "sends_telemetry_event": true
+}
