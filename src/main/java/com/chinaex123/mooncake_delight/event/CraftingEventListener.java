@@ -25,7 +25,7 @@ public class CraftingEventListener {
             ItemStack ingredient = container.getItem(i);
 
             // 找到刀具标签中的物品
-            if (ingredient.is(ModTags.KNIVES)) {
+            if (ingredient.is(ModTags.Items.KNIVES)) {
                 // 直接复制所有组件数据
                 result.applyComponents(ingredient.getComponents());
                 break;

@@ -18,6 +18,7 @@ import net.neoforged.neoforge.common.Tags;
 import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
 import vectorwing.farmersdelight.common.tag.CommonTags;
+import vectorwing.farmersdelight.common.tag.ModTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -39,12 +40,12 @@ public class CroptopiaItemRecipes {
         CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SAUSAGE_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
                 .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(CommonTags.CROPS_ONION)
+                .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "sausages"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "sausages"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "sausages"))))
                 .unlockedBy("has_sausage_mooncake_sugar",  has(ModItemTags.SUGARS))
-                .unlockedBy("has_sausage_mooncake_onion",  has(CommonTags.CROPS_ONION))
+                .unlockedBy("has_sausage_mooncake_onion",  has(CommonTags.Items.CROPS_ONION))
                 .unlockedBy("has_sausage_mooncake_sausage",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "sausages"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
@@ -52,12 +53,12 @@ public class CroptopiaItemRecipes {
         CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CALAMARI_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
                 .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(CommonTags.CROPS_ONION)
+                .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "calamari"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "calamari"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "calamari"))))
                 .unlockedBy("has_calamari_mooncake_sugar",  has(ModItemTags.SUGARS))
-                .unlockedBy("has_calamari_mooncake_onion",  has(CommonTags.CROPS_ONION))
+                .unlockedBy("has_calamari_mooncake_onion",  has(CommonTags.Items.CROPS_ONION))
                 .unlockedBy("has_calamari_mooncake_calamari",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "calamari"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
@@ -176,7 +177,7 @@ public class CroptopiaItemRecipes {
         CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PEPPER_SALT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
                 .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(CommonTags.CROPS_ONION)
+                .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(ModItemTags.PEPPER_SALT)
                 .addIngredient(ModItemTags.PEPPER_SALT)
                 .addIngredient(ModItemTags.PEPPER_SALT)
@@ -347,7 +348,7 @@ public class CroptopiaItemRecipes {
         CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PINEAPPLE_HAM_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
                 .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(CommonTags.CROPS_ONION)
+                .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.HAM.get())
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/pineapple"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/pineapple"))))
@@ -425,7 +426,7 @@ public class CroptopiaItemRecipes {
         CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BBQ_PORK_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
                 .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(CommonTags.CROPS_ONION)
+                .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cooked_bacon"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cooked_bacon"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "pepperoni"))))

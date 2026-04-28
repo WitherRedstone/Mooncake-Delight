@@ -126,7 +126,7 @@ configurations {
 
 dependencies {
     // 前置
-    implementation "curse.maven:farmers-delight-398521:7596366" // 农夫乐事
+    implementation "curse.maven:farmers-delight-398521:8001010" // 农夫乐事
 
     // 联动
     implementation "curse.maven:create-328085:7178775" // 机械动力

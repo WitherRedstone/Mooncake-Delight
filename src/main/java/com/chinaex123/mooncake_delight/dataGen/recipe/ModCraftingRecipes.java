@@ -40,7 +40,7 @@ public class ModCraftingRecipes {
                 .pattern(" B ")
                 .pattern("BAB")
                 .pattern(" B ")
-                .define('A', ModTags.KNIVES)
+                .define('A', ModTags.Items.KNIVES)
                 .define('B', ModItems.TALLOW)
                 .unlockedBy("has_oiled_knife", has(ModItems.TALLOW.get()))
                 .save(recipeOutput);
