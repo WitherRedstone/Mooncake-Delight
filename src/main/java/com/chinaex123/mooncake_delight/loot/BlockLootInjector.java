@@ -1,6 +1,7 @@
 package com.chinaex123.mooncake_delight.loot;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
+import com.chinaex123.mooncake_delight.config.CommonConfig;
 import com.chinaex123.mooncake_delight.init.ModItems;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -24,7 +25,7 @@ public class BlockLootInjector {
             // 添加白芝麻掉落池（破坏草时概率掉落）
             LootPool bonusPool = LootPool.lootPool()
                     .setRolls(ConstantValue.exactly(1.0f))
-                    .when(LootItemRandomChanceCondition.randomChance(0.25f))
+                    .when(LootItemRandomChanceCondition.randomChance(CommonConfig.GRASS_WHITE_SESAME_DROP_CHANCE.get().floatValue()))
                     .add(LootItem.lootTableItem(ModItems.WHITE_SESAME.get()))
                     .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1)))
                     .name("mooncake_delight:white_sesame_from_grass")
