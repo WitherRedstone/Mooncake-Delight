@@ -1,6 +1,7 @@
 package com.chinaex123.mooncake_delight.loot;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
+import com.chinaex123.mooncake_delight.config.CommonConfig;
 import com.chinaex123.mooncake_delight.init.ModItems;
 import net.minecraft.advancements.critereon.EntityEquipmentPredicate;
 import net.minecraft.advancements.critereon.EntityPredicate;
@@ -27,14 +28,17 @@ public class EntityLootInjector {
 
         // 击杀末影龙掉落附魔金苹果月饼
         if (tableId.equals(ResourceLocation.withDefaultNamespace("entities/ender_dragon"))) {
-            LootPool bonusPool = LootPool.lootPool()
-                    .setRolls(UniformGenerator.between(1.0f, 1.0f))
-                    .when(LootItemRandomChanceCondition.randomChance(0.25f))
-                    .add(LootItem.lootTableItem(ModItems.ENCHANTED_GOLDEN_APPLE_MOONCAKE.get()))
-                    .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 1)))
-                    .name("mooncake_delight:ender_dragon_bonus")
-                    .build();
-            event.getTable().addPool(bonusPool);
+            double chance = CommonConfig.ENDER_DRAGON_ENCHANTED_GOLDEN_APPLE_MOONCAKE_CHANCE.get();
+            if (chance > 0) {
+                LootPool bonusPool = LootPool.lootPool()
+                        .setRolls(UniformGenerator.between(1.0f, 1.0f))
+                        .when(LootItemRandomChanceCondition.randomChance((float) chance))
+                        .add(LootItem.lootTableItem(ModItems.ENCHANTED_GOLDEN_APPLE_MOONCAKE.get()))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 1)))
+                        .name("mooncake_delight:ender_dragon_bonus")
+                        .build();
+                event.getTable().addPool(bonusPool);
+            }
         }
 
         // 猪、牛、羊
@@ -44,56 +48,48 @@ public class EntityLootInjector {
                 tableId.equals(ResourceLocation.withDefaultNamespace("entities/goat"))) {
 
             // 普通情况（着火状态）
-            LootPool burntTallowCrumbsPool = LootPool.lootPool()
-                    .setRolls(UniformGenerator.between(1.0f, 1.0f))
-                    .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().flags(EntityFlagsPredicate.Builder.flags().setOnFire(true).build())))
-                    .when(LootItemRandomChanceCondition.randomChance(0.50f))
-                    .add(LootItem.lootTableItem(ModItems.TALLOW_CRUMBS.get()))
-                    .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2)))
-                    .name("mooncake_delight:burnt_animal_tallow_crumbs")
-                    .build();
-            event.getTable().addPool(burntTallowCrumbsPool);
+            double burntChance = CommonConfig.BURNT_ANIMAL_TALLOW_CRUMBS_CHANCE.get();
+            if (burntChance > 0) {
+                LootPool burntTallowCrumbsPool = LootPool.lootPool()
+                        .setRolls(UniformGenerator.between(1.0f, 1.0f))
+                        .when(LootItemEntityPropertyCondition.hasProperties(
+                                LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().flags(EntityFlagsPredicate.Builder.flags().setOnFire(true).build())))
+                        .when(LootItemRandomChanceCondition.randomChance((float) burntChance))
+                        .add(LootItem.lootTableItem(ModItems.TALLOW_CRUMBS.get()))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2)))
+                        .name("mooncake_delight:burnt_animal_tallow_crumbs")
+                        .build();
+                event.getTable().addPool(burntTallowCrumbsPool);
+            }
+
+            double oiledKnifeCrumbsChance = CommonConfig.OILED_KNIFE_BURNT_TALLOW_CRUMBS_CHANCE.get();
+            double oiledKnifeTallowChance = CommonConfig.OILED_KNIFE_BURNT_TALLOW_CHANCE.get();
 
             // 手持油浸刀时（着火状态）- 需要检测攻击者
-            LootPool oiledKnifeTallowCrumbsPool = LootPool.lootPool()
-                    .setRolls(UniformGenerator.between(1.0f, 1.0f))
-                    .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().flags(EntityFlagsPredicate.Builder.flags().setOnFire(true).build())))
-                    .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.entity().equipment(
-                            new EntityEquipmentPredicate(
-                                    ItemPredicate.ANY,
-                                    ItemPredicate.ANY,
-                                    ItemPredicate.ANY,
-                                    ItemPredicate.ANY,
-                                    ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build(),
-                                    ItemPredicate.ANY
-                            )
-                    )))
-                    .when(LootItemRandomChanceCondition.randomChance(0.75f))
-                    .add(LootItem.lootTableItem(ModItems.TALLOW_CRUMBS.get()))
-                    .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 3)))
-                    .name("mooncake_delight:oiled_knife_burnt_tallow_crumbs")
-                    .build();
-            event.getTable().addPool(oiledKnifeTallowCrumbsPool);
-
-            LootPool oiledKnifeTallowPool = LootPool.lootPool()
-                    .setRolls(UniformGenerator.between(1.0f, 1.0f))
-                    .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().flags(EntityFlagsPredicate.Builder.flags().setOnFire(true).build())))
-                    .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.entity().equipment(
-                            new EntityEquipmentPredicate(
-                                    ItemPredicate.ANY,
-                                    ItemPredicate.ANY,
-                                    ItemPredicate.ANY,
-                                    ItemPredicate.ANY,
-                                    ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build(),
-                                    ItemPredicate.ANY
-                            )
-                    )))
-                    .when(LootItemRandomChanceCondition.randomChance(0.25f))
-                    .add(LootItem.lootTableItem(ModItems.TALLOW.get()))
-                    .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 1)))
-                    .name("mooncake_delight:oiled_knife_burnt_tallow")
-                    .build();
-            event.getTable().addPool(oiledKnifeTallowPool);
+            if (oiledKnifeCrumbsChance > 0 || oiledKnifeTallowChance > 0) {
+                if (oiledKnifeCrumbsChance > 0) {
+                    LootPool oiledKnifeTallowPool = LootPool.lootPool()
+                            .setRolls(UniformGenerator.between(1.0f, 1.0f))
+                            .when(LootItemEntityPropertyCondition.hasProperties(
+                                    LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().flags(EntityFlagsPredicate.Builder.flags().setOnFire(true).build())))
+                            .when(LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.KILLER, EntityPredicate.Builder.entity().equipment(
+                                    new EntityEquipmentPredicate(
+                                            ItemPredicate.ANY,
+                                            ItemPredicate.ANY,
+                                            ItemPredicate.ANY,
+                                            ItemPredicate.ANY,
+                                            ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build(),
+                                            ItemPredicate.ANY
+                                    )
+                            )))
+                            .when(LootItemRandomChanceCondition.randomChance((float) oiledKnifeTallowChance))
+                            .add(LootItem.lootTableItem(ModItems.TALLOW.get()))
+                            .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 1)))
+                            .name("mooncake_delight:oiled_knife_burnt_tallow")
+                            .build();
+                    event.getTable().addPool(oiledKnifeTallowPool);
+                }
+            }
         }
     }
 }

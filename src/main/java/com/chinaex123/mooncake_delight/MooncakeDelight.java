@@ -1,5 +1,6 @@
 package com.chinaex123.mooncake_delight;
 
+import com.chinaex123.mooncake_delight.config.CommonConfig;
 import com.chinaex123.mooncake_delight.init.ModBlocks;
 import com.chinaex123.mooncake_delight.init.ModCompostables;
 import com.chinaex123.mooncake_delight.init.ModCreativeTabs;
@@ -9,6 +10,7 @@ import com.mojang.logging.LogUtils;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
@@ -23,6 +25,9 @@ public class MooncakeDelight {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
+
+        context.registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC);
+        
         if (ModList.get().isLoaded("croptopia")) {
             CroptopiaItems.register(modEventBus);
         }
