@@ -1,5 +1,15 @@
 # 🌕月饼乐事（Mooncake Delight）功能分类文档
 
+---
+
+## License
+
+- **Code**: MIT License (see [LICENSE](./LICENSE))
+- **Art Assets (textures, images, models)**: All Rights Reserved
+
+The textures and art assets are NOT open for use. Only the code is open 
+under the MIT License.
+
 [English](#english) | [中文](#中文)
 
 ---
