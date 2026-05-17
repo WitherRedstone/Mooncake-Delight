@@ -44,18 +44,18 @@ public class CommonConfig {
                         "堡垒遗迹宝藏室箱子中残骸月饼的掉落概率 (0.0 - 1.0, 0 为禁用)"
                 )
                 .defineInRange("bastionTreasureDebrisMooncakeChance", 0.10, 0.0, 1.0);
-        DESERT_PYRAMID_TNT_MOONCAKE_CHANCE = builder
-                .comment(
-                        "Chance for tnt mooncake in desert pyramid chest (0.0 - 1.0, 0 to disable)",
-                        "沙漠神殿箱子中TNT月饼的掉落概率 (0.0 - 1.0, 0 为禁用)"
-                )
-                .defineInRange("desertPyramidTntMooncakeChance", 0.10, 0.0, 1.0);
         BASTION_HOGLIN_LAVA_MOONCAKE_CHANCE = builder
                 .comment(
                         "Chance for lava mooncake in bastion hoglin stable chest (0.0 - 1.0, 0 to disable)",
                         "堡垒遗迹疣猪兽棚箱子中流心月饼的掉落概率 (0.0 - 1.0, 0 为禁用)"
                 )
                 .defineInRange("bastionHoglinLavaMooncakeChance", 0.10, 0.0, 1.0);
+        DESERT_PYRAMID_TNT_MOONCAKE_CHANCE = builder
+                .comment(
+                        "Chance for tnt mooncake in desert pyramid chest (0.0 - 1.0, 0 to disable)",
+                        "沙漠神殿箱子中TNT月饼的掉落概率 (0.0 - 1.0, 0 为禁用)"
+                )
+                .defineInRange("desertPyramidTntMooncakeChance", 0.10, 0.0, 1.0);
         builder.pop();
 
         builder.push("Entity Loot");

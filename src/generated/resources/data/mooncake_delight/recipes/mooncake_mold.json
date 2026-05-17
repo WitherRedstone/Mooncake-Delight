@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "A": {
-      "tag": "forge:flours"
+      "tag": "forge:flour"
     },
     "B": {
       "tag": "forge:rods/wooden"

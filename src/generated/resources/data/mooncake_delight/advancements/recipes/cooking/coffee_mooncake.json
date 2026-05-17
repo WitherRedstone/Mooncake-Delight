@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:cocoa_beans"
-            ]
+            "tag": "forge:crops/cocoa_beans"
           }
         ]
       },

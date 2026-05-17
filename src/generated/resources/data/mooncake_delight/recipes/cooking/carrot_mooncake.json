@@ -13,13 +13,13 @@
       "tag": "forge:sugars"
     },
     {
-      "item": "minecraft:carrot"
+      "tag": "forge:fruits/carrot"
     },
     {
-      "item": "minecraft:carrot"
+      "tag": "forge:fruits/carrot"
     },
     {
-      "item": "minecraft:carrot"
+      "tag": "forge:fruits/carrot"
     }
   ],
   "recipe_book_tab": "meals",

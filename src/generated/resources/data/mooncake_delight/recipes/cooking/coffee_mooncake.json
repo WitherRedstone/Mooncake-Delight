@@ -16,13 +16,13 @@
       "tag": "forge:sugars"
     },
     {
-      "item": "minecraft:cocoa_beans"
+      "tag": "forge:crops/cocoa_beans"
     },
     {
-      "item": "minecraft:cocoa_beans"
+      "tag": "forge:crops/cocoa_beans"
     },
     {
-      "item": "minecraft:cocoa_beans"
+      "tag": "forge:crops/cocoa_beans"
     }
   ],
   "recipe_book_tab": "meals",

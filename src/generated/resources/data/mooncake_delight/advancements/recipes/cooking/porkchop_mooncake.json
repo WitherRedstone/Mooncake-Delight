@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:porkchop"
-            ]
+            "tag": "forge:foods/raw_pork"
           }
         ]
       },

@@ -16,13 +16,13 @@
       "tag": "forge:sugars"
     },
     {
-      "item": "minecraft:apple"
+      "tag": "forge:fruits/apple"
     },
     {
-      "item": "minecraft:apple"
+      "tag": "forge:fruits/apple"
     },
     {
-      "item": "minecraft:apple"
+      "tag": "forge:fruits/apple"
     }
   ],
   "recipe_book_tab": "meals",

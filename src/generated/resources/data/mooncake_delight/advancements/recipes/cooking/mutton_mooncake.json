@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "farmersdelight:mutton_chops"
-            ]
+            "tag": "forge:foods/raw_mutton"
           }
         ]
       },

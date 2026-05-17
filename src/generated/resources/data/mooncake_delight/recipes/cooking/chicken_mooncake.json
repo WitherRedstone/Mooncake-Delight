@@ -16,10 +16,10 @@
       "tag": "forge:crops/onion"
     },
     {
-      "item": "farmersdelight:chicken_cuts"
+      "tag": "forge:foods/raw_chicken"
     },
     {
-      "item": "farmersdelight:chicken_cuts"
+      "tag": "forge:foods/raw_chicken"
     }
   ],
   "recipe_book_tab": "meals",

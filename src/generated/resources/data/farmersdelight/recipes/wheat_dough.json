@@ -6,7 +6,7 @@
       "tag": "forge:buckets/water"
     },
     "B": {
-      "item": "mooncake_delight:flour"
+      "tag": "forge:flour"
     }
   },
   "pattern": [
