@@ -19,6 +19,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.Tags;
 import org.jetbrains.annotations.NotNull;
+import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.common.tag.ModTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -52,7 +53,7 @@ public class ModCraftingRecipes {
                 .define('A', MDItemTags.FLOUR)
                 .define('B', Tags.Items.RODS_WOODEN)
                 .define('C', ItemTags.PLANKS)
-                .unlockedBy("has_mooncake_mold", has(vectorwing.farmersdelight.common.registry.ModItems.WHEAT_DOUGH.get()))
+                .unlockedBy("has_mooncake_mold", has(ModItems.WHEAT_DOUGH.get()))
                 .save(recipeOutput);
         // 动物油脂
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, MDItems.TALLOW.get())
@@ -63,13 +64,13 @@ public class ModCraftingRecipes {
                 .unlockedBy("has_tallow_crumbs", has(MDItems.TALLOW_CRUMBS.get()))
                 .save(recipeOutput);
         // 面团
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, vectorwing.farmersdelight.common.registry.ModItems.WHEAT_DOUGH.get(),3)
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.WHEAT_DOUGH.get(),3)
                 .pattern("BBB")
                 .pattern("BAB")
                 .pattern("BBB")
                 .define('A', Tags.Items.BUCKETS_WATER)
-                .define('B', MDItems.FLOUR)
-                .unlockedBy("has_wheat_dough", has(vectorwing.farmersdelight.common.registry.ModItems.WHEAT_DOUGH.get()))
+                .define('B', MDItemTags.FLOUR)
+                .unlockedBy("has_wheat_dough", has(ModItems.WHEAT_DOUGH.get()))
                 .save(recipeOutput);
 
         // ==================== 无形状合成 ====================

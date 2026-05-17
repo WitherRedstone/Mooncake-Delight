@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "A": {
-      "tag": "c:flours"
+      "tag": "c:flour"
     },
     "B": {
       "tag": "c:rods/wooden"

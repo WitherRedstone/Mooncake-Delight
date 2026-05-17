@@ -17,10 +17,10 @@
       "tag": "c:crops/onion"
     },
     {
-      "item": "minecraft:porkchop"
+      "tag": "c:foods/raw_pork"
     },
     {
-      "item": "minecraft:porkchop"
+      "tag": "c:foods/raw_pork"
     }
   ],
   "recipe_book_tab": "meals",

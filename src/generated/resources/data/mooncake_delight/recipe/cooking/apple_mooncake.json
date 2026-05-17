@@ -17,13 +17,13 @@
       "tag": "c:sugars"
     },
     {
-      "item": "minecraft:apple"
+      "tag": "c:fruits/apple"
     },
     {
-      "item": "minecraft:apple"
+      "tag": "c:fruits/apple"
     },
     {
-      "item": "minecraft:apple"
+      "tag": "c:fruits/apple"
     }
   ],
   "recipe_book_tab": "meals",

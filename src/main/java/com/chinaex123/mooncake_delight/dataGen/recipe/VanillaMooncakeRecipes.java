@@ -17,6 +17,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.Tags;
 import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
+import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 import vectorwing.farmersdelight.common.tag.CommonTags;
 
@@ -40,10 +41,10 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(MDItemTags.SUGARS)
-                .addIngredient(Items.APPLE)
-                .addIngredient(Items.APPLE)
-                .addIngredient(Items.APPLE)
-                .unlockedBy("has_apple_mooncake", has(Items.APPLE))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "fruits/apple")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "fruits/apple")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "fruits/apple")))
+                .unlockedBy("has_apple_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "fruits/apple"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 金苹果月饼
@@ -105,20 +106,20 @@ public class VanillaMooncakeRecipes {
         CookingPotRecipeBuilder.cookingPotRecipe(MDItems.CARROT_MOONCAKE.get(), 1, 20 * 20, 0.5F, MDItems.MOONCAKE_MOLD)
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
-                .addIngredient(Items.CARROT)
-                .addIngredient(Items.CARROT)
-                .addIngredient(Items.CARROT)
-                .unlockedBy("has_carrot_mooncake", has(Items.CARROT))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "fruits/carrot")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "fruits/carrot")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "fruits/carrot")))
+                .unlockedBy("has_carrot_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "fruits/carrot"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 马铃薯月饼
         CookingPotRecipeBuilder.cookingPotRecipe(MDItems.POTATO_MOONCAKE.get(), 1, 20 * 20, 0.5F, MDItems.MOONCAKE_MOLD)
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
-                .addIngredient(Items.POTATO)
-                .addIngredient(Items.POTATO)
-                .addIngredient(Items.POTATO)
-                .unlockedBy("has_potato_mooncake", has(Items.POTATO))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "fruits/potato")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "fruits/potato")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "fruits/potato")))
+                .unlockedBy("has_potato_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "fruits/potato"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 牛肉月饼
@@ -126,9 +127,9 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get())
-                .unlockedBy("has_beef_mooncake", has(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get()))
+                .addIngredient(ModItems.MINCED_BEEF.get())
+                .addIngredient(ModItems.MINCED_BEEF.get())
+                .unlockedBy("has_beef_mooncake", has(ModItems.MINCED_BEEF.get()))
                 .unlockedBy("has_beef_mooncake_onion", has(CommonTags.Items.CROPS_ONION))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
@@ -137,9 +138,9 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(Items.PORKCHOP)
-                .addIngredient(Items.PORKCHOP)
-                .unlockedBy("has_porkchop_mooncake", has(Items.PORKCHOP))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_pork")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_pork")))
+                .unlockedBy("has_porkchop_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_pork"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 羊肉月饼
@@ -147,8 +148,8 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_mutton"))))
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_mutton"))))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_mutton")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_mutton")))
                 .unlockedBy("has_mutton_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_mutton"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
@@ -157,8 +158,8 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_chicken"))))
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_chicken"))))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_chicken")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_chicken")))
                 .unlockedBy("has_chicken_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_chicken"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
@@ -177,9 +178,9 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.COD_SLICE.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.COD_SLICE.get())
-                .unlockedBy("has_cod_mooncake", has(vectorwing.farmersdelight.common.registry.ModItems.COD_SLICE.get()))
+                .addIngredient(ModItems.COD_SLICE.get())
+                .addIngredient(ModItems.COD_SLICE.get())
+                .unlockedBy("has_cod_mooncake", has(ModItems.COD_SLICE.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 鲑鱼月饼
@@ -187,9 +188,9 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.SALMON_SLICE.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.SALMON_SLICE.get())
-                .unlockedBy("has_salmon_mooncake", has(vectorwing.farmersdelight.common.registry.ModItems.SALMON_SLICE.get()))
+                .addIngredient(ModItems.SALMON_SLICE.get())
+                .addIngredient(ModItems.SALMON_SLICE.get())
+                .unlockedBy("has_salmon_mooncake", has(ModItems.SALMON_SLICE.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 腐肉月饼
@@ -218,9 +219,9 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(MDItemTags.SUGARS)
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cocoa_bean"))))
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cocoa_bean"))))
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cocoa_bean"))))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cocoa_bean")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cocoa_bean")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cocoa_bean")))
                 .unlockedBy("has_coffee_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cocoa_bean"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
@@ -232,7 +233,7 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(Items.SNOWBALL)
                 .addIngredient(Items.SNOWBALL)
                 .addIngredient(Items.SNOWBALL)
-                .unlockedBy("has_snow_skin_mooncake", has(Items.SNOW))
+                .unlockedBy("has_snow_skin_mooncake", has(Items.SNOWBALL))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 流心奶黄月饼
@@ -271,9 +272,9 @@ public class VanillaMooncakeRecipes {
         CookingPotRecipeBuilder.cookingPotRecipe(MDItems.HUNDRED_FRUITS_MOONCAKE.get(), 1, 20 * 20, 0.5F, MDItems.MOONCAKE_MOLD)
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
-                .addIngredient(Items.SWEET_BERRIES)
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/berry")))
                 .addIngredient(Items.GOLDEN_APPLE)
-                .addIngredient(Items.MELON_SLICE)
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/melons")))
                 .addIngredient(Items.CHORUS_FRUIT)
                 .unlockedBy("has_hundred_fruits_mooncake", has(MDItems.MOONCAKE_CRUST_DOUGH.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
@@ -319,10 +320,10 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.CAKE_SLICE.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.CAKE_SLICE.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.CAKE_SLICE.get())
-                .unlockedBy("has_cake_mooncake", has(vectorwing.farmersdelight.common.registry.ModItems.CAKE_SLICE.get()))
+                .addIngredient(ModItems.CAKE_SLICE.get())
+                .addIngredient(ModItems.CAKE_SLICE.get())
+                .addIngredient(ModItems.CAKE_SLICE.get())
+                .unlockedBy("has_cake_mooncake", has(ModItems.CAKE_SLICE.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 米月饼
@@ -363,10 +364,10 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .unlockedBy("has_pork_mooncake", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
+                .addIngredient(ModItems.BACON.get())
+                .addIngredient(ModItems.BACON.get())
+                .addIngredient(ModItems.BACON.get())
+                .unlockedBy("has_pork_mooncake", has(ModItems.BACON.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 蛋黄月饼
@@ -386,8 +387,8 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Tags.Items.EGGS)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .unlockedBy("has_salted_egg_yolk-pork_mooncake", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
+                .addIngredient(ModItems.BACON.get())
+                .unlockedBy("has_salted_egg_yolk-pork_mooncake", has(ModItems.BACON.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 火腿月饼
@@ -396,9 +397,9 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(Tags.Items.DRINKS_MILK)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.HAM.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.HAM.get())
-                .unlockedBy("has_ham_mooncake", has(vectorwing.farmersdelight.common.registry.ModItems.HAM.get()))
+                .addIngredient(ModItems.HAM.get())
+                .addIngredient(ModItems.HAM.get())
+                .unlockedBy("has_ham_mooncake", has(ModItems.HAM.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 云腿月饼
@@ -408,8 +409,8 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(Tags.Items.DRINKS_HONEY)
                 .addIngredient(Items.COOKED_PORKCHOP)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.HAM.get())
-                .unlockedBy("has_yunnan_ham_mooncake", has(vectorwing.farmersdelight.common.registry.ModItems.HAM.get()))
+                .addIngredient(ModItems.HAM.get())
+                .unlockedBy("has_yunnan_ham_mooncake", has(ModItems.HAM.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 南瓜月饼
@@ -417,10 +418,10 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_HONEY)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get())
-                .unlockedBy("has_pumpkin_mooncake", has(vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get()))
+                .addIngredient(ModItems.PUMPKIN_SLICE.get())
+                .addIngredient(ModItems.PUMPKIN_SLICE.get())
+                .addIngredient(ModItems.PUMPKIN_SLICE.get())
+                .unlockedBy("has_pumpkin_mooncake", has(ModItems.PUMPKIN_SLICE.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 猪肉卷心菜月饼
@@ -428,11 +429,11 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Items.PORKCHOP)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
+                .addIngredient(ModItems.BACON.get())
                 .addIngredient(CommonTags.Items.CROPS_CABBAGE)
                 .addIngredient(CommonTags.Items.CROPS_CABBAGE)
                 .unlockedBy("has_pork-cabbage_mooncake_porkchop", has(Items.PORKCHOP))
-                .unlockedBy("has_pork-cabbage_mooncake_bacon", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
+                .unlockedBy("has_pork-cabbage_mooncake_bacon", has(ModItems.BACON.get()))
                 .unlockedBy("has_pork-cabbage_mooncake_cabbage", has(CommonTags.Items.CROPS_CABBAGE))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
@@ -440,11 +441,11 @@ public class VanillaMooncakeRecipes {
         CookingPotRecipeBuilder.cookingPotRecipe(MDItems.BEEF_TOMATO_MOONCAKE.get(), 1, 20 * 20, 1.0F, MDItems.MOONCAKE_MOLD)
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get())
+                .addIngredient(ModItems.MINCED_BEEF.get())
+                .addIngredient(ModItems.MINCED_BEEF.get())
                 .addIngredient(CommonTags.Items.CROPS_TOMATO)
                 .addIngredient(CommonTags.Items.CROPS_TOMATO)
-                .unlockedBy("has_beef-tomato_mooncake_minced_beef", has(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get()))
+                .unlockedBy("has_beef-tomato_mooncake_minced_beef", has(ModItems.MINCED_BEEF.get()))
                 .unlockedBy("has_beef-tomato_mooncake_tomato", has(CommonTags.Items.CROPS_TOMATO))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
@@ -453,11 +454,11 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_chicken"))))
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_chicken"))))
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get())
-                .unlockedBy("has_chicken-pumpkin_mooncake_minced_beef", has(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get()))
-                .unlockedBy("has_chicken-pumpkin_mooncake_pumpkin_slice", has(vectorwing.farmersdelight.common.registry.ModItems.PUMPKIN_SLICE.get()))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_chicken")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_chicken")))
+                .addIngredient(ModItems.PUMPKIN_SLICE.get())
+                .unlockedBy("has_chicken-pumpkin_mooncake_minced_beef", has(ModItems.MINCED_BEEF.get()))
+                .unlockedBy("has_chicken-pumpkin_mooncake_pumpkin_slice", has(ModItems.PUMPKIN_SLICE.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 火腿卷心菜月饼
@@ -465,10 +466,10 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.HAM.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.HAM.get())
+                .addIngredient(ModItems.HAM.get())
+                .addIngredient(ModItems.HAM.get())
                 .addIngredient(CommonTags.Items.CROPS_CABBAGE)
-                .unlockedBy("has_ham-cabbage_mooncake_ham", has(vectorwing.farmersdelight.common.registry.ModItems.HAM.get()))
+                .unlockedBy("has_ham-cabbage_mooncake_ham", has(ModItems.HAM.get()))
                 .unlockedBy("has_ham-cabbage_mooncake_cabbage", has(CommonTags.Items.CROPS_CABBAGE))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
@@ -477,11 +478,11 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.COD_SLICE.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.SALMON_SLICE.get())
+                .addIngredient(ModItems.COD_SLICE.get())
+                .addIngredient(ModItems.SALMON_SLICE.get())
                 .addIngredient(Items.TROPICAL_FISH)
-                .unlockedBy("has_seafood_mooncake_cod_slice", has(vectorwing.farmersdelight.common.registry.ModItems.COD_SLICE.get()))
-                .unlockedBy("has_seafood_mooncake_salmon_slice", has(vectorwing.farmersdelight.common.registry.ModItems.SALMON_SLICE.get()))
+                .unlockedBy("has_seafood_mooncake_cod_slice", has(ModItems.COD_SLICE.get()))
+                .unlockedBy("has_seafood_mooncake_salmon_slice", has(ModItems.SALMON_SLICE.get()))
                 .unlockedBy("has_seafood_mooncake_tropical_fish", has(Items.TROPICAL_FISH))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
@@ -490,11 +491,11 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.COD_SLICE.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
+                .addIngredient(ModItems.COD_SLICE.get())
+                .addIngredient(ModItems.BACON.get())
                 .addIngredient(CommonTags.Items.CROPS_CABBAGE)
-                .unlockedBy("has_three_delicacies_mooncake_cod_slice", has(vectorwing.farmersdelight.common.registry.ModItems.COD_SLICE.get()))
-                .unlockedBy("has_three_delicacies_mooncake_bacon", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
+                .unlockedBy("has_three_delicacies_mooncake_cod_slice", has(ModItems.COD_SLICE.get()))
+                .unlockedBy("has_three_delicacies_mooncake_bacon", has(ModItems.BACON.get()))
                 .unlockedBy("has_three_delicacies_mooncake_cabbage", has(CommonTags.Items.CROPS_CABBAGE))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
@@ -503,12 +504,12 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_chicken"))))
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get())
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_chicken")))
+                .addIngredient(ModItems.BACON.get())
+                .addIngredient(ModItems.MINCED_BEEF.get())
                 .unlockedBy("has_family_feasts_mooncake_chicken_cuts", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "foods/raw_chicken"))))
-                .unlockedBy("has_family_feasts_mooncake_bacon", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
-                .unlockedBy("has_family_feasts_mooncake_minced_beef", has(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get()))
+                .unlockedBy("has_family_feasts_mooncake_bacon", has(ModItems.BACON.get()))
+                .unlockedBy("has_family_feasts_mooncake_minced_beef", has(ModItems.MINCED_BEEF.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 双拼肉月饼
@@ -516,11 +517,11 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get())
-                .unlockedBy("has_double_meat_mooncake_bacon", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
-                .unlockedBy("has_double_meat_mooncake_minced_beef", has(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get()))
+                .addIngredient(ModItems.BACON.get())
+                .addIngredient(ModItems.BACON.get())
+                .addIngredient(ModItems.MINCED_BEEF.get())
+                .unlockedBy("has_double_meat_mooncake_bacon", has(ModItems.BACON.get()))
+                .unlockedBy("has_double_meat_mooncake_minced_beef", has(ModItems.MINCED_BEEF.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 三肉月饼
@@ -541,11 +542,11 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.HAM.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .unlockedBy("has_ham-bacon_mooncake_ham", has(vectorwing.farmersdelight.common.registry.ModItems.HAM.get()))
-                .unlockedBy("has_ham-bacon_mooncake_bacon", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
+                .addIngredient(ModItems.HAM.get())
+                .addIngredient(ModItems.BACON.get())
+                .addIngredient(ModItems.BACON.get())
+                .unlockedBy("has_ham-bacon_mooncake_ham", has(ModItems.HAM.get()))
+                .unlockedBy("has_ham-bacon_mooncake_bacon", has(ModItems.BACON.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 金华火腿月饼
@@ -553,9 +554,9 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.SMOKED_HAM.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.SMOKED_HAM.get())
-                .unlockedBy("has_jinhua_ham_mooncake_smoked_ham", has(vectorwing.farmersdelight.common.registry.ModItems.SMOKED_HAM.get()))
+                .addIngredient(ModItems.SMOKED_HAM.get())
+                .addIngredient(ModItems.SMOKED_HAM.get())
+                .unlockedBy("has_jinhua_ham_mooncake_smoked_ham", has(ModItems.SMOKED_HAM.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 培根洋葱月饼
@@ -563,10 +564,10 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .unlockedBy("has_bacon-onion_mooncake_leaves", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
+                .addIngredient(ModItems.BACON.get())
+                .addIngredient(ModItems.BACON.get())
+                .addIngredient(ModItems.BACON.get())
+                .unlockedBy("has_bacon-onion_mooncake_leaves", has(ModItems.BACON.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 黑芝麻蓉月饼
@@ -599,8 +600,8 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(MDItems.BLACK_SESAME)
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cocoa_bean"))))
-                .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cocoa_bean"))))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cocoa_bean")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cocoa_bean")))
                 .unlockedBy("has_black_sesame_soy_milk_mooncake_black_sesame", has(MDItems.BLACK_SESAME.get()))
                 .unlockedBy("has_black_sesame_soy_milk_mooncake_cocoa_bean", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cocoa_bean"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
@@ -636,9 +637,9 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(MDItemTags.CROPS_SESAME)
                 .addIngredient(MDItemTags.CROPS_SESAME)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.HAM.get())
+                .addIngredient(ModItems.HAM.get())
                 .unlockedBy("has_sesame-ham_mooncake_white_sesame", has(MDItemTags.CROPS_SESAME))
-                .unlockedBy("has_sesame-ham_mooncake_eggs", has(vectorwing.farmersdelight.common.registry.ModItems.HAM.get()))
+                .unlockedBy("has_sesame-ham_mooncake_eggs", has(ModItems.HAM.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 芝麻牛肉月饼
@@ -648,9 +649,9 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(MDItemTags.CROPS_SESAME)
                 .addIngredient(MDItemTags.CROPS_SESAME)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get())
+                .addIngredient(ModItems.MINCED_BEEF.get())
                 .unlockedBy("has_sesame-beef_mooncake_white_sesame", has(MDItemTags.CROPS_SESAME))
-                .unlockedBy("has_sesame-beef_mooncake_minced_beef", has(vectorwing.farmersdelight.common.registry.ModItems.MINCED_BEEF.get()))
+                .unlockedBy("has_sesame-beef_mooncake_minced_beef", has(ModItems.MINCED_BEEF.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 芝麻培根月饼
@@ -659,10 +660,10 @@ public class VanillaMooncakeRecipes {
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(MDItemTags.CROPS_SESAME)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
+                .addIngredient(ModItems.BACON.get())
+                .addIngredient(ModItems.BACON.get())
                 .unlockedBy("has_sesame-beef_mooncake_white_sesame", has(MDItemTags.CROPS_SESAME))
-                .unlockedBy("has_sesame-beef_mooncake_bacon", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
+                .unlockedBy("has_sesame-beef_mooncake_bacon", has(ModItems.BACON.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 芝麻洋葱月饼
@@ -713,17 +714,6 @@ public class VanillaMooncakeRecipes {
                 .unlockedBy("has_sesame-mutton_mooncake_white_sesame", has(MDItemTags.CROPS_SESAME))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
-        
-        
-        
-        
-
-        
-        
-        
-        
-        
-        
     }
 
     /**

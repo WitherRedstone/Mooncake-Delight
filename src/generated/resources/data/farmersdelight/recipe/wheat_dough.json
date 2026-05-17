@@ -6,7 +6,7 @@
       "tag": "c:buckets/water"
     },
     "B": {
-      "item": "mooncake_delight:flour"
+      "tag": "c:flour"
     }
   },
   "pattern": [

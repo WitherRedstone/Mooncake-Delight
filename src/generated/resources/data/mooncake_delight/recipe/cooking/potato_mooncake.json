@@ -14,13 +14,13 @@
       "tag": "c:sugars"
     },
     {
-      "item": "minecraft:potato"
+      "tag": "c:fruits/potato"
     },
     {
-      "item": "minecraft:potato"
+      "tag": "c:fruits/potato"
     },
     {
-      "item": "minecraft:potato"
+      "tag": "c:fruits/potato"
     }
   ],
   "recipe_book_tab": "meals",

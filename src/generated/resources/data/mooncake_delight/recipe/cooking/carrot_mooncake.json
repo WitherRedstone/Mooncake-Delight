@@ -14,13 +14,13 @@
       "tag": "c:sugars"
     },
     {
-      "item": "minecraft:carrot"
+      "tag": "c:fruits/carrot"
     },
     {
-      "item": "minecraft:carrot"
+      "tag": "c:fruits/carrot"
     },
     {
-      "item": "minecraft:carrot"
+      "tag": "c:fruits/carrot"
     }
   ],
   "recipe_book_tab": "meals",

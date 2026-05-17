@@ -1,5 +1,6 @@
 package com.chinaex123.mooncake_delight.tooltop;
 
+import com.chinaex123.mooncake_delight.config.CommonConfig;
 import com.chinaex123.mooncake_delight.init.MDItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -29,7 +30,7 @@ public class ModTooltop {
                     .withStyle(ChatFormatting.GREEN));
         }
         // 面粉
-        if (stack.getItem() == MDItems.FLOUR.get()) {
+        if (stack.getItem() == MDItems.FLOUR.get() && CommonConfig.ANVIL_DROP_RECIPE_ENABLED.get()) {
             tooltip.add(Component.translatable("item.mooncake_delight.flour.tooltip")
                     .withStyle(ChatFormatting.GREEN));
         }

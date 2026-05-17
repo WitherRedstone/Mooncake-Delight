@@ -168,5 +168,21 @@
   "tooltip.mooncake_delight.effects": "Effect",
   "tooltip.mooncake_delight.effect_seconds": "  • %s %s (%s s) - %s%%",
   "tooltip.mooncake_delight.effect_minutes": "  • %s %s (%s min %s s) - %s%%",
-  "tooltip.mooncake_delight.effect_hours": "  • %s %s (%dh %d min) - %s%%"
+  "tooltip.mooncake_delight.effect_hours": "  • %s %s (%dh %d min) - %s%%",
+
+  "_comment.configuration": "Configuration",
+  "mooncake_delight.configuration.block_loot": "Block Loot",
+  "mooncake_delight.configuration.grassWhiteSesameDropChance": "Chance for white sesame to drop from grass",
+  "mooncake_delight.configuration.chest_loot": "Chest Loot",
+  "mooncake_delight.configuration.endCityBedrockMooncakeChance": "Chance for bedrock mooncake in end city treasure chest",
+  "mooncake_delight.configuration.bastionTreasureDebrisMooncakeChance": "Chance for debris mooncake in bastion treasure chest",
+  "mooncake_delight.configuration.bastionHoglinLavaMooncakeChance": "Chance for lava mooncake in bastion hoglin stable chest",
+  "mooncake_delight.configuration.desertPyramidTntMooncakeChance": "Chance for tnt mooncake in desert pyramid chest",
+  "mooncake_delight.configuration.entity_loot": "Entity Loot",
+  "mooncake_delight.configuration.enderDragonEnchantedGoldenAppleMooncakeChance": "Chance for enchanted golden apple mooncake from ender dragon",
+  "mooncake_delight.configuration.burntAnimalTallowCrumbsChance": "Chance for burnt tallow crumbs from animals when on fire",
+  "mooncake_delight.configuration.oiledKnifeBurntTallowCrumbsChance": "Chance for burnt tallow crumbs with oiled knife when animal is on fire",
+  "mooncake_delight.configuration.oiledKnifeBurntTallowChance": "Chance for burnt tallow with oiled knife when animal is on fire",
+  "mooncake_delight.configuration.anvil_recipe": "Anvil Recipe",
+  "mooncake_delight.configuration.anvilDropRecipeEnabled": "Enable anvil drop recipe feature"
 }
