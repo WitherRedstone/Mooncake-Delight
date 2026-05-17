@@ -13,6 +13,7 @@ public class CommonConfig {
     public static final ForgeConfigSpec.DoubleValue BURNT_ANIMAL_TALLOW_CRUMBS_CHANCE;
     public static final ForgeConfigSpec.DoubleValue OILED_KNIFE_BURNT_TALLOW_CRUMBS_CHANCE;
     public static final ForgeConfigSpec.DoubleValue OILED_KNIFE_BURNT_TALLOW_CHANCE;
+    public static final ForgeConfigSpec.BooleanValue ANVIL_DROP_RECIPE_ENABLED;
 
     public static final ForgeConfigSpec SPEC;
 
@@ -86,6 +87,14 @@ public class CommonConfig {
 
         builder.pop();
 
+        builder.push("Game Mechanics");
+
+        ANVIL_DROP_RECIPE_ENABLED = builder
+                .comment(
+                        "Enable anvil drop recipe feature",
+                        "启用铁砧掉落配方功能"
+                )
+                .define("anvilDropRecipeEnabled", true);
 
         builder.pop();
 

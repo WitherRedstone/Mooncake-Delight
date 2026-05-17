@@ -1,6 +1,6 @@
 package com.chinaex123.mooncake_delight.event;
 
-import com.chinaex123.mooncake_delight.init.ModItems;
+import com.chinaex123.mooncake_delight.init.MDItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.player.PlayerEvent;
@@ -16,7 +16,7 @@ public class CraftingEventListener {
         ItemStack result = event.getCrafting();
 
         // 检查输出是否为油浸刀
-        if (!result.is(ModItems.OILED_KNIFE.get())) {
+        if (!result.is(MDItems.OILED_KNIFE.get())) {
             return;
         }
 

@@ -6,7 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.material.Fluid;
 
-public interface ModFluidTags {
+public interface MDFluidTags {
 
     TagKey<Fluid> FLUIDS = forgeTag("fluid");
     TagKey<Fluid> FLUID_MAPLE_SYRUP = forgeTag("fluid/maple_syrup");

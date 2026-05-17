@@ -1,7 +1,7 @@
 package com.chinaex123.mooncake_delight.event.Foods;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import com.chinaex123.mooncake_delight.init.ModItems;
+import com.chinaex123.mooncake_delight.init.MDItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
@@ -28,7 +28,7 @@ public class ChorusFruitMooncake {
         Item item = itemStack.getItem();
 
         // 检查是否是紫颂果月饼
-        if (item == ModItems.CHORUS_FRUIT_MOONCAKE.get()) {
+        if (item == MDItems.CHORUS_FRUIT_MOONCAKE.get()) {
             Player player = (Player) event.getEntity();
             Level level = player.level();
 

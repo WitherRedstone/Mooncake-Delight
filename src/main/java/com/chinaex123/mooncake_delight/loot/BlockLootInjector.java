@@ -2,7 +2,7 @@ package com.chinaex123.mooncake_delight.loot;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
 import com.chinaex123.mooncake_delight.config.CommonConfig;
-import com.chinaex123.mooncake_delight.init.ModItems;
+import com.chinaex123.mooncake_delight.init.MDItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
@@ -26,7 +26,7 @@ public class BlockLootInjector {
             LootPool bonusPool = LootPool.lootPool()
                     .setRolls(ConstantValue.exactly(1.0f))
                     .when(LootItemRandomChanceCondition.randomChance(CommonConfig.GRASS_WHITE_SESAME_DROP_CHANCE.get().floatValue()))
-                    .add(LootItem.lootTableItem(ModItems.WHITE_SESAME.get()))
+                    .add(LootItem.lootTableItem(MDItems.WHITE_SESAME.get()))
                     .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1)))
                     .name("mooncake_delight:white_sesame_from_grass")
                     .build();

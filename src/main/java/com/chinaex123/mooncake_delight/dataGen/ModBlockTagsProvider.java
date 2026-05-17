@@ -1,8 +1,8 @@
 package com.chinaex123.mooncake_delight.dataGen;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import com.chinaex123.mooncake_delight.init.ModBlocks;
-import com.chinaex123.mooncake_delight.init.ModItemTags;
+import com.chinaex123.mooncake_delight.init.MDBlocks;
+import com.chinaex123.mooncake_delight.init.MDItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -20,11 +20,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
-        this.tag(ModItemTags.CROPS_SPRING_BLOCK).add(ModBlocks.SESAME_CROP.get()); // 春天
-        this.tag(ModItemTags.CROPS_SUMMER_BLOCK).add(ModBlocks.SESAME_CROP.get()); // 夏天
-        this.tag(ModItemTags.CROPS_DRY_AVERAGE).add(ModBlocks.SESAME_CROP.get()); // 干燥
-        this.tag(ModItemTags.CROPS_SPRING_SUMMER).add(ModBlocks.SESAME_CROP.get()); // 干燥
+        this.tag(MDItemTags.CROPS_SPRING_BLOCK).add(MDBlocks.SESAME_CROP.get()); // 春天
+        this.tag(MDItemTags.CROPS_SUMMER_BLOCK).add(MDBlocks.SESAME_CROP.get()); // 夏天
+        this.tag(MDItemTags.CROPS_DRY_AVERAGE).add(MDBlocks.SESAME_CROP.get()); // 干燥
+        this.tag(MDItemTags.CROPS_SPRING_SUMMER).add(MDBlocks.SESAME_CROP.get()); // 干燥
 
-        this.tag(BlockTags.CROPS).add(ModBlocks.SESAME_CROP.get()); // 作物
+        this.tag(BlockTags.CROPS).add(MDBlocks.SESAME_CROP.get()); // 作物
     }
 }

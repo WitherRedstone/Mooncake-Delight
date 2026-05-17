@@ -1,6 +1,6 @@
 package com.chinaex123.mooncake_delight.event.Foods;
 
-import com.chinaex123.mooncake_delight.init.ModItems;
+import com.chinaex123.mooncake_delight.init.MDItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -38,7 +38,7 @@ public class LavaMooncake {
         ItemStack stack = event.getItem();
 
         // 检查是否是流心月饼
-        if (stack.getItem() != ModItems.LAVA_MOONCAKE.get()) {
+        if (stack.getItem() != MDItems.LAVA_MOONCAKE.get()) {
             return;
         }
 

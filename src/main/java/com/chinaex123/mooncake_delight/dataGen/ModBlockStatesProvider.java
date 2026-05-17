@@ -2,7 +2,7 @@ package com.chinaex123.mooncake_delight.dataGen;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
 import com.chinaex123.mooncake_delight.block.Crops.SesameCrop;
-import com.chinaex123.mooncake_delight.init.ModBlocks;
+import com.chinaex123.mooncake_delight.init.MDBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.CropBlock;
@@ -21,7 +21,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        crop(ModBlocks.SESAME_CROP.get(), "sesame_crop_stage", SesameCrop.AGE);
+        crop(MDBlocks.SESAME_CROP.get(), "sesame_crop_stage", SesameCrop.AGE);
     }
 
     public void crop(CropBlock block, String name, IntegerProperty property) {

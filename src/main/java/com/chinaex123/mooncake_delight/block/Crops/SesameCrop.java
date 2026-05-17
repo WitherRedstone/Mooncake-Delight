@@ -1,6 +1,6 @@
 package com.chinaex123.mooncake_delight.block.Crops;
 
-import com.chinaex123.mooncake_delight.init.ModItems;
+import com.chinaex123.mooncake_delight.init.MDItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.BlockGetter;
@@ -37,7 +37,7 @@ public class SesameCrop extends CropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.WHITE_SESAME.get();
+        return MDItems.WHITE_SESAME.get();
     }
 
     @Override

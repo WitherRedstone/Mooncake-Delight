@@ -18,14 +18,14 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public class MDBlocks {
     public static final DeferredRegister<Block> BLOCKS_REGISTER =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MooncakeDelight.MOD_ID);
 
     // ======================= 流体 =======================
     // 转换糖浆
     public static final RegistryObject<LiquidBlock> INVERT_SUGAR_SYRUP_BLOCK = BLOCKS_REGISTER.register("invert_sugar_syrup", () ->
-            new LiquidBlock(() -> (FlowingFluid) ModFluids.INVERT_SUGAR_SYRUP.get(), BlockBehaviour.Properties.of()
+            new LiquidBlock(() -> (FlowingFluid) MDFluids.INVERT_SUGAR_SYRUP.get(), BlockBehaviour.Properties.of()
                     .noLootTable() // 不掉落
                     .liquid() // 液体
                     .replaceable() // 可替换
@@ -39,7 +39,7 @@ public class ModBlocks {
             ));
     // 枫糖浆
     public static final RegistryObject<LiquidBlock> MAPLE_SYRUP_BLOCK = BLOCKS_REGISTER.register("maple_syrup", () ->
-            new LiquidBlock(() -> (FlowingFluid) ModFluids.MAPLE_SYRUP.get(), BlockBehaviour.Properties.of()
+            new LiquidBlock(() -> (FlowingFluid) MDFluids.MAPLE_SYRUP.get(), BlockBehaviour.Properties.of()
                     .noLootTable() // 不掉落
                     .liquid() // 液体
                     .replaceable() // 可替换
@@ -59,7 +59,7 @@ public class ModBlocks {
 
 
     private static <T extends Block> void registerBlockItems(String name, RegistryObject<T> block) {
-        ModItems.ITEMS_REGISTER.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        MDItems.ITEMS_REGISTER.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> block) {

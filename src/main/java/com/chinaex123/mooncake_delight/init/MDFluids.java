@@ -16,7 +16,7 @@ import static net.minecraftforge.registries.ForgeRegistries.FLUIDS;
 import static net.minecraftforge.registries.ForgeRegistries.Keys.FLUID_TYPES;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class ModFluids {
+public class MDFluids {
     // -------------------- 流体 ID --------------------
     // 转换糖浆
     public static final ResourceLocation INVERT_SUGAR_SYRUP_ID = modLoc("invert_sugar_syrup");
@@ -38,21 +38,21 @@ public class ModFluids {
     @SubscribeEvent
     public static void register(RegisterEvent event) {
         event.register(FLUID_TYPES, helper -> {
-            helper.register(INVERT_SUGAR_SYRUP_ID, new ModFluidTypes(INVERT_SUGAR_SYRUP_ID, 0.4F, 0, false, false));
-            helper.register(MAPLE_SYRUP_ID, new ModFluidTypes(MAPLE_SYRUP_ID, 0.2F, 0, false, false));
+            helper.register(INVERT_SUGAR_SYRUP_ID, new MDFluidTypes(INVERT_SUGAR_SYRUP_ID, 0.4F, 0, false, false));
+            helper.register(MAPLE_SYRUP_ID, new MDFluidTypes(MAPLE_SYRUP_ID, 0.2F, 0, false, false));
         });
         event.register(ForgeRegistries.Keys.FLUIDS, helper -> {
             Properties invertSugarSyrup = new Properties(INVERT_SUGAR_SYRUP_TYPE, INVERT_SUGAR_SYRUP, FLOWING_INVERT_SUGAR_SYRUP)
-                    .bucket(ModItems.INVERT_SUGAR_SYRUP_BUCKET)
-                    .block(ModBlocks.INVERT_SUGAR_SYRUP_BLOCK)
+                    .bucket(MDItems.INVERT_SUGAR_SYRUP_BUCKET)
+                    .block(MDBlocks.INVERT_SUGAR_SYRUP_BLOCK)
                     .explosionResistance(100.0F)
                     .slopeFindDistance(4)
                     .levelDecreasePerBlock(1)
                     .tickRate(10);
 
             Properties mapleSyrup = new Properties(MAPLE_SYRUP_TYPE, MAPLE_SYRUP, FLOWING_MAPLE_SYRUP)
-                    .bucket(ModItems.MAPLE_SYRUP_BUCKET)
-                    .block(ModBlocks.MAPLE_SYRUP_BLOCK)
+                    .bucket(MDItems.MAPLE_SYRUP_BUCKET)
+                    .block(MDBlocks.MAPLE_SYRUP_BLOCK)
                     .explosionResistance(100.0F)
                     .slopeFindDistance(4)
                     .levelDecreasePerBlock(1)

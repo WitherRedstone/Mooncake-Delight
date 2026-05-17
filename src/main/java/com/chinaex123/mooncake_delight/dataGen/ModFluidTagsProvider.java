@@ -1,8 +1,8 @@
 package com.chinaex123.mooncake_delight.dataGen;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
-import com.chinaex123.mooncake_delight.init.ModFluids;
-import com.chinaex123.mooncake_delight.init.ModFluidTags;
+import com.chinaex123.mooncake_delight.init.MDFluids;
+import com.chinaex123.mooncake_delight.init.MDFluidTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.FluidTagsProvider;
@@ -20,16 +20,16 @@ public class ModFluidTagsProvider  extends FluidTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         // c:fluid
-        this.tag(ModFluidTags.FLUIDS)
-                .add(ModFluids.INVERT_SUGAR_SYRUP.get()) // 转换糖浆
-                .add(ModFluids.MAPLE_SYRUP.get()); // 枫糖浆
+        this.tag(MDFluidTags.FLUIDS)
+                .add(MDFluids.INVERT_SUGAR_SYRUP.get()) // 转换糖浆
+                .add(MDFluids.MAPLE_SYRUP.get()); // 枫糖浆
 
         // c:fluid/maple_syrup
-        this.tag(ModFluidTags.FLUID_MAPLE_SYRUP)
-                .add(ModFluids.MAPLE_SYRUP.get()); // 枫糖浆
+        this.tag(MDFluidTags.FLUID_MAPLE_SYRUP)
+                .add(MDFluids.MAPLE_SYRUP.get()); // 枫糖浆
 
         // c:fluid/invert_sugar_syrup
-        this.tag(ModFluidTags.FLUID_INVERT_SUGAR_SYRUP)
-                .add(ModFluids.INVERT_SUGAR_SYRUP.get()); // 转换糖浆
+        this.tag(MDFluidTags.FLUID_INVERT_SUGAR_SYRUP)
+                .add(MDFluids.INVERT_SUGAR_SYRUP.get()); // 转换糖浆
     }
 }

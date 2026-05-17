@@ -1,8 +1,8 @@
 package com.chinaex123.mooncake_delight.dataGen;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
+import com.chinaex123.mooncake_delight.init.MDItems;
 import com.chinaex123.mooncake_delight.item.ModCompat.Croptopia.CroptopiaItems;
-import com.chinaex123.mooncake_delight.init.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
@@ -18,88 +18,88 @@ public class ModItemModelsProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         // ======================= 流体桶 =======================
-        basicItem(ModItems.INVERT_SUGAR_SYRUP_BUCKET.get()); // 转换糖浆 桶
-        basicItem(ModItems.MAPLE_SYRUP_BUCKET.get()); // 枫糖浆 桶
+        basicItem(MDItems.INVERT_SUGAR_SYRUP_BUCKET.get()); // 转换糖浆 桶
+        basicItem(MDItems.MAPLE_SYRUP_BUCKET.get()); // 枫糖浆 桶
 
         // ======================= 食材 =======================
-        basicItem(ModItems.OILED_KNIFE.get()); // 油刀
-        basicItem(ModItems.MOONCAKE_MOLD.get()); // 月饼模具
-        basicItem(ModItems.SUGAR_CUBE.get()); // 方糖
-        basicItem(ModItems.TRUFFLE.get()); // 松露
-        basicItem(ModItems.TALLOW_CRUMBS.get()); // 动物油脂碎
-        basicItem(ModItems.TALLOW.get()); // 动物油脂
-        basicItem(ModItems.ANIMAL_FAT.get()); // 动物油
-        basicItem(ModItems.LOTUS_SEED.get()); // 莲子
-        basicItem(ModItems.FLOUR.get()); // 面粉
-        basicItem(ModItems.MOONCAKE_CRUST_DOUGH.get()); // 月饼面团
-        basicItem(ModItems.SNOW_SKIN_MOONCAKE_CRUST_DOUGH.get()); // 冰皮月饼面团
-        basicItem(ModItems.INVERT_SUGAR_SYRUP_BOTTLE.get()); // 转换糖浆
-        basicItem(ModItems.MAPLE_SYRUP_BOTTLE.get()); // 枫糖浆
+        basicItem(MDItems.OILED_KNIFE.get()); // 油刀
+        basicItem(MDItems.MOONCAKE_MOLD.get()); // 月饼模具
+        basicItem(MDItems.SUGAR_CUBE.get()); // 方糖
+        basicItem(MDItems.TRUFFLE.get()); // 松露
+        basicItem(MDItems.TALLOW_CRUMBS.get()); // 动物油脂碎
+        basicItem(MDItems.TALLOW.get()); // 动物油脂
+        basicItem(MDItems.ANIMAL_FAT.get()); // 动物油
+        basicItem(MDItems.LOTUS_SEED.get()); // 莲子
+        basicItem(MDItems.FLOUR.get()); // 面粉
+        basicItem(MDItems.MOONCAKE_CRUST_DOUGH.get()); // 月饼面团
+        basicItem(MDItems.SNOW_SKIN_MOONCAKE_CRUST_DOUGH.get()); // 冰皮月饼面团
+        basicItem(MDItems.INVERT_SUGAR_SYRUP_BOTTLE.get()); // 转换糖浆
+        basicItem(MDItems.MAPLE_SYRUP_BOTTLE.get()); // 枫糖浆
 
         // ======================= 原版自带 =======================
-        basicItem(ModItems.WHITE_SESAME.get()); // 白芝麻
-        basicItem(ModItems.BLACK_SESAME.get()); // 黑芝麻
+        basicItem(MDItems.WHITE_SESAME.get()); // 白芝麻
+        basicItem(MDItems.BLACK_SESAME.get()); // 黑芝麻
         
         // ======================= 原版自带 =======================
-        basicFoodItem(ModItems.APPLE_MOONCAKE); // 苹果月饼
-        enchantedFoodItem(ModItems.GOLDEN_APPLE_MOONCAKE, ModItems.ENCHANTED_GOLDEN_APPLE_MOONCAKE);
-        basicFoodItem(ModItems.SWEET_BERRIES_MOONCAKE); // 甜浆果月饼
-        basicFoodItem(ModItems.GLOW_BERRIES_MOONCAKE); // 发光浆果月饼
-        basicFoodItem(ModItems.CHORUS_FRUIT_MOONCAKE); // 紫颂果月饼
-        basicFoodItem(ModItems.CARROT_MOONCAKE); // 胡萝卜月饼
-        basicFoodItem(ModItems.POTATO_MOONCAKE); // 马铃薯月饼
-        basicFoodItem(ModItems.BEEF_MOONCAKE); // 牛肉月饼
-        basicFoodItem(ModItems.PORKCHOP_MOONCAKE); // 猪肉月饼
-        basicFoodItem(ModItems.MUTTON_MOONCAKE); // 羊肉月饼
-        basicFoodItem(ModItems.CHICKEN_MOONCAKE); // 鸡肉月饼
-        basicFoodItem(ModItems.RABBIT_MOONCAKE); // 兔肉月饼
-        basicFoodItem(ModItems.COD_MOONCAKE); // 鳕鱼月饼
-        basicFoodItem(ModItems.SALMON_MOONCAKE); // 鲑鱼月饼
-        basicFoodItem(ModItems.ROTTEN_FLESH_MOONCAKE); // 腐肉月饼
-        basicFoodItem(ModItems.HONEY_MOONCAKE); // 蜂蜜月饼
-        basicFoodItem(ModItems.COFFEE_MOONCAKE); // 咖啡月饼
-        basicFoodItem(ModItems.SNOW_SKIN_MOONCAKE); // 冰皮月饼
-        basicFoodItem(ModItems.LAVA_EGG_CUSTARD_MOONCAKE); // 流心奶黄月饼
-        basicFoodItem(ModItems.LAVA_DOUBLE_EGG_CUSTARD_MOONCAKE); // 流心奶双黄月饼
-        basicFoodItem(ModItems.BLACK_TRUFFLE_MOONCAKE); // 黑松露月饼
-        basicFoodItem(ModItems.HUNDRED_FRUITS_MOONCAKE); // 百果月饼
-        basicFoodItem(ModItems.EDIBLE_FLOWER_MOONCAKE); // 鲜花月饼
-        basicFoodItem(ModItems.ROSE_MOONCAKE); // 玫瑰月饼
-        basicFoodItem(ModItems.CHRYSANTHEMUM_MOONCAKE); // 菊花月饼
-        basicFoodItem(ModItems.CAKE_MOONCAKE); // 蛋糕月饼
-        basicFoodItem(ModItems.RICE_MOONCAKE); // 米月饼
-        basicFoodItem(ModItems.LOTUS_SEED_PASTE_MOONCAKE); // 莲蓉月饼
-        basicFoodItem(ModItems.DOUBLE_YOLK_LOTUS_MOONCAKE); // 双黄莲蓉月饼
-        basicFoodItem(ModItems.PORK_MOONCAKE); // 鲜肉月饼
-        basicFoodItem(ModItems.EGG_YOLK_MOONCAKE); // 蛋黄月饼
-        basicFoodItem(ModItems.SALTED_EGG_YOLK_PORK_MOONCAKE); // 蛋黄鲜肉月饼
-        basicFoodItem(ModItems.HAM_MOONCAKE); // 火腿月饼
-        basicFoodItem(ModItems.YUNNAN_HAM_MOONCAKE); // 云腿月饼
-        basicFoodItem(ModItems.PUMPKIN_MOONCAKE); // 南瓜月饼
-        basicFoodItem(ModItems.PORK_CABBAGE_MOONCAKE); // 猪肉卷心菜月饼
-        basicFoodItem(ModItems.BEEF_TOMATO_MOONCAKE); // 牛肉番茄月饼
-        basicFoodItem(ModItems.CHICKEN_PUMPKIN_MOONCAKE); // 鸡肉南瓜月饼
-        basicFoodItem(ModItems.HAM_CABBAGE_MOONCAKE); // 火腿卷心菜月饼
-        basicFoodItem(ModItems.SEAFOOD_MOONCAKE); // 海鲜月饼
-        basicFoodItem(ModItems.THREE_DELICACIES_MOONCAKE); // 三鲜月饼
-        basicFoodItem(ModItems.FAMILY_FEASTS_MOONCAKE); // 全家福月饼
-        basicFoodItem(ModItems.DOUBLE_MEAT_MOONCAKE); // 双拼肉月饼
-        basicFoodItem(ModItems.TRIPLE_MEAT_MOONCAKE); // 三肉月饼
-        basicFoodItem(ModItems.HAM_BACON_MOONCAKE); // 火腿培根月饼
-        basicFoodItem(ModItems.JINHUA_HAM_MOONCAKE); // 金华火腿月饼
-        basicFoodItem(ModItems.BACON_ONION_MOONCAKE); // 培根洋葱月饼
-        basicFoodItem(ModItems.BLACK_SESAME_PASTE_MOONCAKE); // 黑芝麻蓉月饼
-        basicFoodItem(ModItems.BLACK_SESAME_LAVA_MOONCAKE); // 黑芝麻蓉流心月饼
-        basicFoodItem(ModItems.BLACK_SESAME_SOY_MILK_MOONCAKE); // 黑芝麻豆乳月饼
-        basicFoodItem(ModItems.WHITE_SESAME_PASTE_MOONCAKE); // 白芝麻蓉月饼
-        basicFoodItem(ModItems.SESAME_EGG_YOLK_MOONCAKE); // 芝麻蛋黄月饼
-        basicFoodItem(ModItems.SESAME_HAM_MOONCAKE); // 芝麻火腿月饼
-        basicFoodItem(ModItems.SESAME_BEEF_MOONCAKE); // 芝麻牛肉月饼
-        basicFoodItem(ModItems.SESAME_BACON_MOONCAKE); // 芝麻培根月饼
-        basicFoodItem(ModItems.SESAME_ONION_MOONCAKE); // 芝麻洋葱月饼
-        basicFoodItem(ModItems.SESAME_TOMATO_MOONCAKE); // 芝麻番茄月饼
-        basicFoodItem(ModItems.SESAME_CHICKEN_MOONCAKE); // 芝麻鸡肉月饼
-        basicFoodItem(ModItems.SESAME_MUTTON_MOONCAKE); // 芝麻羊肉月饼
+        basicFoodItem(MDItems.APPLE_MOONCAKE); // 苹果月饼
+        enchantedFoodItem(MDItems.GOLDEN_APPLE_MOONCAKE, MDItems.ENCHANTED_GOLDEN_APPLE_MOONCAKE);
+        basicFoodItem(MDItems.SWEET_BERRIES_MOONCAKE); // 甜浆果月饼
+        basicFoodItem(MDItems.GLOW_BERRIES_MOONCAKE); // 发光浆果月饼
+        basicFoodItem(MDItems.CHORUS_FRUIT_MOONCAKE); // 紫颂果月饼
+        basicFoodItem(MDItems.CARROT_MOONCAKE); // 胡萝卜月饼
+        basicFoodItem(MDItems.POTATO_MOONCAKE); // 马铃薯月饼
+        basicFoodItem(MDItems.BEEF_MOONCAKE); // 牛肉月饼
+        basicFoodItem(MDItems.PORKCHOP_MOONCAKE); // 猪肉月饼
+        basicFoodItem(MDItems.MUTTON_MOONCAKE); // 羊肉月饼
+        basicFoodItem(MDItems.CHICKEN_MOONCAKE); // 鸡肉月饼
+        basicFoodItem(MDItems.RABBIT_MOONCAKE); // 兔肉月饼
+        basicFoodItem(MDItems.COD_MOONCAKE); // 鳕鱼月饼
+        basicFoodItem(MDItems.SALMON_MOONCAKE); // 鲑鱼月饼
+        basicFoodItem(MDItems.ROTTEN_FLESH_MOONCAKE); // 腐肉月饼
+        basicFoodItem(MDItems.HONEY_MOONCAKE); // 蜂蜜月饼
+        basicFoodItem(MDItems.COFFEE_MOONCAKE); // 咖啡月饼
+        basicFoodItem(MDItems.SNOW_SKIN_MOONCAKE); // 冰皮月饼
+        basicFoodItem(MDItems.LAVA_EGG_CUSTARD_MOONCAKE); // 流心奶黄月饼
+        basicFoodItem(MDItems.LAVA_DOUBLE_EGG_CUSTARD_MOONCAKE); // 流心奶双黄月饼
+        basicFoodItem(MDItems.BLACK_TRUFFLE_MOONCAKE); // 黑松露月饼
+        basicFoodItem(MDItems.HUNDRED_FRUITS_MOONCAKE); // 百果月饼
+        basicFoodItem(MDItems.EDIBLE_FLOWER_MOONCAKE); // 鲜花月饼
+        basicFoodItem(MDItems.ROSE_MOONCAKE); // 玫瑰月饼
+        basicFoodItem(MDItems.CHRYSANTHEMUM_MOONCAKE); // 菊花月饼
+        basicFoodItem(MDItems.CAKE_MOONCAKE); // 蛋糕月饼
+        basicFoodItem(MDItems.RICE_MOONCAKE); // 米月饼
+        basicFoodItem(MDItems.LOTUS_SEED_PASTE_MOONCAKE); // 莲蓉月饼
+        basicFoodItem(MDItems.DOUBLE_YOLK_LOTUS_MOONCAKE); // 双黄莲蓉月饼
+        basicFoodItem(MDItems.PORK_MOONCAKE); // 鲜肉月饼
+        basicFoodItem(MDItems.EGG_YOLK_MOONCAKE); // 蛋黄月饼
+        basicFoodItem(MDItems.SALTED_EGG_YOLK_PORK_MOONCAKE); // 蛋黄鲜肉月饼
+        basicFoodItem(MDItems.HAM_MOONCAKE); // 火腿月饼
+        basicFoodItem(MDItems.YUNNAN_HAM_MOONCAKE); // 云腿月饼
+        basicFoodItem(MDItems.PUMPKIN_MOONCAKE); // 南瓜月饼
+        basicFoodItem(MDItems.PORK_CABBAGE_MOONCAKE); // 猪肉卷心菜月饼
+        basicFoodItem(MDItems.BEEF_TOMATO_MOONCAKE); // 牛肉番茄月饼
+        basicFoodItem(MDItems.CHICKEN_PUMPKIN_MOONCAKE); // 鸡肉南瓜月饼
+        basicFoodItem(MDItems.HAM_CABBAGE_MOONCAKE); // 火腿卷心菜月饼
+        basicFoodItem(MDItems.SEAFOOD_MOONCAKE); // 海鲜月饼
+        basicFoodItem(MDItems.THREE_DELICACIES_MOONCAKE); // 三鲜月饼
+        basicFoodItem(MDItems.FAMILY_FEASTS_MOONCAKE); // 全家福月饼
+        basicFoodItem(MDItems.DOUBLE_MEAT_MOONCAKE); // 双拼肉月饼
+        basicFoodItem(MDItems.TRIPLE_MEAT_MOONCAKE); // 三肉月饼
+        basicFoodItem(MDItems.HAM_BACON_MOONCAKE); // 火腿培根月饼
+        basicFoodItem(MDItems.JINHUA_HAM_MOONCAKE); // 金华火腿月饼
+        basicFoodItem(MDItems.BACON_ONION_MOONCAKE); // 培根洋葱月饼
+        basicFoodItem(MDItems.BLACK_SESAME_PASTE_MOONCAKE); // 黑芝麻蓉月饼
+        basicFoodItem(MDItems.BLACK_SESAME_LAVA_MOONCAKE); // 黑芝麻蓉流心月饼
+        basicFoodItem(MDItems.BLACK_SESAME_SOY_MILK_MOONCAKE); // 黑芝麻豆乳月饼
+        basicFoodItem(MDItems.WHITE_SESAME_PASTE_MOONCAKE); // 白芝麻蓉月饼
+        basicFoodItem(MDItems.SESAME_EGG_YOLK_MOONCAKE); // 芝麻蛋黄月饼
+        basicFoodItem(MDItems.SESAME_HAM_MOONCAKE); // 芝麻火腿月饼
+        basicFoodItem(MDItems.SESAME_BEEF_MOONCAKE); // 芝麻牛肉月饼
+        basicFoodItem(MDItems.SESAME_BACON_MOONCAKE); // 芝麻培根月饼
+        basicFoodItem(MDItems.SESAME_ONION_MOONCAKE); // 芝麻洋葱月饼
+        basicFoodItem(MDItems.SESAME_TOMATO_MOONCAKE); // 芝麻番茄月饼
+        basicFoodItem(MDItems.SESAME_CHICKEN_MOONCAKE); // 芝麻鸡肉月饼
+        basicFoodItem(MDItems.SESAME_MUTTON_MOONCAKE); // 芝麻羊肉月饼
 
         // ======================= 作物盛景 联动 =======================
         basicCroptopiaItem(CroptopiaItems.PEPPER_SALT); // 椒盐
@@ -159,10 +159,10 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicCroptopiaItem(CroptopiaItems.BLACK_SESAME_COCONUT_MOONCAKE); // 黑芝麻椰蓉月饼
 
         // ======================= 特殊/彩蛋物品 =======================
-        specialEasterEggItem(ModItems.LAVA_MOONCAKE); // 流心月饼
-        specialEasterEggItem(ModItems.TNT_MOONCAKE); // TNT 月饼
-        specialEasterEggItem(ModItems.DEBRIS_MOONCAKE); // 残骸月饼
-        specialEasterEggItem(ModItems.BEDROCK_MOONCAKE); // 基岩月饼
+        specialEasterEggItem(MDItems.LAVA_MOONCAKE); // 流心月饼
+        specialEasterEggItem(MDItems.TNT_MOONCAKE); // TNT 月饼
+        specialEasterEggItem(MDItems.DEBRIS_MOONCAKE); // 残骸月饼
+        specialEasterEggItem(MDItems.BEDROCK_MOONCAKE); // 基岩月饼
     }
 
     /**
