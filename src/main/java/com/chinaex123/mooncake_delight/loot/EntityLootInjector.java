@@ -2,7 +2,7 @@ package com.chinaex123.mooncake_delight.loot;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
 import com.chinaex123.mooncake_delight.config.CommonConfig;
-import com.chinaex123.mooncake_delight.init.ModItems;
+import com.chinaex123.mooncake_delight.init.MDItems;
 import net.minecraft.advancements.critereon.EntityEquipmentPredicate;
 import net.minecraft.advancements.critereon.EntityPredicate;
 import net.minecraft.advancements.critereon.EntityFlagsPredicate;
@@ -35,7 +35,7 @@ public class EntityLootInjector {
                 LootPool bonusPool = LootPool.lootPool()
                         .setRolls(UniformGenerator.between(1.0f, 1.0f))
                         .when(LootItemRandomChanceCondition.randomChance((float) chance))
-                        .add(LootItem.lootTableItem(ModItems.ENCHANTED_GOLDEN_APPLE_MOONCAKE.get()))
+                        .add(LootItem.lootTableItem(MDItems.ENCHANTED_GOLDEN_APPLE_MOONCAKE.get()))
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 1)))
                         .name("mooncake_delight:ender_dragon_bonus")
                         .build();
@@ -57,7 +57,7 @@ public class EntityLootInjector {
                         .when(LootItemEntityPropertyCondition.hasProperties(
                                 LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().flags(EntityFlagsPredicate.Builder.flags().setOnFire(true))))
                         .when(LootItemRandomChanceCondition.randomChance((float) burntChance))
-                        .add(LootItem.lootTableItem(ModItems.TALLOW_CRUMBS.get()))
+                        .add(LootItem.lootTableItem(MDItems.TALLOW_CRUMBS.get()))
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2)))
                         .name("mooncake_delight:burnt_animal_tallow_crumbs")
                         .build();
@@ -82,11 +82,11 @@ public class EntityLootInjector {
                                                     Optional.empty(),
                                                     Optional.empty(),
                                                     Optional.empty(),
-                                                    Optional.of(ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build()),
+                                                    Optional.of(ItemPredicate.Builder.item().of(MDItems.OILED_KNIFE.get()).build()),
                                                     Optional.empty()
                                             ))))
                             .when(LootItemRandomChanceCondition.randomChance((float) oiledKnifeCrumbsChance))
-                            .add(LootItem.lootTableItem(ModItems.TALLOW_CRUMBS.get()))
+                            .add(LootItem.lootTableItem(MDItems.TALLOW_CRUMBS.get()))
                             .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 3)))
                             .name("mooncake_delight:oiled_knife_burnt_tallow_crumbs")
                             .build();
@@ -106,11 +106,11 @@ public class EntityLootInjector {
                                                     Optional.empty(),
                                                     Optional.empty(),
                                                     Optional.empty(),
-                                                    Optional.of(ItemPredicate.Builder.item().of(ModItems.OILED_KNIFE.get()).build()),
+                                                    Optional.of(ItemPredicate.Builder.item().of(MDItems.OILED_KNIFE.get()).build()),
                                                     Optional.empty()
                                             ))))
                             .when(LootItemRandomChanceCondition.randomChance((float) oiledKnifeTallowChance))
-                            .add(LootItem.lootTableItem(ModItems.TALLOW.get()))
+                            .add(LootItem.lootTableItem(MDItems.TALLOW.get()))
                             .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 1)))
                             .name("mooncake_delight:oiled_knife_burnt_tallow")
                             .build();

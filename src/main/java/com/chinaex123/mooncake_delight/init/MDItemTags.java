@@ -7,7 +7,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
-public interface ModItemTags {
+public interface MDItemTags {
 
     // 所有月饼
     TagKey<Item> MOONCAKE = bind("mooncake");

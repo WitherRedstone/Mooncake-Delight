@@ -1,8 +1,8 @@
 package com.chinaex123.mooncake_delight.dataGen.recipe;
 
+import com.chinaex123.mooncake_delight.init.MDItems;
 import com.chinaex123.mooncake_delight.init.ModCompat.Croptopia.CroptopiaItems;
-import com.chinaex123.mooncake_delight.init.ModItems;
-import com.chinaex123.mooncake_delight.init.ModItemTags;
+import com.chinaex123.mooncake_delight.init.MDItemTags;
 import net.minecraft.advancements.Criterion;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.advancements.critereon.ItemPredicate;
@@ -36,31 +36,31 @@ public class ModCraftingRecipes {
     public void buildCraftingRecipes(@NotNull RecipeOutput recipeOutput) {
         // ==================== 有序合成 ====================
         // 油浸刀
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OILED_KNIFE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, MDItems.OILED_KNIFE.get())
                 .pattern(" B ")
                 .pattern("BAB")
                 .pattern(" B ")
                 .define('A', ModTags.Items.KNIVES)
-                .define('B', ModItems.TALLOW)
-                .unlockedBy("has_oiled_knife", has(ModItems.TALLOW.get()))
+                .define('B', MDItems.TALLOW)
+                .unlockedBy("has_oiled_knife", has(MDItems.TALLOW.get()))
                 .save(recipeOutput);
         // 月饼模具
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MOONCAKE_MOLD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, MDItems.MOONCAKE_MOLD.get())
                 .pattern(" CA")
                 .pattern(" CC")
                 .pattern("B  ")
-                .define('A', ModItemTags.FLOURS)
+                .define('A', MDItemTags.FLOUR)
                 .define('B', Tags.Items.RODS_WOODEN)
                 .define('C', ItemTags.PLANKS)
                 .unlockedBy("has_mooncake_mold", has(vectorwing.farmersdelight.common.registry.ModItems.WHEAT_DOUGH.get()))
                 .save(recipeOutput);
         // 动物油脂
-        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.TALLOW.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, MDItems.TALLOW.get())
                 .pattern("AAA")
                 .pattern("AAA")
                 .pattern("AAA")
-                .define('A', ModItems.TALLOW_CRUMBS)
-                .unlockedBy("has_tallow_crumbs", has(ModItems.TALLOW_CRUMBS.get()))
+                .define('A', MDItems.TALLOW_CRUMBS)
+                .unlockedBy("has_tallow_crumbs", has(MDItems.TALLOW_CRUMBS.get()))
                 .save(recipeOutput);
         // 面团
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, vectorwing.farmersdelight.common.registry.ModItems.WHEAT_DOUGH.get(),3)
@@ -68,15 +68,15 @@ public class ModCraftingRecipes {
                 .pattern("BAB")
                 .pattern("BBB")
                 .define('A', Tags.Items.BUCKETS_WATER)
-                .define('B', ModItems.FLOUR)
+                .define('B', MDItems.FLOUR)
                 .unlockedBy("has_wheat_dough", has(vectorwing.farmersdelight.common.registry.ModItems.WHEAT_DOUGH.get()))
                 .save(recipeOutput);
 
         // ==================== 无形状合成 ====================
         // 动物油脂碎
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.TALLOW_CRUMBS.get(),9)
-                .requires(ModItems.TALLOW)
-                .unlockedBy("has_tallow", has(ModItems.TALLOW.get()))
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, MDItems.TALLOW_CRUMBS.get(),9)
+                .requires(MDItems.TALLOW)
+                .unlockedBy("has_tallow", has(MDItems.TALLOW.get()))
                 .save(recipeOutput);
 
         // ======================= 作物盛景 联动 =======================

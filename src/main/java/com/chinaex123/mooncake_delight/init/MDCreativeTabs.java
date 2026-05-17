@@ -12,103 +12,103 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class ModCreativeTabs {
+public class MDCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MooncakeDelight.MOD_ID);
 
     public static final Supplier<CreativeModeTab> MOONCAKE_DELIGHT_TAB =
             CREATIVE_MODE_TAB.register("mooncake_delight_tab", () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.BEDROCK_MOONCAKE.get()))
+                    .icon(() -> new ItemStack(MDItems.BEDROCK_MOONCAKE.get()))
                     .title(Component.translatable("itemGroup.mooncake_delight_tab"))
                     .displayItems((parameters, output) -> {
 
                         // ======================= 食材 =======================
-                        output.accept(ModItems.INVERT_SUGAR_SYRUP_BUCKET.get()); // 转换糖浆 桶
-                        output.accept(ModItems.MAPLE_SYRUP_BUCKET.get()); // 枫糖浆 桶
+                        output.accept(MDItems.INVERT_SUGAR_SYRUP_BUCKET.get()); // 转换糖浆 桶
+                        output.accept(MDItems.MAPLE_SYRUP_BUCKET.get()); // 枫糖浆 桶
 
-                        output.accept(ModItems.INVERT_SUGAR_SYRUP_BOTTLE.get()); // 转换糖浆
-                        output.accept(ModItems.MAPLE_SYRUP_BOTTLE.get()); // 枫糖浆
-                        output.accept(ModItems.ANIMAL_FAT.get()); // 动物油
+                        output.accept(MDItems.INVERT_SUGAR_SYRUP_BOTTLE.get()); // 转换糖浆
+                        output.accept(MDItems.MAPLE_SYRUP_BOTTLE.get()); // 枫糖浆
+                        output.accept(MDItems.ANIMAL_FAT.get()); // 动物油
 
-                        output.accept(ModItems.OILED_KNIFE.get()); // 油浸刀
-                        output.accept(ModItems.MOONCAKE_MOLD.get()); // 月饼模具
-                        output.accept(ModItems.SUGAR_CUBE.get()); // 方糖
-                        output.accept(ModItems.TRUFFLE.get()); // 松露
-                        output.accept(ModItems.TALLOW.get()); // 动物油脂
-                        output.accept(ModItems.TALLOW_CRUMBS.get()); // 动物油脂碎
-                        output.accept(ModItems.LOTUS_SEED.get()); // 莲子
-                        output.accept(ModItems.FLOUR.get()); // 面粉
-                        output.accept(ModItems.MOONCAKE_CRUST_DOUGH.get()); // 月饼面团
-                        output.accept(ModItems.SNOW_SKIN_MOONCAKE_CRUST_DOUGH.get()); // 冰皮月饼面团
+                        output.accept(MDItems.OILED_KNIFE.get()); // 油浸刀
+                        output.accept(MDItems.MOONCAKE_MOLD.get()); // 月饼模具
+                        output.accept(MDItems.SUGAR_CUBE.get()); // 方糖
+                        output.accept(MDItems.TRUFFLE.get()); // 松露
+                        output.accept(MDItems.TALLOW.get()); // 动物油脂
+                        output.accept(MDItems.TALLOW_CRUMBS.get()); // 动物油脂碎
+                        output.accept(MDItems.LOTUS_SEED.get()); // 莲子
+                        output.accept(MDItems.FLOUR.get()); // 面粉
+                        output.accept(MDItems.MOONCAKE_CRUST_DOUGH.get()); // 月饼面团
+                        output.accept(MDItems.SNOW_SKIN_MOONCAKE_CRUST_DOUGH.get()); // 冰皮月饼面团
                         if (ModList.get().isLoaded("croptopia")) {
                             output.accept(CroptopiaItems.PEPPER_SALT.get()); // 椒盐
                         }
 
                         // ======================= 作物 =======================
-                        output.accept(ModItems.WHITE_SESAME.get()); // 白芝麻
-                        output.accept(ModItems.BLACK_SESAME.get()); // 黑芝麻
+                        output.accept(MDItems.WHITE_SESAME.get()); // 白芝麻
+                        output.accept(MDItems.BLACK_SESAME.get()); // 黑芝麻
 
                         // ======================= 原版自带 =======================
-                        output.accept(ModItems.APPLE_MOONCAKE.get()); // 苹果月饼
-                        output.accept(ModItems.GOLDEN_APPLE_MOONCAKE.get()); // 金苹果月饼
-                        output.accept(ModItems.ENCHANTED_GOLDEN_APPLE_MOONCAKE.get()); // 附魔金苹果月饼
-                        output.accept(ModItems.SWEET_BERRIES_MOONCAKE.get()); // 甜浆果月饼
-                        output.accept(ModItems.GLOW_BERRIES_MOONCAKE.get()); // 发光浆果月饼
-                        output.accept(ModItems.CHORUS_FRUIT_MOONCAKE.get()); // 紫颂果月饼
-                        output.accept(ModItems.CARROT_MOONCAKE.get()); // 胡萝卜月饼
-                        output.accept(ModItems.POTATO_MOONCAKE.get()); // 马铃薯月饼
-                        output.accept(ModItems.BEEF_MOONCAKE.get()); // 牛肉月饼
-                        output.accept(ModItems.PORKCHOP_MOONCAKE.get()); // 猪肉月饼
-                        output.accept(ModItems.MUTTON_MOONCAKE.get()); // 羊肉月饼
-                        output.accept(ModItems.CHICKEN_MOONCAKE.get()); // 鸡肉月饼
-                        output.accept(ModItems.RABBIT_MOONCAKE.get()); // 兔肉月饼
-                        output.accept(ModItems.COD_MOONCAKE.get()); // 鳕鱼月饼
-                        output.accept(ModItems.SALMON_MOONCAKE.get()); // 鲑鱼月饼
-                        output.accept(ModItems.ROTTEN_FLESH_MOONCAKE.get()); // 腐肉月饼
-                        output.accept(ModItems.HONEY_MOONCAKE.get()); // 蜂蜜月饼
-                        output.accept(ModItems.COFFEE_MOONCAKE.get()); // 咖啡月饼
-                        output.accept(ModItems.SNOW_SKIN_MOONCAKE.get()); // 冰皮月饼
-                        output.accept(ModItems.LAVA_EGG_CUSTARD_MOONCAKE.get()); // 流心奶黄月饼
-                        output.accept(ModItems.LAVA_DOUBLE_EGG_CUSTARD_MOONCAKE.get()); // 流心奶双黄月饼
-                        output.accept(ModItems.BLACK_TRUFFLE_MOONCAKE.get()); // 黑松露月饼
-                        output.accept(ModItems.HUNDRED_FRUITS_MOONCAKE.get()); // 百果月饼
-                        output.accept(ModItems.EDIBLE_FLOWER_MOONCAKE.get()); // 鲜花月饼
-                        output.accept(ModItems.ROSE_MOONCAKE.get()); // 玫瑰月饼
-                        output.accept(ModItems.CHRYSANTHEMUM_MOONCAKE.get()); // 菊花月饼
-                        output.accept(ModItems.CAKE_MOONCAKE.get()); // 蛋糕月饼
-                        output.accept(ModItems.RICE_MOONCAKE.get()); // 米月饼
-                        output.accept(ModItems.LOTUS_SEED_PASTE_MOONCAKE.get()); // 莲蓉月饼
-                        output.accept(ModItems.DOUBLE_YOLK_LOTUS_MOONCAKE.get()); // 双黄莲蓉月饼
-                        output.accept(ModItems.PORK_MOONCAKE.get()); // 鲜肉月饼
-                        output.accept(ModItems.EGG_YOLK_MOONCAKE.get()); // 蛋黄月饼
-                        output.accept(ModItems.SALTED_EGG_YOLK_PORK_MOONCAKE.get()); // 蛋黄鲜肉月饼
-                        output.accept(ModItems.HAM_MOONCAKE.get()); // 火腿月饼
-                        output.accept(ModItems.YUNNAN_HAM_MOONCAKE.get()); // 云腿月饼
-                        output.accept(ModItems.PUMPKIN_MOONCAKE.get()); // 南瓜月饼
-                        output.accept(ModItems.PORK_CABBAGE_MOONCAKE.get()); // 猪肉卷心菜月饼
-                        output.accept(ModItems.BEEF_TOMATO_MOONCAKE.get()); // 牛肉番茄月饼
-                        output.accept(ModItems.CHICKEN_PUMPKIN_MOONCAKE.get()); // 鸡肉南瓜月饼
-                        output.accept(ModItems.HAM_CABBAGE_MOONCAKE.get()); // 火腿卷心菜月饼
-                        output.accept(ModItems.SEAFOOD_MOONCAKE.get()); // 海鲜月饼
-                        output.accept(ModItems.THREE_DELICACIES_MOONCAKE.get()); // 三鲜月饼
-                        output.accept(ModItems.FAMILY_FEASTS_MOONCAKE.get()); // 全家福月饼
-                        output.accept(ModItems.DOUBLE_MEAT_MOONCAKE.get()); // 双拼肉月饼
-                        output.accept(ModItems.TRIPLE_MEAT_MOONCAKE.get()); // 三肉月饼
-                        output.accept(ModItems.HAM_BACON_MOONCAKE.get()); // 火腿培根月饼
-                        output.accept(ModItems.JINHUA_HAM_MOONCAKE.get()); // 金华火腿月饼
-                        output.accept(ModItems.BACON_ONION_MOONCAKE.get()); // 培根洋葱月饼
-                        output.accept(ModItems.BLACK_SESAME_PASTE_MOONCAKE.get()); // 黑芝麻蓉月饼
-                        output.accept(ModItems.BLACK_SESAME_LAVA_MOONCAKE.get()); // 黑芝麻蓉流心月饼
-                        output.accept(ModItems.BLACK_SESAME_SOY_MILK_MOONCAKE.get()); // 黑芝麻豆乳月饼
-                        output.accept(ModItems.WHITE_SESAME_PASTE_MOONCAKE.get()); // 白芝麻蓉月饼
-                        output.accept(ModItems.SESAME_EGG_YOLK_MOONCAKE.get()); // 芝麻蛋黄月饼
-                        output.accept(ModItems.SESAME_HAM_MOONCAKE.get()); // 芝麻火腿月饼
-                        output.accept(ModItems.SESAME_BEEF_MOONCAKE.get()); // 芝麻牛肉月饼 配方：牛肉馅+洋葱+番茄酱+芝麻
-                        output.accept(ModItems.SESAME_BACON_MOONCAKE.get()); // 芝麻培根月饼
-                        output.accept(ModItems.SESAME_ONION_MOONCAKE.get()); // 芝麻洋葱月饼 配方：洋葱+焦糖+芝麻
-                        output.accept(ModItems.SESAME_TOMATO_MOONCAKE.get()); // 芝麻番茄月饼
-                        output.accept(ModItems.SESAME_CHICKEN_MOONCAKE.get()); // 芝麻鸡肉月饼
-                        output.accept(ModItems.SESAME_MUTTON_MOONCAKE.get()); // 芝麻羊肉月饼
+                        output.accept(MDItems.APPLE_MOONCAKE.get()); // 苹果月饼
+                        output.accept(MDItems.GOLDEN_APPLE_MOONCAKE.get()); // 金苹果月饼
+                        output.accept(MDItems.ENCHANTED_GOLDEN_APPLE_MOONCAKE.get()); // 附魔金苹果月饼
+                        output.accept(MDItems.SWEET_BERRIES_MOONCAKE.get()); // 甜浆果月饼
+                        output.accept(MDItems.GLOW_BERRIES_MOONCAKE.get()); // 发光浆果月饼
+                        output.accept(MDItems.CHORUS_FRUIT_MOONCAKE.get()); // 紫颂果月饼
+                        output.accept(MDItems.CARROT_MOONCAKE.get()); // 胡萝卜月饼
+                        output.accept(MDItems.POTATO_MOONCAKE.get()); // 马铃薯月饼
+                        output.accept(MDItems.BEEF_MOONCAKE.get()); // 牛肉月饼
+                        output.accept(MDItems.PORKCHOP_MOONCAKE.get()); // 猪肉月饼
+                        output.accept(MDItems.MUTTON_MOONCAKE.get()); // 羊肉月饼
+                        output.accept(MDItems.CHICKEN_MOONCAKE.get()); // 鸡肉月饼
+                        output.accept(MDItems.RABBIT_MOONCAKE.get()); // 兔肉月饼
+                        output.accept(MDItems.COD_MOONCAKE.get()); // 鳕鱼月饼
+                        output.accept(MDItems.SALMON_MOONCAKE.get()); // 鲑鱼月饼
+                        output.accept(MDItems.ROTTEN_FLESH_MOONCAKE.get()); // 腐肉月饼
+                        output.accept(MDItems.HONEY_MOONCAKE.get()); // 蜂蜜月饼
+                        output.accept(MDItems.COFFEE_MOONCAKE.get()); // 咖啡月饼
+                        output.accept(MDItems.SNOW_SKIN_MOONCAKE.get()); // 冰皮月饼
+                        output.accept(MDItems.LAVA_EGG_CUSTARD_MOONCAKE.get()); // 流心奶黄月饼
+                        output.accept(MDItems.LAVA_DOUBLE_EGG_CUSTARD_MOONCAKE.get()); // 流心奶双黄月饼
+                        output.accept(MDItems.BLACK_TRUFFLE_MOONCAKE.get()); // 黑松露月饼
+                        output.accept(MDItems.HUNDRED_FRUITS_MOONCAKE.get()); // 百果月饼
+                        output.accept(MDItems.EDIBLE_FLOWER_MOONCAKE.get()); // 鲜花月饼
+                        output.accept(MDItems.ROSE_MOONCAKE.get()); // 玫瑰月饼
+                        output.accept(MDItems.CHRYSANTHEMUM_MOONCAKE.get()); // 菊花月饼
+                        output.accept(MDItems.CAKE_MOONCAKE.get()); // 蛋糕月饼
+                        output.accept(MDItems.RICE_MOONCAKE.get()); // 米月饼
+                        output.accept(MDItems.LOTUS_SEED_PASTE_MOONCAKE.get()); // 莲蓉月饼
+                        output.accept(MDItems.DOUBLE_YOLK_LOTUS_MOONCAKE.get()); // 双黄莲蓉月饼
+                        output.accept(MDItems.PORK_MOONCAKE.get()); // 鲜肉月饼
+                        output.accept(MDItems.EGG_YOLK_MOONCAKE.get()); // 蛋黄月饼
+                        output.accept(MDItems.SALTED_EGG_YOLK_PORK_MOONCAKE.get()); // 蛋黄鲜肉月饼
+                        output.accept(MDItems.HAM_MOONCAKE.get()); // 火腿月饼
+                        output.accept(MDItems.YUNNAN_HAM_MOONCAKE.get()); // 云腿月饼
+                        output.accept(MDItems.PUMPKIN_MOONCAKE.get()); // 南瓜月饼
+                        output.accept(MDItems.PORK_CABBAGE_MOONCAKE.get()); // 猪肉卷心菜月饼
+                        output.accept(MDItems.BEEF_TOMATO_MOONCAKE.get()); // 牛肉番茄月饼
+                        output.accept(MDItems.CHICKEN_PUMPKIN_MOONCAKE.get()); // 鸡肉南瓜月饼
+                        output.accept(MDItems.HAM_CABBAGE_MOONCAKE.get()); // 火腿卷心菜月饼
+                        output.accept(MDItems.SEAFOOD_MOONCAKE.get()); // 海鲜月饼
+                        output.accept(MDItems.THREE_DELICACIES_MOONCAKE.get()); // 三鲜月饼
+                        output.accept(MDItems.FAMILY_FEASTS_MOONCAKE.get()); // 全家福月饼
+                        output.accept(MDItems.DOUBLE_MEAT_MOONCAKE.get()); // 双拼肉月饼
+                        output.accept(MDItems.TRIPLE_MEAT_MOONCAKE.get()); // 三肉月饼
+                        output.accept(MDItems.HAM_BACON_MOONCAKE.get()); // 火腿培根月饼
+                        output.accept(MDItems.JINHUA_HAM_MOONCAKE.get()); // 金华火腿月饼
+                        output.accept(MDItems.BACON_ONION_MOONCAKE.get()); // 培根洋葱月饼
+                        output.accept(MDItems.BLACK_SESAME_PASTE_MOONCAKE.get()); // 黑芝麻蓉月饼
+                        output.accept(MDItems.BLACK_SESAME_LAVA_MOONCAKE.get()); // 黑芝麻蓉流心月饼
+                        output.accept(MDItems.BLACK_SESAME_SOY_MILK_MOONCAKE.get()); // 黑芝麻豆乳月饼
+                        output.accept(MDItems.WHITE_SESAME_PASTE_MOONCAKE.get()); // 白芝麻蓉月饼
+                        output.accept(MDItems.SESAME_EGG_YOLK_MOONCAKE.get()); // 芝麻蛋黄月饼
+                        output.accept(MDItems.SESAME_HAM_MOONCAKE.get()); // 芝麻火腿月饼
+                        output.accept(MDItems.SESAME_BEEF_MOONCAKE.get()); // 芝麻牛肉月饼 配方：牛肉馅+洋葱+番茄酱+芝麻
+                        output.accept(MDItems.SESAME_BACON_MOONCAKE.get()); // 芝麻培根月饼
+                        output.accept(MDItems.SESAME_ONION_MOONCAKE.get()); // 芝麻洋葱月饼 配方：洋葱+焦糖+芝麻
+                        output.accept(MDItems.SESAME_TOMATO_MOONCAKE.get()); // 芝麻番茄月饼
+                        output.accept(MDItems.SESAME_CHICKEN_MOONCAKE.get()); // 芝麻鸡肉月饼
+                        output.accept(MDItems.SESAME_MUTTON_MOONCAKE.get()); // 芝麻羊肉月饼
 
                         // ======================= 作物盛景 联动 =======================
                         if (ModList.get().isLoaded("croptopia")) {
@@ -169,10 +169,10 @@ public class ModCreativeTabs {
                         }
 
                         // ======================= 特殊/彩蛋物品 =======================
-                        output.accept(ModItems.LAVA_MOONCAKE.get()); // 流心月饼
-                        output.accept(ModItems.TNT_MOONCAKE.get()); // TNT 月饼
-                        output.accept(ModItems.DEBRIS_MOONCAKE.get()); // 残骸月饼
-                        output.accept(ModItems.BEDROCK_MOONCAKE.get()); // 基岩月饼
+                        output.accept(MDItems.LAVA_MOONCAKE.get()); // 流心月饼
+                        output.accept(MDItems.TNT_MOONCAKE.get()); // TNT 月饼
+                        output.accept(MDItems.DEBRIS_MOONCAKE.get()); // 残骸月饼
+                        output.accept(MDItems.BEDROCK_MOONCAKE.get()); // 基岩月饼
                     })
                     .build());
 

@@ -1,6 +1,6 @@
 package com.chinaex123.mooncake_delight.dataGen;
 
-import com.chinaex123.mooncake_delight.init.ModItems;
+import com.chinaex123.mooncake_delight.init.MDItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DataMapProvider;
@@ -21,7 +21,7 @@ public class DataMaps extends DataMapProvider {
         // 堆肥
         builder(NeoForgeDataMaps.COMPOSTABLES)
                 // ======================= 作物 =======================
-                .add(ModItems.WHITE_SESAME.get().builtInRegistryHolder(), new Compostable(0.30F), false) // 白芝麻
-                .add(ModItems.BLACK_SESAME.get().builtInRegistryHolder(), new Compostable(0.65F), false); // 黑芝麻
+                .add(MDItems.WHITE_SESAME.get().builtInRegistryHolder(), new Compostable(0.30F), false) // 白芝麻
+                .add(MDItems.BLACK_SESAME.get().builtInRegistryHolder(), new Compostable(0.65F), false); // 黑芝麻
     }
 }

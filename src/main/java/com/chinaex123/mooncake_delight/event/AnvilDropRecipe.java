@@ -1,6 +1,7 @@
 package com.chinaex123.mooncake_delight.event;
 
-import com.chinaex123.mooncake_delight.init.ModItems;
+import com.chinaex123.mooncake_delight.config.CommonConfig;
+import com.chinaex123.mooncake_delight.init.MDItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.FallingBlockEntity;
@@ -31,7 +32,7 @@ public class AnvilDropRecipe {
     private static void initRecipes() {
         if (!initialized) {
             // 格式：registerRecipe(输入物品，最小输入数量，最大输入数量，输出物品，每个产出最小值，每个产出最大值)
-            registerRecipe(Items.WHEAT, 1, 1, ModItems.FLOUR, 2, 6); // 小麦 → 面粉
+            registerRecipe(Items.WHEAT, 1, 1, MDItems.FLOUR, 2, 6); // 小麦 → 面粉
             
             initialized = true;
         }
@@ -52,6 +53,10 @@ public class AnvilDropRecipe {
 
     @SubscribeEvent
     public static void onEntityTick(EntityTickEvent.Pre event) {
+        if (!CommonConfig.ANVIL_DROP_RECIPE_ENABLED.get()) {
+            return;
+        }
+
         // 确保配方已初始化
         initRecipes();
 

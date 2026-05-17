@@ -1,8 +1,8 @@
 package com.chinaex123.mooncake_delight.dataGen.recipe.ModCompat;
 
+import com.chinaex123.mooncake_delight.init.MDItems;
 import com.chinaex123.mooncake_delight.init.ModCompat.Croptopia.CroptopiaItems;
-import com.chinaex123.mooncake_delight.init.ModItems;
-import com.chinaex123.mooncake_delight.init.ModItemTags;
+import com.chinaex123.mooncake_delight.init.MDItemTags;
 import net.minecraft.advancements.Criterion;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.advancements.critereon.ItemPredicate;
@@ -18,7 +18,6 @@ import net.neoforged.neoforge.common.Tags;
 import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
 import vectorwing.farmersdelight.common.tag.CommonTags;
-import vectorwing.farmersdelight.common.tag.ModTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -37,36 +36,36 @@ public class CroptopiaItemRecipes {
 
         // ======================= 作物盛景 联动 =======================
         // 香肠月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SAUSAGE_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SAUSAGE_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "sausages"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "sausages"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "sausages"))))
-                .unlockedBy("has_sausage_mooncake_sugar",  has(ModItemTags.SUGARS))
+                .unlockedBy("has_sausage_mooncake_sugar",  has(MDItemTags.SUGARS))
                 .unlockedBy("has_sausage_mooncake_onion",  has(CommonTags.Items.CROPS_ONION))
                 .unlockedBy("has_sausage_mooncake_sausage",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "sausages"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 鱿鱼月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CALAMARI_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CALAMARI_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "calamari"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "calamari"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "calamari"))))
-                .unlockedBy("has_calamari_mooncake_sugar",  has(ModItemTags.SUGARS))
+                .unlockedBy("has_calamari_mooncake_sugar",  has(MDItemTags.SUGARS))
                 .unlockedBy("has_calamari_mooncake_onion",  has(CommonTags.Items.CROPS_ONION))
                 .unlockedBy("has_calamari_mooncake_calamari",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "calamari"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 菠萝月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PINEAPPLE_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PINEAPPLE_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/pineapple"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/pineapple"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/pineapple"))))
@@ -74,10 +73,10 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 草莓月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.STRAWBERRY_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.STRAWBERRY_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/strawberry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/strawberry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/strawberry"))))
@@ -85,10 +84,10 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 蓝莓月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BLUEBERRY_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BLUEBERRY_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/blueberry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/blueberry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/blueberry"))))
@@ -96,10 +95,10 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 蔓越莓月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CRANBERRY_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CRANBERRY_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cranberry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cranberry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cranberry"))))
@@ -107,10 +106,10 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 黑莓月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BLACKBERRY_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BLACKBERRY_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/blackberry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/blackberry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/blackberry"))))
@@ -118,10 +117,10 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 椰蓉月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.COCONUT_PASTE_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.COCONUT_PASTE_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/coconut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/coconut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/coconut"))))
@@ -129,10 +128,10 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 枣泥月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.JUJUBE_PASTE_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.JUJUBE_PASTE_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/date"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/date"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/date"))))
@@ -140,10 +139,10 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 绿豆月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.MUNG_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.MUNG_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/greenbean"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/greenbean"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/greenbean"))))
@@ -151,10 +150,10 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 花生月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PEANUT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PEANUT_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/peanut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/peanut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/peanut"))))
@@ -162,10 +161,10 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 葱油月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.HUNAN_SCALLION_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.HUNAN_SCALLION_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "olive_oils"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/greenonion"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/greenonion"))))
@@ -174,32 +173,32 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 椒盐月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PEPPER_SALT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PEPPER_SALT_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(ModItemTags.PEPPER_SALT)
-                .addIngredient(ModItemTags.PEPPER_SALT)
-                .addIngredient(ModItemTags.PEPPER_SALT)
-                .unlockedBy("has_pepper_salt_mooncake_pepper_salt", has(ModItemTags.PEPPER_SALT))
+                .addIngredient(MDItemTags.PEPPER_SALT)
+                .addIngredient(MDItemTags.PEPPER_SALT)
+                .addIngredient(MDItemTags.PEPPER_SALT)
+                .unlockedBy("has_pepper_salt_mooncake_pepper_salt", has(MDItemTags.PEPPER_SALT))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 黑麻椒盐月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BLACK_SESAME_PEPPER_SALT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.PEPPER_SALT)
-                .addIngredient(ModItemTags.PEPPER_SALT)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BLACK_SESAME_PEPPER_SALT_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.PEPPER_SALT)
+                .addIngredient(MDItemTags.PEPPER_SALT)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "paprika"))))
                 .unlockedBy("has_black_sesame_pepper_salt_mooncake_paprika",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "paprika"))))
-                .unlockedBy("has_black_sesame_pepper_salt_mooncake_pepper_salt", has(ModItemTags.PEPPER_SALT))
+                .unlockedBy("has_black_sesame_pepper_salt_mooncake_pepper_salt", has(MDItemTags.PEPPER_SALT))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 芒果月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.MANGO_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.MANGO_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/mango"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/mango"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/mango"))))
@@ -207,9 +206,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 芒果椰奶月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.MANGO_COCONUT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.MANGO_COCONUT_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/mango"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/mango"))))
@@ -219,9 +218,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 肉桂苹果月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CINNAMON_APPLE_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CINNAMON_APPLE_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "apples"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cinnamon"))))
@@ -231,9 +230,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 热带水果月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.TROPICAL_FRUIT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.TROPICAL_FRUIT_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/mango"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/pineapple"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/banana"))))
@@ -245,9 +244,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 浆果荟萃月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BERRY_MEDLEY_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BERRY_MEDLEY_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/blackberry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/blueberry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/raspberry"))))
@@ -259,9 +258,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 柑橘炸弹月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CITRUS_BLAST_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CITRUS_BLAST_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/orange"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/lemon"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/grapefruit"))))
@@ -273,10 +272,10 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 扁桃仁樱桃月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.ALMOND_CHERRY_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.ALMOND_CHERRY_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/almond"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cherry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cherry"))))
@@ -285,10 +284,10 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 腰果芒果月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CASHEW_MANGO_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CASHEW_MANGO_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/mango"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cashew"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cashew"))))
@@ -297,9 +296,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 鲜虾芦笋月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SHRIMP_ASPARAGUS_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SHRIMP_ASPARAGUS_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "shrimp"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "shrimp"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/asparagus"))))
@@ -309,9 +308,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 螃蟹玉米月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CRAB_CORNS_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CRAB_CORNS_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crabs"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crabs"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/corn"))))
@@ -321,9 +320,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 金枪鱼牛油果月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.TUNA_AVOCADO_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.TUNA_AVOCADO_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "tuna"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/avocado"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/avocado"))))
@@ -333,9 +332,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 菠菜核桃月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SPINACHE_WALNUT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SPINACHE_WALNUT_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/spinach"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/spinach"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/walnut"))))
@@ -345,9 +344,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 菠萝火腿月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PINEAPPLE_HAM_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PINEAPPLE_HAM_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.HAM.get())
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/pineapple"))))
@@ -357,10 +356,10 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 蔓越莓核桃月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CRANBERRY_WALNUT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CRANBERRY_WALNUT_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cranberry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cranberry"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/walnut"))))
@@ -369,9 +368,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 蓝莓酸奶月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BLUEBERRY_YOGURT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BLUEBERRY_YOGURT_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "lemonades"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/blueberry"))))
@@ -381,9 +380,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 海鲜总汇月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SEAFOOD_MEDLEY_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SEAFOOD_MEDLEY_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "tuna"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "shrimp"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crabs"))))
@@ -395,9 +394,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 蔬菜之王月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.KING_OF_VEGGIES_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.KING_OF_VEGGIES_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/kale"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/spinach"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/yam"))))
@@ -409,9 +408,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 五仁月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.FIVE_KERNELS_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.FIVE_KERNELS_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/peanut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/walnut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/cashew"))))
@@ -423,9 +422,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 叉烧月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BBQ_PORK_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BBQ_PORK_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cooked_bacon"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cooked_bacon"))))
@@ -435,8 +434,8 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 叉烧五仁月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BBQ_PORK_FIVE_KERNELS_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BBQ_PORK_FIVE_KERNELS_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cooked_bacon"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/peanut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/walnut"))))
@@ -450,8 +449,8 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 金腿五仁月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.JINHUA_HAM_FIVE_KERNELS_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.JINHUA_HAM_FIVE_KERNELS_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
                 .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.HAM.get())
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/peanut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/walnut"))))
@@ -465,22 +464,22 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 栗蓉月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CHESTNUT_PASTE_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.CROPS_LOTUS)
-                .addIngredient(ModItemTags.CROPS_LOTUS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CHESTNUT_PASTE_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.CROPS_LOTUS)
+                .addIngredient(MDItemTags.CROPS_LOTUS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/currant"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/currant"))))
-                .unlockedBy("has_chestnut_paste_mooncake_lotus_seed", has(ModItemTags.CROPS_LOTUS))
+                .unlockedBy("has_chestnut_paste_mooncake_lotus_seed", has(MDItemTags.CROPS_LOTUS))
                 .unlockedBy("has_chestnut_paste_mooncake_currant",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/currant"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 核桃枣泥月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.WALNUT_DATE_PASTE_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.WALNUT_DATE_PASTE_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/walnut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/date"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/date"))))
@@ -489,9 +488,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 梅干菜月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PRESERVED_MUSTARD_GREEN_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PRESERVED_MUSTARD_GREEN_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "salts"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/mustard"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/mustard"))))
@@ -501,9 +500,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 榨菜鲜肉月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PICKLED_MUSTARD_PORK_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.PICKLED_MUSTARD_PORK_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
                 .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "salts"))))
@@ -513,9 +512,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 奶茶月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.MILK_TEA_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.MILK_TEA_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/tea_leaves"))))
@@ -524,9 +523,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 橙皮丁月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CANDIED_ORANGE_PEEL_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CANDIED_ORANGE_PEEL_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/orange"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/orange"))))
@@ -535,9 +534,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 焦糖月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CARAMEL_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CARAMEL_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "caramel"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "caramel"))))
@@ -546,9 +545,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 焦糖海盐月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CARAMEL_SEA_SALT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CARAMEL_SEA_SALT_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "salts"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "salts"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "caramel"))))
@@ -558,9 +557,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 芝士流心月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CHEESE_LAVA_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CHEESE_LAVA_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cheeses"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cheeses"))))
@@ -569,9 +568,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 芝士焦糖月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CHEESE_CARAMEL_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.CHEESE_CARAMEL_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cheeses"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "caramel"))))
@@ -581,9 +580,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 黄油巧克力月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BUTTER_CHOCOLATE_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BUTTER_CHOCOLATE_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "butters"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "chocolates"))))
@@ -593,9 +592,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 黄油芝士月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BUTTER_CHEESE_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BUTTER_CHEESE_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "butters"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cheeses"))))
@@ -605,9 +604,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 流心巧克力月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.LAVA_CHOCOLATE_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.LAVA_CHOCOLATE_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "chocolates"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "chocolates"))))
@@ -616,9 +615,9 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 伯爵茶月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.EARL_GREY_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.EARL_GREY_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/tea_leaves"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/tea_leaves"))))
@@ -628,63 +627,63 @@ public class CroptopiaItemRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 芝麻核桃月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SESAME_WALNUT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.CROPS_SESAME)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SESAME_WALNUT_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.CROPS_SESAME)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/walnut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/walnut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/walnut"))))
                 .unlockedBy("has_sesame-walnut_mooncake_walnut",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/walnut"))))
-                .unlockedBy("has_sesame-walnut_mooncake_white_sesame", has(ModItemTags.CROPS_SESAME))
+                .unlockedBy("has_sesame-walnut_mooncake_white_sesame", has(MDItemTags.CROPS_SESAME))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 芝麻花生月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SESAME_PEANUT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.CROPS_SESAME)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SESAME_PEANUT_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.CROPS_SESAME)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/peanut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/peanut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/peanut"))))
                 .unlockedBy("has_sesame-peanut_mooncake_peanut",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/peanut"))))
-                .unlockedBy("has_sesame-peanut_mooncake_white_sesame", has(ModItemTags.CROPS_SESAME))
+                .unlockedBy("has_sesame-peanut_mooncake_white_sesame", has(MDItemTags.CROPS_SESAME))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 芝麻杏仁月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SESAME_ALMOND_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.CROPS_SESAME)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SESAME_ALMOND_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.CROPS_SESAME)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/almond"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/almond"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/almond"))))
                 .unlockedBy("has_sesame-almond_mooncake_almond",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/almond"))))
-                .unlockedBy("has_sesame-almond_mooncake_white_sesame", has(ModItemTags.CROPS_SESAME))
+                .unlockedBy("has_sesame-almond_mooncake_white_sesame", has(MDItemTags.CROPS_SESAME))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 芝麻芝士月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SESAME_CHEESE_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItemTags.CROPS_SESAME)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.SESAME_CHEESE_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItemTags.CROPS_SESAME)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cheeses"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cheeses"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cheeses"))))
                 .unlockedBy("has_sesame-almond_mooncake_cheese",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "cheeses"))))
-                .unlockedBy("has_sesame-almond_mooncake_white_sesame", has(ModItemTags.CROPS_SESAME))
+                .unlockedBy("has_sesame-almond_mooncake_white_sesame", has(MDItemTags.CROPS_SESAME))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 黑芝麻椰蓉月饼
-        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BLACK_SESAME_COCONUT_MOONCAKE.get(), 1, 20 * 20,0.5F, ModItems.MOONCAKE_MOLD)
-                .addIngredient(ModItems.MOONCAKE_CRUST_DOUGH)
-                .addIngredient(ModItemTags.SUGARS)
-                .addIngredient(ModItems.BLACK_SESAME)
-                .addIngredient(ModItemTags.CROPS_LOTUS)
+        CookingPotRecipeBuilder.cookingPotRecipe(CroptopiaItems.BLACK_SESAME_COCONUT_MOONCAKE.get(), 1, 20 * 20,0.5F, MDItems.MOONCAKE_MOLD)
+                .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH)
+                .addIngredient(MDItemTags.SUGARS)
+                .addIngredient(MDItems.BLACK_SESAME)
+                .addIngredient(MDItemTags.CROPS_LOTUS)
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/coconut"))))
                 .addIngredient(Ingredient.of(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/coconut"))))
                 .unlockedBy("has_black_sesame-coconut_mooncake_cheese",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "crops/coconut"))))
-                .unlockedBy("has_black_sesame-coconut_mooncake_white_sesame", has(ModItemTags.CROPS_SESAME))
+                .unlockedBy("has_black_sesame-coconut_mooncake_white_sesame", has(MDItemTags.CROPS_SESAME))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
     }

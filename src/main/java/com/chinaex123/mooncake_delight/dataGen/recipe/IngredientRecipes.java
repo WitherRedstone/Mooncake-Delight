@@ -1,7 +1,7 @@
 package com.chinaex123.mooncake_delight.dataGen.recipe;
 
-import com.chinaex123.mooncake_delight.init.ModItems;
-import com.chinaex123.mooncake_delight.init.ModItemTags;
+import com.chinaex123.mooncake_delight.init.MDItems;
+import com.chinaex123.mooncake_delight.init.MDItemTags;
 import net.minecraft.advancements.Criterion;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.advancements.critereon.ItemPredicate;
@@ -32,46 +32,46 @@ public class IngredientRecipes {
 
         // ======================= 食材 =======================
         // 转换糖浆
-        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.INVERT_SUGAR_SYRUP_BOTTLE.get(), 1, 20 * 20,0.5F, Items.GLASS_BOTTLE)
-                .addIngredient(ModItemTags.SUGARS)
+        CookingPotRecipeBuilder.cookingPotRecipe(MDItems.INVERT_SUGAR_SYRUP_BOTTLE.get(), 1, 20 * 20,0.5F, Items.GLASS_BOTTLE)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Items.GLOW_BERRIES)
                 .addIngredient(Items.HONEYCOMB)
                 .addIngredient(Items.HONEYCOMB)
                 .addIngredient(Items.HONEYCOMB)
-                .unlockedBy("has_sugar",  has(ModItemTags.SUGARS))
+                .unlockedBy("has_sugar",  has(MDItemTags.SUGARS))
                 .setRecipeBookTab(CookingPotRecipeBookTab.DRINKS)
                 .save(recipeOutput);
         // 动物油
-        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.ANIMAL_FAT.get(), 1, 20 * 30,0.5F, Items.GLASS_BOTTLE)
-                .addIngredient(ModItems.TALLOW)
-                .addIngredient(ModItems.TALLOW)
-                .addIngredient(ModItems.TALLOW)
-                .addIngredient(ModItems.TALLOW)
-                .addIngredient(ModItems.TALLOW)
-                .addIngredient(ModItems.TALLOW)
-                .unlockedBy("has_tallow", has(ModItems.TALLOW.get()))
+        CookingPotRecipeBuilder.cookingPotRecipe(MDItems.ANIMAL_FAT.get(), 1, 20 * 30,0.5F, Items.GLASS_BOTTLE)
+                .addIngredient(MDItems.TALLOW)
+                .addIngredient(MDItems.TALLOW)
+                .addIngredient(MDItems.TALLOW)
+                .addIngredient(MDItems.TALLOW)
+                .addIngredient(MDItems.TALLOW)
+                .addIngredient(MDItems.TALLOW)
+                .unlockedBy("has_tallow", has(MDItems.TALLOW.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.DRINKS)
                 .save(recipeOutput);
         // 月饼面团
-        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.MOONCAKE_CRUST_DOUGH.get(), 1, 20 * 20,0.5F)
+        CookingPotRecipeBuilder.cookingPotRecipe(MDItems.MOONCAKE_CRUST_DOUGH.get(), 1, 20 * 20,0.5F)
                 .addIngredient(Tags.Items.BUCKETS_WATER)
-                .addIngredient(ModItems.INVERT_SUGAR_SYRUP_BOTTLE)
-                .addIngredient(ModItems.ANIMAL_FAT)
-                .addIngredient(ModItemTags.FLOUR)
-                .addIngredient(ModItemTags.FLOUR)
+                .addIngredient(MDItems.INVERT_SUGAR_SYRUP_BOTTLE)
+                .addIngredient(MDItems.ANIMAL_FAT)
+                .addIngredient(MDItemTags.FLOUR)
+                .addIngredient(MDItemTags.FLOUR)
                 .addIngredient(Items.BLAZE_POWDER)
-                .unlockedBy("has_animal_fat", has(ModItems.ANIMAL_FAT.get()))
-                .unlockedBy("has_flour", has(ModItems.FLOUR.get()))
+                .unlockedBy("has_animal_fat", has(MDItems.ANIMAL_FAT.get()))
+                .unlockedBy("has_flour", has(MDItems.FLOUR.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
                 .save(recipeOutput);
         // 冰皮月饼面团
-        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.SNOW_SKIN_MOONCAKE_CRUST_DOUGH.get(), 1, 20 * 20,0.5F)
+        CookingPotRecipeBuilder.cookingPotRecipe(MDItems.SNOW_SKIN_MOONCAKE_CRUST_DOUGH.get(), 1, 20 * 20,0.5F)
                 .addIngredient(Tags.Items.BUCKETS_WATER)
-                .addIngredient(ModItemTags.SUGARS)
+                .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(Tags.Items.DRINKS_MILK)
                 .addIngredient(Items.BLUE_ICE)
-                .addIngredient(ModItemTags.FLOUR)
-                .addIngredient(ModItemTags.FLOUR)
+                .addIngredient(MDItemTags.FLOUR)
+                .addIngredient(MDItemTags.FLOUR)
                 .unlockedBy("has_snow_skin_mooncake_crust_dough", has(Tags.Items.DRINKS_MILK))
                 .unlockedBy("has_snow_skin_mooncake_crust_dough_blue_ice", has(Items.BLUE_ICE))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MISC)

@@ -16,14 +16,14 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public class MDBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(MooncakeDelight.MOD_ID);
 
     // ======================= 流体 =======================
     // 转换糖浆
     public static final DeferredBlock<LiquidBlock> INVERT_SUGAR_SYRUP_BLOCK =
-            BLOCKS.register("invert_sugar_syrup_block", () -> new LiquidBlock(ModFluids.INVERT_SUGAR_SYRUP.get(), BlockBehaviour.Properties.of()
+            BLOCKS.register("invert_sugar_syrup_block", () -> new LiquidBlock(MDFluids.INVERT_SUGAR_SYRUP.get(), BlockBehaviour.Properties.of()
                     .noLootTable() // 不掉落
                     .liquid() // 液体
                     .replaceable() // 可替换
@@ -37,7 +37,7 @@ public class ModBlocks {
             ));
     // 枫糖浆
     public static final DeferredBlock<LiquidBlock> MAPLE_SYRUP_BLOCK =
-            BLOCKS.register("maple_syrup_block", () -> new LiquidBlock(ModFluids.MAPLE_SYRUP.get(), BlockBehaviour.Properties.of()
+            BLOCKS.register("maple_syrup_block", () -> new LiquidBlock(MDFluids.MAPLE_SYRUP.get(), BlockBehaviour.Properties.of()
                     .noLootTable() // 不掉落
                     .liquid() // 液体
                     .replaceable() // 可替换
@@ -57,7 +57,7 @@ public class ModBlocks {
 
 
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
-        ModItems.ITEMS_REGISTER.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        MDItems.ITEMS_REGISTER.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     private static <T extends Block> DeferredBlock<T> register(String name, Supplier<T> block) {

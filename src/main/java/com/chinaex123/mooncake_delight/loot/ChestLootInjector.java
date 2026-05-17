@@ -2,7 +2,7 @@ package com.chinaex123.mooncake_delight.loot;
 
 import com.chinaex123.mooncake_delight.MooncakeDelight;
 import com.chinaex123.mooncake_delight.config.CommonConfig;
-import com.chinaex123.mooncake_delight.init.ModItems;
+import com.chinaex123.mooncake_delight.init.MDItems;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -27,7 +27,7 @@ public class ChestLootInjector {
                 LootPool bonusPool = LootPool.lootPool()
                         .setRolls(UniformGenerator.between(1.0f, 1.0f))
                         .when(LootItemRandomChanceCondition.randomChance((float) chance))
-                        .add(LootItem.lootTableItem(ModItems.BEDROCK_MOONCAKE.get()))
+                        .add(LootItem.lootTableItem(MDItems.BEDROCK_MOONCAKE.get()))
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 1)))
                         .name("mooncake_delight:bedrock_mooncake_bonus")
                         .build();
@@ -42,7 +42,7 @@ public class ChestLootInjector {
                 LootPool bonusPool = LootPool.lootPool()
                         .setRolls(UniformGenerator.between(1.0f, 1.0f))
                         .when(LootItemRandomChanceCondition.randomChance((float) chance))
-                        .add(LootItem.lootTableItem(ModItems.DEBRIS_MOONCAKE.get()))
+                        .add(LootItem.lootTableItem(MDItems.DEBRIS_MOONCAKE.get()))
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2)))
                         .name("mooncake_delight:debris_mooncake_bonus")
                         .build();
@@ -57,7 +57,7 @@ public class ChestLootInjector {
                 LootPool bonusPool = LootPool.lootPool()
                         .setRolls(UniformGenerator.between(1.0f, 1.0f))
                         .when(LootItemRandomChanceCondition.randomChance((float) chance))
-                        .add(LootItem.lootTableItem(ModItems.TNT_MOONCAKE.get()))
+                        .add(LootItem.lootTableItem(MDItems.TNT_MOONCAKE.get()))
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 1)))
                         .name("mooncake_delight:tnt_mooncake_bonus")
                         .build();
@@ -72,7 +72,7 @@ public class ChestLootInjector {
                 LootPool bonusPool = LootPool.lootPool()
                         .setRolls(UniformGenerator.between(1.0f, 1.0f))
                         .when(LootItemRandomChanceCondition.randomChance((float) chance))
-                        .add(LootItem.lootTableItem(ModItems.LAVA_MOONCAKE.get()))
+                        .add(LootItem.lootTableItem(MDItems.LAVA_MOONCAKE.get()))
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 1)))
                         .name("mooncake_delight:lava_mooncake_bonus")
                         .build();

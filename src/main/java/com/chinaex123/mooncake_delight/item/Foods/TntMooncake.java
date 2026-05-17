@@ -1,6 +1,6 @@
 package com.chinaex123.mooncake_delight.item.Foods;
 
-import com.chinaex123.mooncake_delight.init.ModItems;
+import com.chinaex123.mooncake_delight.init.MDItems;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.item.ItemStack;
@@ -17,7 +17,7 @@ public class TntMooncake {
         ItemStack stack = event.getItem();
 
         // 检查是否是 TNT 月饼
-        if (stack.getItem() != ModItems.TNT_MOONCAKE.get()) {
+        if (stack.getItem() != MDItems.TNT_MOONCAKE.get()) {
             return;
         }
 

@@ -1,6 +1,6 @@
 package com.chinaex123.mooncake_delight.item.Foods;
 
-import com.chinaex123.mooncake_delight.init.ModItems;
+import com.chinaex123.mooncake_delight.init.MDItems;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -18,7 +18,7 @@ public class DebrisMooncake {
         ItemStack stack = event.getItem();
 
         // 检查是否是残骸月饼
-        if (stack.getItem() != ModItems.DEBRIS_MOONCAKE.get()) {
+        if (stack.getItem() != MDItems.DEBRIS_MOONCAKE.get()) {
             return;
         }
 
