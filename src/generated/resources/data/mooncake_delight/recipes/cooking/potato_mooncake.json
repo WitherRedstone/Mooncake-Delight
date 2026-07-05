@@ -13,13 +13,13 @@
       "tag": "forge:sugars"
     },
     {
-      "tag": "forge:fruits/potato"
+      "tag": "forge:crops/potato"
     },
     {
-      "tag": "forge:fruits/potato"
+      "tag": "forge:crops/potato"
     },
     {
-      "tag": "forge:fruits/potato"
+      "tag": "forge:crops/potato"
     }
   ],
   "recipe_book_tab": "meals",

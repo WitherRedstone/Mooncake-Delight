@@ -83,6 +83,11 @@ dependencies {
     implementation fg.deobf("curse.maven:jei-238222:7391695")
     implementation fg.deobf("curse.maven:advanced-loot-info-1205426:7767313")
 
+    implementation fg.deobf("curse.maven:kubejs-238086:8020595")
+    implementation fg.deobf("curse.maven:architectury-api-419699:5137938")
+    implementation fg.deobf("curse.maven:rhino-416294:6186971")
+    //implementation files('libs/kubejs-forge-2001.6.5-build.16.jar')
+
 }
 
 tasks.named('processResources', ProcessResources).configure {

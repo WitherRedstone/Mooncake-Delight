@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:foods/raw_chicken"
+            "items": [
+              "farmersdelight:chicken_cuts"
+            ]
           }
         ]
       },

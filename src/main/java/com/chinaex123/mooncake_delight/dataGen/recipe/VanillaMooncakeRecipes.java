@@ -105,20 +105,20 @@ public class VanillaMooncakeRecipes{
         CookingPotRecipeBuilder.cookingPotRecipe(MDItems.CARROT_MOONCAKE.get(), 1, 20 * 20, 0.5F, MDItems.MOONCAKE_MOLD.get())
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH.get())
                 .addIngredient(MDItemTags.SUGARS)
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "fruits/carrot")))
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "fruits/carrot")))
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "fruits/carrot")))
-                .unlockedBy("has_carrot_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "fruits/carrot"))))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/carrot")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/carrot")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/carrot")))
+                .unlockedBy("has_carrot_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/carrot"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 马铃薯月饼
         CookingPotRecipeBuilder.cookingPotRecipe(MDItems.POTATO_MOONCAKE.get(), 1, 20 * 20, 0.5F, MDItems.MOONCAKE_MOLD.get())
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH.get())
                 .addIngredient(MDItemTags.SUGARS)
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "fruits/potato")))
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "fruits/potato")))
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "fruits/potato")))
-                .unlockedBy("has_potato_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "fruits/potato"))))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/potato")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/potato")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/potato")))
+                .unlockedBy("has_potato_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/potato"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 牛肉月饼
@@ -137,9 +137,9 @@ public class VanillaMooncakeRecipes{
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH.get())
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "foods/raw_pork")))
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "foods/raw_pork")))
-                .unlockedBy("has_porkchop_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "foods/raw_pork"))))
+                .addIngredient(Items.PORKCHOP)
+                .addIngredient(Items.PORKCHOP)
+                .unlockedBy("has_porkchop_mooncake", has(Items.PORKCHOP))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 羊肉月饼
@@ -147,9 +147,9 @@ public class VanillaMooncakeRecipes{
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH.get())
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "foods/raw_mutton")))
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "foods/raw_mutton")))
-                .unlockedBy("has_mutton_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "foods/raw_mutton"))))
+                .addIngredient(Items.MUTTON)
+                .addIngredient(Items.MUTTON)
+                .unlockedBy("has_mutton_mooncake", has(Items.MUTTON))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 鸡肉月饼
@@ -157,9 +157,9 @@ public class VanillaMooncakeRecipes{
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH.get())
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(CommonTags.Items.CROPS_ONION)
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "foods/raw_chicken")))
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "foods/raw_chicken")))
-                .unlockedBy("has_chicken_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "foods/raw_chicken"))))
+                .addIngredient(ModItems.CHICKEN_CUTS.get())
+                .addIngredient(ModItems.CHICKEN_CUTS.get())
+                .unlockedBy("has_chicken_mooncake", has(ModItems.CHICKEN_CUTS.get()))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 兔肉月饼
@@ -218,10 +218,10 @@ public class VanillaMooncakeRecipes{
                 .addIngredient(MDItems.MOONCAKE_CRUST_DOUGH.get())
                 .addIngredient(MDItemTags.SUGARS)
                 .addIngredient(MDItemTags.SUGARS)
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/cocoa_beans")))
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/cocoa_beans")))
-                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/cocoa_beans")))
-                .unlockedBy("has_coffee_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/cocoa_beans"))))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/coffee_beans")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/coffee_beans")))
+                .addIngredient(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/coffee_beans")))
+                .unlockedBy("has_coffee_mooncake", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "crops/coffee_beans"))))
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput);
         // 冰皮月饼

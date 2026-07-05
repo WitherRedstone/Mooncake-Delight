@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:fruits/potato"
+            "tag": "forge:crops/potato"
           }
         ]
       },

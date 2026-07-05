@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:foods/raw_mutton"
+            "items": [
+              "minecraft:mutton"
+            ]
           }
         ]
       },
