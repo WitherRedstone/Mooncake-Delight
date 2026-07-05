@@ -14,13 +14,13 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:crops/berry"
+      "tag": "c:foods/berry"
     },
     {
       "item": "minecraft:golden_apple"
     },
     {
-      "tag": "c:crops/melons"
+      "tag": "c:melons"
     },
     {
       "item": "minecraft:chorus_fruit"

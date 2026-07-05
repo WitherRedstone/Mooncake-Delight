@@ -14,13 +14,13 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:fruits/carrot"
+      "tag": "c:crops/carrot"
     },
     {
-      "tag": "c:fruits/carrot"
+      "tag": "c:crops/carrot"
     },
     {
-      "tag": "c:fruits/carrot"
+      "tag": "c:crops/carrot"
     }
   ],
   "recipe_book_tab": "meals",

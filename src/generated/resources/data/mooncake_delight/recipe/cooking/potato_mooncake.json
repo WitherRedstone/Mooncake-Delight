@@ -14,13 +14,13 @@
       "tag": "c:sugars"
     },
     {
-      "tag": "c:fruits/potato"
+      "tag": "c:crops/potato"
     },
     {
-      "tag": "c:fruits/potato"
+      "tag": "c:crops/potato"
     },
     {
-      "tag": "c:fruits/potato"
+      "tag": "c:crops/potato"
     }
   ],
   "recipe_book_tab": "meals",
