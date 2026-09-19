@@ -13,21 +13,14 @@
       }
     },
     {
-      "chance": 0.5,
-      "item": {
-        "count": 1,
-        "id": "mooncake_delight:flour"
-      }
-    },
-    {
       "chance": 0.25,
       "item": {
-        "count": 2,
+        "count": 1,
         "id": "mooncake_delight:flour"
       }
     }
   ],
   "tool": {
-    "item": "minecraft:anvil"
+    "item": "minecraft:chipped_anvil"
   }
 }
