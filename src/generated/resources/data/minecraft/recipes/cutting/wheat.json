@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "result": [
+    {
+      "item": "mooncake_delight:flour"
+    },
+    {
+      "chance": 0.5,
+      "item": "mooncake_delight:flour"
+    },
+    {
+      "chance": 0.25,
+      "count": 2,
+      "item": "mooncake_delight:flour"
+    }
+  ],
+  "tool": {
+    "item": "minecraft:anvil"
+  }
+}
