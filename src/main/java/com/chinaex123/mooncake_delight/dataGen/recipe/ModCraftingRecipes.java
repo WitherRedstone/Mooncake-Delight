@@ -1,5 +1,6 @@
 package com.chinaex123.mooncake_delight.dataGen.recipe;
 
+import com.chinaex123.mooncake_delight.MooncakeDelight;
 import com.chinaex123.mooncake_delight.init.MDItems;
 import com.chinaex123.mooncake_delight.init.ModCompat.Croptopia.CroptopiaItems;
 import com.chinaex123.mooncake_delight.init.MDItemTags;
@@ -16,11 +17,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.Tags;
 import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.common.tag.ModTags;
+import vectorwing.farmersdelight.data.builder.CuttingBoardRecipeBuilder;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -89,7 +92,19 @@ public class ModCraftingRecipes {
                 .unlockedBy("has_sugar_salt",  has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "salt"))))
                 .save(recipeOutput);
 
-
+        // ======================= 砧板 =======================
+        // 小麦粉
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(Items.WHEAT), Ingredient.of(Items.ANVIL), MDItems.FLOUR.get(), 1)
+                .addResultWithChance(MDItems.FLOUR.get(), 0.5F)
+                .addResultWithChance(MDItems.FLOUR.get(), 0.25F, 2)
+                .save(recipeOutput);
+        // 小麦粉
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(Items.WHEAT), Ingredient.of(Items.CHIPPED_ANVIL), MDItems.FLOUR.get(), 1)
+                .addResultWithChance(MDItems.FLOUR.get(), 0.25F)
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MooncakeDelight.MOD_ID, "cutting/wheat_chipped_anvil"));
+        // 小麦粉
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(Items.WHEAT), Ingredient.of(Items.DAMAGED_ANVIL), MDItems.FLOUR.get(), 1)
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MooncakeDelight.MOD_ID, "cutting/wheat_damaged_anvil"));
 
 
         //.requires(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("croptopia", "pepper")))
